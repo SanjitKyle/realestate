@@ -1,0 +1,81 @@
+{
+  "project": "Ultra Luxury Villa Master Showcase Video Series",
+  "part": 1,
+  "part_name": "Part 1: Villa Full View Exterior, 360-Degree Orbit & Interior Entrance",
+  "aspect_ratio": "16:9",
+  "resolution": "3840x2160 (4K UHD 60fps)",
+  "text_overlay_enabled": false,
+  "cinematography_specs": {
+    "camera_system": "Arri Alexa 65 Cinema Camera",
+    "lens_type": "Hasselblad Medium Format 24mm Ultra-Wide f/1.4 Lens",
+    "lighting_model": "Raytraced Golden Hour Sunset Illumination & Pool Water Reflections",
+    "color_grading": "Photorealistic Hollywood Teal & Orange Architectural Digest LUT",
+    "rendering_engine": "8K Photorealistic Octane Realism, 0% AI Glitch"
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Full Villa Architectural Ground View Reveal",
+      "start_frame_image": "01_full_villa_exterior.jpg",
+      "end_frame_image": "01_full_villa_exterior.jpg",
+      "duration_seconds": 4.5,
+      "prompt": "Mind-blowing 16:9 photorealistic full view reveal of the modern luxury villa compound (01_full_villa_exterior.jpg). Wide eye-level architectural shot capturing the grand 2-story glass facade, warm interior lighting, crystal-clear infinity pool, and surrounding tropical palm trees under a vibrant golden hour sunset sky. Slow subtle push-in, water ripples gently reflecting glowing villa lights. Photorealistic 8K architecture photography, zero text, hyper-attractive visual.",
+      "camera_motion_control": {
+        "movement_type": "Eye-Level Wide Architectural Steadycam Push-In",
+        "lens_aperture": "f/2.8 pristine edge-to-edge optical clarity",
+        "speed_ramp": "Ultra-slow 60fps smooth cinematic entrance"
+      },
+      "architectural_highlights": {
+        "facade": "Multi-level glass & warm wood luxury villa architecture",
+        "pool": "Rectangular infinity pool reflecting lit villa windows",
+        "landscape": "Lush tropical palm trees and manicured garden surroundings"
+      },
+      "transition": "Smooth orbital arc camera sweep into Scene 2"
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "360-Degree Panoramic Villa Exterior Orbit Sweep",
+      "start_frame_image": "01_full_villa_exterior.jpg",
+      "end_frame_image": "08_villa_drone_view.jpg",
+      "duration_seconds": 5.0,
+      "prompt": "Sensational 16:9 photorealistic 360-degree exterior orbital camera sweep around the full villa compound. Camera glides in a continuous fluid 360-degree circle around the estate, showcasing the glass balconies, stone walls, pool deck loungers, and lush tropical foliage (08_villa_drone_view.jpg). Sunset light flare shimmering off glass windows. Photorealistic 8K, zero text, ultimate architectural showcase.",
+      "camera_motion_control": {
+        "movement_type": "360° Wide Orbital Ring Sweep Around Estate",
+        "orbit_radius": "15 meters centered on villa main compound",
+        "rotation_speed": "Smooth constant cinematic velocity"
+      },
+      "lifestyle_details": {
+        "pool_deck": "Sun loungers with plush towels beside infinity pool",
+        "lighting": "Warm ambient interior lights glowing through floor-to-ceiling glass"
+      },
+      "transition": "Forward camera glide pushing low across the patio towards living room glass doors"
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Slight Forward Entrance Glide Inside Villa Living Room",
+      "start_frame_image": "02_inside_villa_living.jpg",
+      "end_frame_image": "12_villa_staircase_lobby.jpg",
+      "duration_seconds": 4.5,
+      "prompt": "Breathtaking 16:9 camera glide moving slightly inside the villa through floor-to-ceiling glass sliding doors (02_inside_villa_living.jpg). Camera softly crosses the threshold from outdoor terrace into the spacious high-ceiling living room, revealing white marble floors, designer plush sofas, cozy flickering fireplace, and tracking toward the grand staircase lobby (12_villa_staircase_lobby.jpg). Pure visual elegance, zero text, 8K ultra detail.",
+      "camera_motion_control": {
+        "movement_type": "Slow Threshold Push-In & Interior Glide",
+        "altitude": "1.6m eye-level floating steadycam",
+        "movement_path": "Direct forward entrance from patio into living room and staircase"
+      },
+      "interior_highlights": {
+        "living_room": "High ceiling living space with volumetric golden sunlight beams",
+        "staircase": "Floating wooden staircase with glass balustrade in grand lobby"
+      },
+      "transition": "Fade to black with elegant gold lens flare ending Part 1"
+    }
+  ],
+  "audio_mastering": {
+    "music_track": "Deep cinematic electronic ambient synth with acoustic piano & sub-bass drop",
+    "spatial_asmr_sfx": [
+      "Soft pool water ripples",
+      "Gentle breeze through tropical palm leaves",
+      "Subtle fireplace crackle",
+      "Warm glass refraction ambient sound"
+    ]
+  }
+}

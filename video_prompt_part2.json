@@ -1,0 +1,81 @@
+{
+  "project": "Ultra Luxury Villa Master Showcase Video Series",
+  "part": 2,
+  "part_name": "Part 2: Ultimate Master Bedroom Suite & Luxury Spa Bathroom Showcase",
+  "aspect_ratio": "16:9",
+  "resolution": "3840x2160 (4K UHD 60fps)",
+  "text_overlay_enabled": false,
+  "cinematography_specs": {
+    "camera_system": "Arri Alexa 65 Cinema Camera",
+    "lens_type": "Hasselblad Medium Format 24mm Ultra-Wide f/1.4 Lens",
+    "lighting_model": "Raytraced Volumetric Sunlight & Warm Ambient Illumination",
+    "color_grading": "Photorealistic Architectural Digest Luxury LUT",
+    "rendering_engine": "8K Photorealistic Octane Realism, 0% AI Glitch"
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Grand Master Bedroom Suite 180-Degree Panoramic Reveal",
+      "start_frame_image": "03_bedroom_inside_villa.jpg",
+      "end_frame_image": "10_villa_balcony_terrace.jpg",
+      "duration_seconds": 5.0,
+      "prompt": "Mind-blowing 16:9 wide-angle interior camera sweep of the ultimate luxury master bedroom suite (03_bedroom_inside_villa.jpg). Smooth 180-degree panoramic tracking shot starting from the king-sized bed with crisp white 1000-thread-count Egyptian cotton linens, panning across rich warm teak wood paneling, plush bedroom lounge chairs, and opening out to the sunlit balcony terrace window (10_villa_balcony_terrace.jpg). Sheer white silk curtains fluttering softly in gentle ocean breeze, hidden warm LED headboard accents glowing. 100% photorealistic 8K architecture photography, zero text, hyper-attractive visual.",
+      "camera_motion_control": {
+        "movement_type": "Wide-Angle Panoramic Steadicam Arc & Smooth Push",
+        "lens_aperture": "f/2.0 ultra-crisp interior depth",
+        "focus_pull": "Rack focus from plush bed linens to floor-to-ceiling ocean view window"
+      },
+      "room_highlights": {
+        "bed_suite": "King size bed with pristine white luxury duvet and decorative throw pillows",
+        "lounge_area": "Designer armchair with marble side table and fresh flowers",
+        "view": "Panoramic view of tropical garden estate outside balcony"
+      },
+      "transition": "Glass-shutter light-leak blur transition into the private spa bathroom entrance"
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "Ultimate Luxury Spa Bathroom Full View Showcase",
+      "start_frame_image": "04_bathroom_inside_room.jpg",
+      "end_frame_image": "04_bathroom_inside_room.jpg",
+      "duration_seconds": 5.0,
+      "prompt": "Sensational 16:9 full wide-angle showcase of the en-suite luxury spa bathroom (04_bathroom_inside_room.jpg). Ultra-smooth camera tracking shot moving past the double sink marble vanity with polished chrome fixtures, revealing the freestanding oval soaking bathtub with delicate steam wisps rising, and seamless glass rainfall shower. Golden morning sunlight beams cutting through large privacy glass window reflecting off Italian Carrara white marble. Photorealistic 8K architecture photography, zero text, mind-blowing luxury visual.",
+      "camera_motion_control": {
+        "movement_type": "Low-Angle Smooth Parallel Glide & Slow Crane Rise",
+        "lens_aperture": "f/2.8 pristine edge-to-edge optical clarity",
+        "lighting": "Raytraced sunlight refractions dancing across polished marble and glass"
+      },
+      "bathroom_highlights": {
+        "bathtub": "Freestanding oval soaking tub with warm water ripples & subtle steam",
+        "vanity": "Double marble vanity sink with lit mirror LED rim and plush folded towels",
+        "shower": "Walk-in rainfall glass shower enclosure with chrome finishes"
+      },
+      "transition": "Vertical rocket camera acceleration initiating high-altitude satellite map zoom"
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Photorealistic 3D Satellite Map View Orbital Hyper-Zoom Out Finale",
+      "start_frame_image": "04_bathroom_inside_room.jpg",
+      "middle_frame_image": "08_villa_drone_view.jpg",
+      "end_frame_image": "08_villa_drone_view.jpg",
+      "duration_seconds": 5.5,
+      "prompt": "Mind-blowing 100% photorealistic Google Earth Studio 3D satellite map hyper-zoom out effect: Starting directly from above the luxury spa bathroom (04_bathroom_inside_room.jpg), camera explodes upward through the glass roof, shooting vertically past the 3D villa estate rooftop into a 100m aerial drone view (08_villa_drone_view.jpg), and continuously accelerating up into a 5,000m high-altitude top-down satellite map perspective. Revealing the entire tropical island coastline, turquoise coral ocean reefs, and realistic atmospheric clouds. Hyper-realistic orbital camera motion finale, zero text, 16:9, ultimate video conclusion.",
+      "satellite_map_camera_effects": {
+        "camera_effect_type": "Google Earth Studio 8K Satellite Map Hyper-Zoom",
+        "altitude_ramp": "1.5m (Bathroom) ➔ 100m (Estate Rooftop) ➔ 5,000m (Satellite Orbit)",
+        "velocity_curve": "Exponential rocket acceleration curve",
+        "atmospheric_rendering": "Volumetric 3D cloud penetration with natural Rayleigh scattering",
+        "satellite_topography": "True 8K photogrammetry terrain of tropical coastal island & ocean reef"
+      },
+      "transition": "Slow atmospheric cloud-dissolve fade to black"
+    }
+  ],
+  "audio_mastering": {
+    "music_track": "Lush cinematic electronic ambient synth with acoustic cello building into an epic satellite orbital crescendo",
+    "spatial_asmr_sfx": [
+      "Soft ocean breeze through bedroom sheer curtains",
+      "Spa tub water steam hiss and water droplets",
+      "High-velocity rocket zoom-out air pressure surge",
+      "Deep orbital satellite sub-bass impact drop"
+    ]
+  }
+}

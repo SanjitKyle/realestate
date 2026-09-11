@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE LIVING — Villa Scroll Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Fixed Navbar that stays on top -->
+    <header class="navbar" id="main-nav">
+        <div class="logo-container">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#D4AF37" stroke-width="1.5">
+                <path d="M12 3L3 9v12h18V9l-9-6z"/>
+                <path d="M9 21V12h6v9"/>
+                <path d="M12 9v12"/>
+            </svg>
+            <div class="logo">LUXE LIVING</div>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#anim-spacer">Experience</a>
+            <a href="#collection">Properties</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+        
+        <div class="nav-right">
+            <a href="#" class="search-icon" aria-label="Search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="white" stroke-width="1.5">
+                    <circle cx="11" cy="11" r="8"/>
+                    <path d="M21 21l-4.35-4.35"/>
+                </svg>
+            </a>
+            <div class="nav-divider"></div>
+            <a href="#collection" class="btn-inquire">INQUIRE</a>
+        </div>
+    </header>
+
+    <!-- Scroll Animated Banner Wrapper -->
+    <div class="animation-wrapper" id="anim-spacer">
+        <div class="sticky-container">
+            <div class="canvas-container">
+                <canvas id="hero-lightpass"></canvas>
+            </div>
+
+            <!-- Fading Hero Text Overlay -->
+            <div class="overlay-container" id="hero-text">
+                <main class="hero">
+                    <div class="hero-subtitle">
+                        <span class="line"></span>
+                        <span class="text">EXCLUSIVE LUXURY VILLA SHOWCASE</span>
+                        <span class="line"></span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Live the Life<br>
+                        <span class="hero-title-gold">You've Always Dreamed Of</span>
+                    </h1>
+                    
+                    <p class="hero-desc">
+                        Discover extraordinary oceanfront villas, architectural masterworks, and private sanctuaries.<br>
+                        Scroll down to experience the interactive estate tour.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#collection" class="btn-primary">
+                            <span>EXPLORE VILLA</span>
+                            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#collection" class="btn-secondary">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="8 5 19 12 8 19 8 5"/>
+                            </svg>
+                            <span>VIEW COLLECTION</span>
+                        </a>
+                    </div>
+                </main>
+
+                <!-- Minimalist Scroll Cue -->
+                <div class="scroll-cue">
+                    <span class="scroll-text">SCROLL TO WALK THROUGH</span>
+                    <div class="scroll-line-container">
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Normal Content Section that scrolls up after the animation -->
+    <section class="normal-content" id="collection">
+        <div class="content-inner">
+            <h2 class="section-title">The Villa Collection</h2>
+            <p class="section-text">
+                Explore an exclusive portfolio of the most prestigious properties on the market. From breathtaking modern oceanfront villas to private estate sanctuaries, find your dream home.
+            </p>
+            
+            <div class="properties-grid">
+                <!-- Card 1 -->
+                <div class="property-card">
+                    <div class="img-wrapper">
+                        <img src="part1/ezgif-frame-001.jpg" alt="Oceanfront Villa Exterior">
+                        <div class="badge">Featured Villa</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Oceana Horizon Villa</h3>
+                        <p class="location">Malibu Coastline, California</p>
+                        <div class="price-action">
+                            <span class="price">$18,500,000</span>
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="property-card">
+                    <div class="img-wrapper">
+                        <img src="part2/ezgif-frame-040.jpg" alt="Master Suite Sanctuary">
+                        <div class="badge">Master Suite</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Skyline Sanctuary Suite</h3>
+                        <p class="location">Manhattan, New York</p>
+                        <div class="price-action">
+                            <span class="price">$22,000,000</span>
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="property-card">
+                    <div class="img-wrapper">
+                        <img src="endpart/ezgif-frame-040.jpg" alt="Infinity Pool Estate">
+                        <div class="badge">Architecture</div>
+                    </div>
+                    <div class="card-info">
+                        <h3>The Heritage Villa Architecture</h3>
+                        <p class="location">Surrey, England</p>
+                        <div class="price-action">
+                            <span class="price">£14,250,000</span>
+                            <a href="#" class="view-btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const html = document.documentElement;
+        const canvas = document.getElementById("hero-lightpass");
+        const context = canvas.getContext("2d");
+        const heroText = document.getElementById("hero-text");
+        const animSpacer = document.getElementById("anim-spacer");
+
+        // 4 Sequence Parts
+        const frameCount1 = 240; // part1
+        const frameCount2 = 160; // part2
+        const frameCount3 = 118; // part3
+        const frameCount4 = 80;  // endpart
+        const totalFrames = frameCount1 + frameCount2 + frameCount3 + frameCount4;
+
+        const currentFrame1 = index => `part1/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
+        const currentFrame2 = index => `part2/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
+        const currentFrame3 = index => `part3/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
+        const currentFrame4 = index => `endpart/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
+
+        const images = [];
+
+        function setCanvasDimensions() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            if (images[0] && images[0].complete) {
+                drawFrameToCanvas(images[0]);
+            }
+        }
+
+        setCanvasDimensions();
+        window.addEventListener('resize', setCanvasDimensions);
+
+        const drawFrameToCanvas = (img) => {
+            if (!img || !img.complete || !img.naturalWidth) return;
+            const cWidth = canvas.width;
+            const cHeight = canvas.height;
+            const iWidth = img.naturalWidth || 1920;
+            const iHeight = img.naturalHeight || 1080;
+
+            const scale = Math.max(cWidth / iWidth, cHeight / iHeight);
+            const x = (cWidth - iWidth * scale) / 2;
+            const y = (cHeight - iHeight * scale) / 2;
+
+            context.clearRect(0, 0, cWidth, cHeight);
+            context.drawImage(img, x, y, iWidth * scale, iHeight * scale);
+        };
+
+        // Preload First Frame Immediately
+        const firstImg = new Image();
+        firstImg.src = currentFrame1(1);
+        firstImg.onload = () => {
+            drawFrameToCanvas(firstImg);
+        };
+        images.push(firstImg);
+
+        // Preload Remaining Frames
+        for (let i = 2; i <= frameCount1; i++) {
+            const img = new Image();
+            img.src = currentFrame1(i);
+            images.push(img);
+        }
+        for (let i = 1; i <= frameCount2; i++) {
+            const img = new Image();
+            img.src = currentFrame2(i);
+            images.push(img);
+        }
+        for (let i = 1; i <= frameCount3; i++) {
+            const img = new Image();
+            img.src = currentFrame3(i);
+            images.push(img);
+        }
+        for (let i = 1; i <= frameCount4; i++) {
+            const img = new Image();
+            img.src = currentFrame4(i);
+            images.push(img);
+        }
+
+        let currentFrameIndex = 0;
+        let targetFrameIndex = 0;
+        
+        const lerp = (start, end, factor) => start + (end - start) * factor;
+
+        const render = () => {
+            currentFrameIndex = lerp(currentFrameIndex, targetFrameIndex, 0.15);
+            const frameToDraw = Math.min(totalFrames - 1, Math.max(0, Math.round(currentFrameIndex)));
+            
+            if (images[frameToDraw] && images[frameToDraw].complete) {
+                drawFrameToCanvas(images[frameToDraw]);
+            } else if (images[0] && images[0].complete) {
+                drawFrameToCanvas(images[0]);
+            }
+            
+            const progress = currentFrameIndex / (totalFrames - 1);
+            
+            // Hero Text Overlay Fade Out on Scroll
+            if (heroText) {
+                heroText.style.opacity = Math.max(0, 1 - (progress * 12));
+                heroText.style.transform = `translateY(${-(progress * 120)}px)`;
+            }
+
+            requestAnimationFrame(render);
+        };
+
+        requestAnimationFrame(render);
+
+        window.addEventListener('scroll', () => {  
+            const scrollTop = html.scrollTop;
+            const maxScroll = animSpacer.offsetHeight - window.innerHeight;
+            let scrollFraction = scrollTop / maxScroll;
+            
+            if (scrollFraction > 1) scrollFraction = 1;
+            if (scrollFraction < 0) scrollFraction = 0;
+            
+            targetFrameIndex = scrollFraction * (totalFrames - 1);
+        });
+    </script>
+</body>
+</html>
