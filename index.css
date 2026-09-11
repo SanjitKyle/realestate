@@ -65,7 +65,15 @@ canvas {
 }
 
 .overlay-container::before {
-    display: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.72) 38%, rgba(255, 255, 255, 0.15) 70%, rgba(255, 255, 255, 0) 100%);
+    z-index: -1;
+    pointer-events: none;
 }
 
 .overlay-container * {
@@ -185,18 +193,18 @@ canvas {
 
 /* Hero Section */
 .hero {
-    margin-top: 130px;
-    margin-left: 80px;
-    max-width: 640px;
-    padding: 48px 52px;
-    background: rgba(255, 255, 255, 0.84);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 0 80px;
+    margin-top: 30px;
+    max-width: 680px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 .hero-subtitle {
@@ -222,11 +230,11 @@ canvas {
 
 .hero-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 58px;
+    font-size: 68px;
     font-weight: 700;
     color: #111111;
-    line-height: 1.12;
-    margin: 0 0 20px 0;
+    line-height: 1.1;
+    margin: 0 0 22px 0;
     letter-spacing: -0.5px;
 }
 
@@ -236,12 +244,12 @@ canvas {
 }
 
 .hero-desc {
-    font-size: 15px;
+    font-size: 16px;
     color: #333333;
-    line-height: 1.65;
-    margin: 0 0 32px 0;
+    line-height: 1.7;
+    margin: 0 0 38px 0;
     font-weight: 400;
-    max-width: 560px;
+    max-width: 600px;
 }
 
 .hero-buttons {
@@ -311,11 +319,12 @@ canvas {
 .scroll-cue {
     position: absolute;
     bottom: 35px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 80px;
+    left: auto;
+    transform: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: 8px;
     pointer-events: none;
     z-index: 10;
