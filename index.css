@@ -1418,3 +1418,599 @@ canvas {
     .footer-inner { grid-template-columns: 1fr; }
     .footer { padding: 60px 25px 30px; }
 }
+
+/* -------------------------------------------------------------
+   OUR 4-STEP ADVISORY PROCESS
+------------------------------------------------------------- */
+.advisory-process-section {
+    background: #ffffff;
+    padding: 80px 80px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.process-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.process-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-subtitle-center {
+    font-size: 15px;
+    color: #666666;
+    margin-top: 10px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.process-card {
+    background: #FAF9F5;
+    border: 1px solid #EAE8DF;
+    border-radius: 12px;
+    padding: 35px 25px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.process-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-color: #C5A059;
+}
+
+.process-number {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(197, 160, 89, 0.25);
+}
+
+.process-icon {
+    width: 54px;
+    height: 54px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid #EAE8DF;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.process-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 12px 0;
+}
+
+.process-card p {
+    font-size: 13.5px;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* -------------------------------------------------------------
+   KOLKATA NEIGHBORHOOD GUIDE
+------------------------------------------------------------- */
+.neighborhood-section {
+    background: #FAF9F5;
+    padding: 80px 80px;
+    border-bottom: 1px solid #EAE8DF;
+}
+
+.neighborhood-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.neighborhood-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.neighborhood-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.neighborhood-card {
+    position: relative;
+    height: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border: 1px solid #EAE8DF;
+}
+
+.neighborhood-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.neighborhood-card:hover .neighborhood-bg {
+    transform: scale(1.08);
+}
+
+.neighborhood-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(17,17,17,0.92) 0%, rgba(17,17,17,0.3) 60%, rgba(17,17,17,0.1) 100%);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #ffffff;
+}
+
+.location-badge {
+    align-self: flex-start;
+    background: rgba(197, 160, 89, 0.9);
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.neighborhood-overlay h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #ffffff;
+}
+
+.neighborhood-overlay p {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+}
+
+.neighborhood-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11.5px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 10px;
+    color: rgba(255,255,255,0.9);
+}
+
+.neighborhood-stats strong {
+    color: #C5A059;
+}
+
+/* -------------------------------------------------------------
+   NRI & OVERSEAS ADVISORY DESK
+------------------------------------------------------------- */
+.nri-desk-section {
+    background: #ffffff;
+    padding: 80px 80px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.nri-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.nri-card-wrapper {
+    background: #111111;
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.nri-content {
+    padding: 60px 50px;
+    color: #ffffff;
+}
+
+.nri-pill {
+    background: rgba(197, 160, 89, 0.2);
+    color: #C5A059;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.nri-content h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+}
+
+.nri-content p {
+    font-size: 14.5px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    margin: 0 0 25px 0;
+}
+
+.nri-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.nri-feat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.nri-image {
+    height: 100%;
+    min-height: 380px;
+}
+
+.nri-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* -------------------------------------------------------------
+   PROPERTY VALUE ESTIMATOR
+------------------------------------------------------------- */
+.estimator-section {
+    background: #FAF9F5;
+    padding: 80px 80px;
+    border-bottom: 1px solid #EAE8DF;
+}
+
+.estimator-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.estimator-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.estimator-box {
+    background: #ffffff;
+    border: 1px solid #EAE8DF;
+    border-radius: 16px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+}
+
+.estimator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 8px;
+}
+
+.est-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-family: 'Montserrat', sans-serif;
+    color: #111111;
+    background: #FAF9F5;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.est-input:focus {
+    border-color: #C5A059;
+}
+
+.est-slider {
+    width: 100%;
+    accent-color: #C5A059;
+    cursor: pointer;
+}
+
+.estimator-result {
+    background: #FAF9F5;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #EAE8DF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.res-badge {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #C5A059;
+    letter-spacing: 1px;
+}
+
+.res-price {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111111;
+    font-family: 'Playfair Display', serif;
+    margin: 10px 0 5px 0;
+}
+
+.res-sub {
+    font-size: 13.5px;
+    color: #666666;
+    margin: 0 0 15px 0;
+}
+
+.res-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11.5px;
+    color: #888888;
+    line-height: 1.4;
+    border-top: 1px solid #EAE8DF;
+    padding-top: 15px;
+}
+
+/* -------------------------------------------------------------
+   CLIENT TESTIMONIALS
+------------------------------------------------------------- */
+.testimonials-section {
+    background: #ffffff;
+    padding: 80px 80px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.testimonials-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #FAF9F5;
+    border: 1px solid #EAE8DF;
+    border-radius: 12px;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.stars {
+    color: #C5A059;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.7;
+    font-style: italic;
+    margin: 0 0 25px 0;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.client-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #C5A059;
+}
+
+.client-info h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0;
+}
+
+.client-info span {
+    font-size: 11.5px;
+    color: #888888;
+}
+
+/* -------------------------------------------------------------
+   KOLKATA LUXURY JOURNAL
+------------------------------------------------------------- */
+.journal-section {
+    background: #FAF9F5;
+    padding: 80px 80px;
+}
+
+.journal-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.journal-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.journal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.journal-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #EAE8DF;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+.journal-card:hover {
+    transform: translateY(-6px);
+}
+
+.journal-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.journal-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.journal-card:hover .journal-img-wrapper img {
+    transform: scale(1.06);
+}
+
+.journal-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #111111;
+    color: #C5A059;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.journal-body {
+    padding: 25px;
+}
+
+.journal-date {
+    font-size: 11.5px;
+    color: #888888;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.journal-body h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.journal-body p {
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0 0 18px 0;
+}
+
+.read-more {
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #C5A059;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.read-more:hover {
+    color: #111111;
+}
+
+/* Responsive updates for new sections */
+@media (max-width: 1024px) {
+    .advisory-process-section,
+    .neighborhood-section,
+    .nri-desk-section,
+    .estimator-section,
+    .testimonials-section,
+    .journal-section {
+        padding: 60px 40px;
+    }
+
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
+    .neighborhood-grid { grid-template-columns: repeat(2, 1fr); }
+    .nri-card-wrapper { grid-template-columns: 1fr; }
+    .nri-image { height: 280px; min-height: auto; }
+    .estimator-box { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .journal-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .advisory-process-section,
+    .neighborhood-section,
+    .nri-desk-section,
+    .estimator-section,
+    .testimonials-section,
+    .journal-section {
+        padding: 50px 25px;
+    }
+
+    .process-grid { grid-template-columns: 1fr; }
+    .neighborhood-grid { grid-template-columns: 1fr; }
+    .nri-content { padding: 35px 25px; }
+    .nri-content h2 { font-size: 26px; }
+    .nri-features { grid-template-columns: 1fr; }
+    .estimator-box { padding: 25px; }
+    .res-price { font-size: 30px; }
+}
