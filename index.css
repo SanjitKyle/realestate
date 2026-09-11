@@ -1638,28 +1638,29 @@ canvas {
    NRI & OVERSEAS ADVISORY DESK
 ------------------------------------------------------------- */
 .nri-desk-section {
-    background: #ffffff;
-    padding: 80px 80px;
-    border-bottom: 1px solid #EFEFEF;
+    background: #FAF9F5;
+    padding: 0;
+    border-bottom: 1px solid #EAE8DF;
 }
 
 .nri-container {
-    max-width: 1300px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
 }
 
 .nri-card-wrapper {
     background: #FAF9F5;
-    border: 1px solid #EAE8DF;
-    border-radius: 16px;
+    border: none;
+    border-radius: 0;
     overflow: hidden;
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.04);
+    box-shadow: none;
 }
 
 .nri-content {
-    padding: 60px 50px;
+    padding: 80px 80px 80px 100px;
     color: #111111;
 }
 
@@ -1709,7 +1710,7 @@ canvas {
 
 .nri-image {
     height: 100%;
-    min-height: 380px;
+    min-height: 450px;
 }
 
 .nri-image img {
@@ -2077,7 +2078,6 @@ canvas {
 @media (max-width: 1024px) {
     .advisory-process-section,
     .neighborhood-section,
-    .nri-desk-section,
     .estimator-section,
     .testimonials-section,
     .journal-section {
@@ -2087,7 +2087,8 @@ canvas {
     .process-grid { grid-template-columns: repeat(2, 1fr); }
     .neighborhood-grid { grid-template-columns: repeat(2, 1fr); }
     .nri-card-wrapper { grid-template-columns: 1fr; }
-    .nri-image { height: 280px; min-height: auto; }
+    .nri-content { padding: 60px 50px; }
+    .nri-image { height: 320px; min-height: auto; }
     .estimator-box { grid-template-columns: 1fr; }
     .testimonials-grid { grid-template-columns: 1fr; }
     .journal-grid { grid-template-columns: 1fr; }
@@ -2096,7 +2097,6 @@ canvas {
 @media (max-width: 768px) {
     .advisory-process-section,
     .neighborhood-section,
-    .nri-desk-section,
     .estimator-section,
     .testimonials-section,
     .journal-section {
