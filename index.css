@@ -634,8 +634,8 @@ canvas {
 
 .section-pill-badge {
     display: inline-block;
-    background: rgba(255, 90, 95, 0.12);
-    color: #FF5A5F;
+    background: rgba(197, 160, 89, 0.12);
+    color: #C5A059;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.5px;
@@ -699,8 +699,8 @@ canvas {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: #7ED321;
-    color: #ffffff;
+    background: #111111;
+    color: #C5A059;
     font-size: 10px;
     font-weight: 700;
     padding: 4px 10px;
@@ -714,7 +714,7 @@ canvas {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: #FF5A5F;
+    background: #C5A059;
     color: #ffffff;
     font-size: 10px;
     font-weight: 700;
@@ -778,7 +778,7 @@ canvas {
 .card-price {
     font-size: 19px;
     font-weight: 700;
-    color: #FF5A5F;
+    color: #C5A059;
     margin-bottom: 8px;
 }
 
@@ -898,9 +898,9 @@ canvas {
 }
 
 .action-btn:hover {
-    background: #FF5A5F;
+    background: #C5A059;
     color: #ffffff;
-    border-color: #FF5A5F;
+    border-color: #C5A059;
 }
 
 /* Carousel Pagination Dots */
@@ -922,7 +922,7 @@ canvas {
 }
 
 .carousel-pagination .dot.active {
-    background: #FF5A5F;
+    background: #C5A059;
     width: 10px;
     height: 10px;
 }
@@ -1016,9 +1016,9 @@ canvas {
 
 /* Interactive Action Buttons */
 .action-btn.active-heart {
-    background: #FF5A5F !important;
+    background: #C5A059 !important;
     color: #ffffff !important;
-    border-color: #FF5A5F !important;
+    border-color: #C5A059 !important;
     transform: scale(1.15);
 }
 
@@ -1112,7 +1112,7 @@ canvas {
 .modal-price {
     font-size: 26px;
     font-weight: 700;
-    color: #FF5A5F;
+    color: #C5A059;
     margin-bottom: 8px;
 }
 
@@ -1197,7 +1197,7 @@ canvas {
     font-size: 13px;
     font-weight: 600;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    border-left: 4px solid #FF5A5F;
+    border-left: 4px solid #C5A059;
     z-index: 2000;
     opacity: 0;
     transform: translateY(20px);
