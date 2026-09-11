@@ -14,7 +14,7 @@
     <!-- Fixed Navbar that stays on top -->
     <header class="navbar" id="main-nav">
         <div class="logo-container">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#D4AF37" stroke-width="1.5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#C5A059" stroke-width="1.8">
                 <path d="M12 3L3 9v12h18V9l-9-6z"/>
                 <path d="M9 21V12h6v9"/>
                 <path d="M12 9v12"/>
@@ -23,16 +23,16 @@
         </div>
         
         <nav class="nav-links">
-            <a href="#" class="active">Home</a>
-            <a href="#anim-spacer">Experience</a>
+            <a href="#anim-spacer" class="active">Home</a>
+            <a href="#about">About Us</a>
             <a href="#collection">Properties</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
         </nav>
         
         <div class="nav-right">
             <a href="#" class="search-icon" aria-label="Search">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="white" stroke-width="1.5">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111" stroke-width="1.8">
                     <circle cx="11" cy="11" r="8"/>
                     <path d="M21 21l-4.35-4.35"/>
                 </svg>
@@ -75,11 +75,11 @@
                                 <path d="M5 12h14M12 5l7 7-7 7"/>
                             </svg>
                         </a>
-                        <a href="#collection" class="btn-secondary">
+                        <a href="#about" class="btn-secondary">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                                 <polygon points="8 5 19 12 8 19 8 5"/>
                             </svg>
-                            <span>VIEW COLLECTION</span>
+                            <span>ABOUT OUR ESTATES</span>
                         </a>
                     </div>
                 </main>
@@ -95,9 +95,124 @@
         </div>
     </div>
 
-    <!-- Normal Content Section that scrolls up after the animation -->
-    <section class="normal-content" id="collection">
-        <div class="content-inner">
+    <!-- Main Content Section -->
+    <section class="normal-content">
+
+        <!-- About Us Section -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <!-- Left Column: Visual Image Stack & Video Card -->
+                <div class="about-visual">
+                    <div class="main-img-card">
+                        <img src="part1/ezgif-frame-001.jpg" alt="Luxury Villa Architecture" class="about-main-img">
+                        <div class="img-accent-border"></div>
+                    </div>
+                    
+                    <!-- Floating Experience Badge -->
+                    <div class="exp-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-text">Years of Architectural<br>Excellence</span>
+                    </div>
+                    
+                    <!-- Video Preview Card -->
+                    <div class="video-preview-card">
+                        <div class="video-thumb">
+                            <img src="part2/ezgif-frame-040.jpg" alt="Video Preview">
+                            <button class="play-btn" aria-label="Play Virtual Tour Video">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="8 5 19 12 8 19 8 5"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="video-info">
+                            <h4>Virtual Estate Tour</h4>
+                            <p>02:45 min HD Walkthrough</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Content & Features -->
+                <div class="about-content">
+                    <div class="about-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>ABOUT US</span>
+                    </div>
+
+                    <h2 class="about-title">
+                        The Leading Luxury Villa & Real Estate Marketplace
+                    </h2>
+
+                    <p class="about-description">
+                        For over 15 years, Luxe Living has set the global benchmark for luxury real estate. We curate exclusive architectural masterpieces, ultra-modern beachfront sanctuaries, and private hillside estates designed for those who demand extraordinary living spaces.
+                    </p>
+
+                    <!-- 2x2 Feature Grid -->
+                    <div class="about-features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                    <polyline points="9 22 9 12 15 12 15 22"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Smart Home Design</h3>
+                                <p>Automated climate, lighting & smart security integration.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2">
+                                    <path d="M2 20h20"/>
+                                    <path d="M6 16l4-8 4 4 6-10"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Beautiful Scenic Views</h3>
+                                <p>Unmatched oceanfront panoramas & pristine horizons.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Exceptional Lifestyle</h3>
+                                <p>Private infinity pools, luxury spas & exclusive amenities.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Complete 24/7 Security</h3>
+                                <p>Gated private perimeter & round-the-clock concierge.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Quote Box -->
+                    <div class="about-quote-box">
+                        <p class="quote-text">
+                            "Our commitment to architectural excellence and bespoke client services sets the standard for ultra-luxury real estate across the globe."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Collection Section -->
+        <div class="content-inner" id="collection">
             <h2 class="section-title">The Villa Collection</h2>
             <p class="section-text">
                 Explore an exclusive portfolio of the most prestigious properties on the market. From breathtaking modern oceanfront villas to private estate sanctuaries, find your dream home.
@@ -153,6 +268,56 @@
                 </div>
             </div>
         </div>
+
+        <!-- Footer Section -->
+        <footer class="footer" id="contact">
+            <div class="footer-inner">
+                <div class="footer-col logo-col">
+                    <div class="logo-container">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="1.8">
+                            <path d="M12 3L3 9v12h18V9l-9-6z"/>
+                            <path d="M9 21V12h6v9"/>
+                            <path d="M12 9v12"/>
+                        </svg>
+                        <span class="logo">LUXE LIVING</span>
+                    </div>
+                    <p class="footer-desc">
+                        Curating world-class luxury villas, coastal sanctuaries, and modern architectural estates for global clientele.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#anim-spacer">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#collection">Properties</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Estates</h4>
+                    <ul>
+                        <li><a href="#collection">Beachfront Villas</a></li>
+                        <li><a href="#collection">Modern Mansions</a></li>
+                        <li><a href="#collection">Hillside Retreats</a></li>
+                        <li><a href="#collection">Private Islands</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p class="contact-info">100 Luxury Boulevard, Beverly Hills, CA 90210</p>
+                    <p class="contact-info">inquire@luxeliving.com</p>
+                    <p class="contact-info">+1 (800) 555-LUXE</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 LUXE LIVING Real Estate. All rights reserved.</p>
+            </div>
+        </footer>
     </section>
     
     <script>
