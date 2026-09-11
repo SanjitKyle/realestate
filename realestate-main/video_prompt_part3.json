@@ -1,0 +1,85 @@
+{
+  "project": "Ultra Luxury Villa Master Showcase Video Series",
+  "part": 3,
+  "part_name": "Part 3: Chef Kitchen, Outdoor Pool Deck & Grand Sunset Satellite Finale",
+  "aspect_ratio": "16:9",
+  "resolution": "3840x2160 (4K UHD 60fps)",
+  "text_overlay_enabled": false,
+  "cinematography_specs": {
+    "camera_system": "Arri Alexa 65 Cinema Camera",
+    "lens_type": "Hasselblad Medium Format 24mm Ultra-Wide f/1.4 Prime Optics",
+    "lighting_model": "Raytraced Golden Hour Sunset Illumination & Water Caustic Refractions",
+    "color_grading": "Photorealistic Hollywood Teal & Orange Sunset LUT",
+    "rendering_engine": "8K Photorealistic Octane Realism, 0% AI Glitch"
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Chef's Gourmet Kitchen & Dining 360-Degree Orbital Sweep",
+      "start_frame_image": "07_villa_kitchen_dining.jpg",
+      "end_frame_image": "05_sliding_door_close.jpg",
+      "duration_seconds": 4.5,
+      "prompt": "Mind-blowing 16:9 photorealistic 360-degree orbital micro-drone sweep around luxury villa kitchen island counter (07_villa_kitchen_dining.jpg). Smooth steadycam arc highlighting sleek black marble island, designer bar stools, warm sparkling pendant lights, and fresh steaming espresso coffee. Camera glides gracefully toward the floor-to-ceiling glass sliding patio door (05_sliding_door_close.jpg). Photorealistic 8K architecture photography, zero text, hyper-attractive visual.",
+      "camera_motion_control": {
+        "movement_type": "360° Tight Circle Orbit & Smooth Push",
+        "lens_aperture": "f/2.0 crisp interior depth of field",
+        "lighting": "Dynamic optical anamorphic flare as lens passes beneath designer pendant lamps"
+      },
+      "kitchen_highlights": {
+        "counter": "Steaming hot espresso cup & fresh fruit pastry display",
+        "dining": "Set luxury dinner tableware with crystal wine glasses",
+        "ambiance": "Warm 2700K ambient LED strip lighting along wooden cabinetry"
+      },
+      "transition": "High-velocity speed-ramp acceleration towards the sliding patio glass door"
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "Sliding Door Macro Opening & Outdoor Pool Deck Reveal",
+      "start_frame_image": "05_sliding_door_close.jpg",
+      "end_frame_image": "06_outside_our_villa.jpg",
+      "duration_seconds": 4.5,
+      "prompt": "Sensational 2-stage photorealistic transition: Macro close-up on sleek black aluminum sliding glass door handle (05_sliding_door_close.jpg) as it smoothly glides open to the right with sunlight glittering off clear glass reflections. Camera immediately bursts through the open doorway, soaring low across the sunlit teak pool deck (06_outside_our_villa.jpg) past luxury sun loungers, manicured lawn, and tropical palm trees. 16:9, photorealistic 8K, pure visual brilliance.",
+      "camera_motion_control": {
+        "movement_type": "Macro-to-Wide Forward Fly-Through",
+        "door_action": "Motorized smooth sliding glass movement with golden lens flare",
+        "altitude": "1.2m low hover above teak pool deck"
+      },
+      "patio_highlights": {
+        "pool_deck": "Teak wood decking with sun loungers & tropical palm shadows",
+        "pool": "Vibrant turquoise swimming pool water under sunny sky"
+      },
+      "transition": "Low-angle speed glide over the swimming pool water surface"
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Pool Water Ripple Macro to Grand Satellite Sunset Ascent Finale",
+      "start_frame_image": "11_villa_pool_water_close.jpg",
+      "middle_frame_image": "08_villa_drone_view.jpg",
+      "end_frame_image": "08_villa_drone_view.jpg",
+      "duration_seconds": 6.0,
+      "prompt": "Mind-blowing finale sequence: Ultra-low camera hover over infinity pool water surface (11_villa_pool_water_close.jpg) capturing slow-motion water ripples reflecting sunset sky. Suddenly, camera shoots vertically like a rocket, climbing straight up to 60 meters altitude for a 360° estate overview (08_villa_drone_view.jpg), and continuously accelerating up into a 5,000m high-altitude photorealistic Google Earth 3D satellite map view of the entire tropical island coastline, ocean reefs, and golden hour sunset horizon. Pure cinematic 8K satellite finale, zero text, 16:9, ultimate video conclusion.",
+      "satellite_map_camera_effects": {
+        "camera_effect_type": "Google Earth Studio 8K Satellite Map Hyper-Zoom",
+        "altitude_ramp": "0.5m (Pool Water) ➔ 60m (Estate Aerial Overview) ➔ 5,000m (Satellite Orbit)",
+        "velocity_curve": "Exponential vertical rocket acceleration curve",
+        "atmospheric_rendering": "Volumetric 3D cloud penetration with natural Rayleigh sunset scattering",
+        "satellite_topography": "True 8K photogrammetry terrain of tropical island coast & ocean coral reef"
+      },
+      "environment_details": {
+        "water_physics": "Real fluid dynamics caustics on pool surface expanding into satellite ocean view",
+        "sky_gradient": "Vibrant golden hour pink, amber, and deep navy sunset sky gradient"
+      },
+      "transition": "Ultra-smooth atmospheric cloud fade to black"
+    }
+  ],
+  "audio_mastering": {
+    "music_track": "Uplifting orchestral electronic hybrid crescendo building to an explosive sub-bass finale drop",
+    "spatial_asmr_sfx": [
+      "Glass water droplet clink",
+      "Satisfying glass sliding door mechanism click",
+      "High-velocity outdoor drone wind surge",
+      "Resort birds & ocean surf ambient background",
+      "Deep orbital satellite sub-bass drop"
+    ]
+  }
+}
