@@ -580,10 +580,109 @@
                     </div>
                 </div>
 
-                <!-- Interactive Carousel Pagination Dots -->
-                <div class="carousel-pagination" id="carousel-dots">
-                    <span class="dot active" data-slide="0"></span>
-                    <span class="dot" data-slide="1"></span>
+            </div>
+        </section>
+
+        <!-- Apartments Plan / Floor Plan Section -->
+        <section class="floor-plan-section" id="floor-plans">
+            <div class="floor-plan-container">
+                <div class="floor-plan-header">
+                    <span class="section-pill-badge">Apartment Sketch</span>
+                    <h2 class="section-title-center">Apartments Plan</h2>
+                </div>
+
+                <!-- Category Navigation Tabs -->
+                <div class="plan-tabs">
+                    <button class="plan-tab-btn" data-plan="studio">The Studio</button>
+                    <button class="plan-tab-btn active" data-plan="deluxe">Deluxe Portion</button>
+                    <button class="plan-tab-btn" data-plan="penthouse">Penthouse</button>
+                    <button class="plan-tab-btn" data-plan="topgarden">Top Garden</button>
+                    <button class="plan-tab-btn" data-plan="doubleheight">Double Height</button>
+                </div>
+
+                <!-- Floor Plan Grid -->
+                <div class="plan-content-grid">
+                    <!-- Left Spec Card -->
+                    <div class="plan-spec-card">
+                        <h3 class="plan-title" id="plan-name">Deluxe Portion</h3>
+                        <p class="plan-desc">
+                            Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons actetur adipisicing elit sedo eiusmod tempor. Incididunt labore et dolore magna aliqua.
+                        </p>
+
+                        <div class="plan-specs-list">
+                            <div class="plan-spec-row">
+                                <span class="spec-name">Total Area</span>
+                                <span class="spec-dots"></span>
+                                <span class="spec-val" id="spec-area">2800 Sq. Ft</span>
+                            </div>
+                            <div class="plan-spec-row">
+                                <span class="spec-name">Bedroom</span>
+                                <span class="spec-dots"></span>
+                                <span class="spec-val" id="spec-bed">150 Sq. Ft</span>
+                            </div>
+                            <div class="plan-spec-row">
+                                <span class="spec-name">Bathroom</span>
+                                <span class="spec-dots"></span>
+                                <span class="spec-val" id="spec-bath">45 Sq. Ft</span>
+                            </div>
+                            <div class="plan-spec-row">
+                                <span class="spec-name">Belcony/Pets</span>
+                                <span class="spec-dots"></span>
+                                <span class="spec-val" id="spec-pets">Allowed</span>
+                            </div>
+                            <div class="plan-spec-row">
+                                <span class="spec-name">Lounge</span>
+                                <span class="spec-dots"></span>
+                                <span class="spec-val" id="spec-lounge">650 Sq. Ft</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Blueprint Visual -->
+                    <div class="plan-blueprint-container">
+                        <div class="blueprint-svg-wrapper">
+                            <svg viewBox="0 0 800 550" class="blueprint-svg" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(197, 160, 89, 0.08)" stroke-width="1"/>
+                                    </pattern>
+                                </defs>
+                                <rect width="100%" height="100%" fill="url(#grid)" />
+
+                                <!-- Outer Wall Boundaries -->
+                                <path d="M 100 80 L 700 80 L 700 480 L 100 480 Z" fill="none" stroke="#111111" stroke-width="8"/>
+                                <path d="M 380 80 L 380 480" fill="none" stroke="#111111" stroke-width="6"/>
+                                <path d="M 100 300 L 380 300" fill="none" stroke="#111111" stroke-width="6"/>
+                                <path d="M 380 240 L 700 240" fill="none" stroke="#111111" stroke-width="6"/>
+
+                                <!-- Rooms Labels & Icons -->
+                                <text x="240" y="180" text-anchor="middle" font-family="Montserrat" font-size="15" font-weight="700" fill="#111111">MASTER BEDROOM</text>
+                                <text x="240" y="205" text-anchor="middle" font-family="Montserrat" font-size="12" fill="#C5A059">15' x 18'</text>
+
+                                <text x="240" y="380" text-anchor="middle" font-family="Montserrat" font-size="15" font-weight="700" fill="#111111">LUXURY BATHROOM</text>
+                                <text x="240" y="405" text-anchor="middle" font-family="Montserrat" font-size="12" fill="#C5A059">10' x 14'</text>
+
+                                <text x="540" y="160" text-anchor="middle" font-family="Montserrat" font-size="15" font-weight="700" fill="#111111">GRAND LOUNGE & DINING</text>
+                                <text x="540" y="185" text-anchor="middle" font-family="Montserrat" font-size="12" fill="#C5A059">25' x 30'</text>
+
+                                <text x="540" y="340" text-anchor="middle" font-family="Montserrat" font-size="15" font-weight="700" fill="#111111">OPEN CHEF KITCHEN</text>
+                                <text x="540" y="365" text-anchor="middle" font-family="Montserrat" font-size="12" fill="#C5A059">16' x 20'</text>
+
+                                <text x="540" y="440" text-anchor="middle" font-family="Montserrat" font-size="13" font-weight="600" fill="#C5A059">SUN TERRACE & BALCONY</text>
+
+                                <!-- Door Swings & Fixtures -->
+                                <path d="M 380 160 A 40 40 0 0 1 340 120" fill="none" stroke="#C5A059" stroke-width="2" stroke-dasharray="4,4"/>
+                                <path d="M 380 360 A 40 40 0 0 1 340 320" fill="none" stroke="#C5A059" stroke-width="2" stroke-dasharray="4,4"/>
+
+                                <!-- Dimension Lines -->
+                                <line x1="100" y1="50" x2="700" y2="50" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="3,3"/>
+                                <text x="400" y="42" text-anchor="middle" font-family="Montserrat" font-size="12" font-weight="600" fill="#C5A059">56' - 0"</text>
+
+                                <line x1="60" y1="80" x2="60" y2="480" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="3,3"/>
+                                <text x="50" y="280" text-anchor="middle" font-family="Montserrat" font-size="12" font-weight="600" fill="#C5A059" transform="rotate(-90 50 280)">40' - 0"</text>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -923,6 +1022,76 @@
                 if (e.target === videoModal) videoModal.classList.remove('show');
             });
         }
+
+        // ==========================================
+        // FLOOR PLAN TABS INTERACTIVITY
+        // ==========================================
+        const planData = {
+            studio: {
+                name: 'The Studio',
+                desc: 'Compact architectural design for modern urban living with space-efficient multipurpose layouts.',
+                area: '1200 Sq. Ft',
+                bed: '120 Sq. Ft',
+                bath: '35 Sq. Ft',
+                pets: 'Allowed',
+                lounge: '400 Sq. Ft'
+            },
+            deluxe: {
+                name: 'Deluxe Portion',
+                desc: 'Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons actetur adipisicing elit sedo eiusmod tempor.',
+                area: '2800 Sq. Ft',
+                bed: '150 Sq. Ft',
+                bath: '45 Sq. Ft',
+                pets: 'Allowed',
+                lounge: '650 Sq. Ft'
+            },
+            penthouse: {
+                name: 'Penthouse Suite',
+                desc: 'Ultra-exclusive double-story rooftop sanctuary with panoramic skyline views and private elevator access.',
+                area: '4200 Sq. Ft',
+                bed: '250 Sq. Ft',
+                bath: '80 Sq. Ft',
+                pets: 'Allowed',
+                lounge: '1100 Sq. Ft'
+            },
+            topgarden: {
+                name: 'Top Garden Residence',
+                desc: 'Seamless blend of lush outdoor garden terraces and interior glass living spaces.',
+                area: '3500 Sq. Ft',
+                bed: '180 Sq. Ft',
+                bath: '60 Sq. Ft',
+                pets: 'Allowed',
+                lounge: '850 Sq. Ft'
+            },
+            doubleheight: {
+                name: 'Double Height Loft',
+                desc: 'Dramatic 20ft ceiling heights, custom mezzanine floor, and floor-to-ceiling glass facades.',
+                area: '5000 Sq. Ft',
+                bed: '300 Sq. Ft',
+                bath: '95 Sq. Ft',
+                pets: 'Allowed',
+                lounge: '1400 Sq. Ft'
+            }
+        };
+
+        const tabBtns = document.querySelectorAll('.plan-tab-btn');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const planKey = btn.getAttribute('data-plan');
+                const data = planData[planKey];
+                if (!data) return;
+
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                document.getElementById('plan-name').textContent = data.name;
+                document.getElementById('spec-area').textContent = data.area;
+                document.getElementById('spec-bed').textContent = data.bed;
+                document.getElementById('spec-bath').textContent = data.bath;
+                document.getElementById('spec-pets').textContent = data.pets;
+                document.getElementById('spec-lounge').textContent = data.lounge;
+            });
+        });
     </script>
 </body>
 </html>
