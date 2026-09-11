@@ -15,89 +15,199 @@ body {
     color: #111111;
 }
 
-/* Animation Wrapper */
-.animation-wrapper {
-    height: 1200vh;
+/* Hero Section — Static Image Background */
+.hero-section {
     position: relative;
-}
-
-.sticky-container {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-.canvas-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background: #faf9f6 url('part1/ezgif-frame-001.jpg') center/cover no-repeat;
-}
-
-canvas {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; 
-    will-change: transform, filter, opacity; 
-}
-
-/* UI Overlay Container */
-.overlay-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    background: url('part1/ezgif-frame-001.jpg') center/cover no-repeat;
     display: flex;
-    flex-direction: column;
-    z-index: 10;
-    pointer-events: none;
-    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 70px;
+    box-sizing: border-box;
 }
 
-.overlay-container::before {
-    content: '';
+.hero-bg-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.45) 45%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0) 100%),
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 25%);
-    z-index: -1;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.55) 50%, rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.15) 100%),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 30%);
+    z-index: 1;
     pointer-events: none;
 }
 
-.overlay-container * {
-    pointer-events: auto; 
+.hero-grid {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 80px 70px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
 }
 
-/* Navbar - Transparent Dark Luxury Overlay */
+.hero-left {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Trust Bar */
+.hero-trust-bar {
+    display: flex;
+    gap: 30px;
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.5px;
+}
+
+/* Hero Form Card */
+.hero-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-form-card {
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 28px 28px 22px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.form-card-header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.form-card-header h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111111;
+    margin: 0 0 4px 0;
+}
+
+.form-card-header p {
+    font-size: 12px;
+    color: #777777;
+    margin: 0;
+    font-weight: 400;
+}
+
+.hero-inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-field label {
+    font-size: 10.5px;
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.form-field input,
+.form-field select {
+    padding: 9px 14px;
+    border: 1.5px solid #E0DED8;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #111111;
+    background: #FAF9F5;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: #C5A059;
+    box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.15);
+}
+
+.form-field input::placeholder {
+    color: #AAAAAA;
+    font-weight: 400;
+}
+
+.btn-form-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    background: #C5A059;
+    color: #111111;
+    border: none;
+    border-radius: 8px;
+    font-size: 11.5px;
+    font-weight: 700;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+    margin-top: 4px;
+}
+
+.btn-form-submit:hover {
+    background: #d4b068;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.45);
+}
+
+.form-privacy {
+    text-align: center;
+    font-size: 11px;
+    color: #999999;
+    margin: 10px 0 0 0;
+    font-weight: 400;
+}
+
+/* Navbar - White Luxury */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 22px 80px;
+    padding: 18px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    background: rgba(17, 17, 17, 0.35);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 1px solid #EFEFEF;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+    color: #111111;
     z-index: 100;
 }
 
@@ -109,10 +219,10 @@ canvas {
 
 .logo {
     font-family: 'Cinzel', serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 4px;
-    color: #ffffff;
+    color: #111111;
     text-transform: uppercase;
 }
 
@@ -125,7 +235,7 @@ canvas {
 }
 
 .nav-links a {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(17, 17, 17, 0.7);
     text-decoration: none;
     font-size: 13px;
     font-weight: 500;
@@ -136,7 +246,7 @@ canvas {
 }
 
 .nav-links a:hover, .nav-links a.active {
-    color: #ffffff;
+    color: #111111;
     font-weight: 600;
 }
 
@@ -170,7 +280,7 @@ canvas {
 .nav-divider {
     width: 1px;
     height: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(17, 17, 17, 0.15);
 }
 
 .btn-inquire {
@@ -193,21 +303,7 @@ canvas {
     box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
 }
 
-/* Hero Section */
-.hero {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 80px;
-    margin-top: 75px;
-    max-width: 750px;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-}
+/* Hero Text Styles */
 
 .hero-subtitle {
     display: flex;
@@ -320,73 +416,8 @@ canvas {
     transform: translateY(-2px);
 }
 
-/* Minimalist Scroll Cue */
-.scroll-cue {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    pointer-events: none;
-    z-index: 10;
-}
 
-.scroll-text {
-    font-size: 10.5px;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.75);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
 
-.scroll-line-container {
-    width: 2px;
-    height: 32px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 2px;
-    overflow: hidden;
-}
-
-.scroll-line {
-    width: 100%;
-    height: 100%;
-    background: #C5A059;
-    animation: scrollLineAnim 2s infinite ease-in-out;
-}
-
-.scroll-text {
-    font-size: 9px;
-    letter-spacing: 3.5px;
-    color: #666666;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.scroll-line-container {
-    width: 1px;
-    height: 32px;
-    background: rgba(0, 0, 0, 0.12);
-    position: relative;
-    overflow: hidden;
-}
-
-.scroll-line {
-    width: 100%;
-    height: 50%;
-    background: #C5A059;
-    position: absolute;
-    top: -50%;
-    animation: scrollPulse 2s infinite ease-in-out;
-}
-
-@keyframes scrollPulse {
-    0% { top: -50%; }
-    50% { top: 100%; }
-    100% { top: 100%; }
-}
 
 /* Normal Content Section */
 .normal-content {
