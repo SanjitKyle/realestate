@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUXE LIVING — Premier Property Advisory Kolkata</title>
+    <title>Steady Shield Realtech — Premier Property Advisory Kolkata</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,23 +14,15 @@
     <!-- Fixed Navbar that stays on top -->
     <header class="navbar" id="main-nav">
         <div class="logo-container">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#C5A059" stroke-width="1.8">
-                <path d="M12 3L3 9v12h18V9l-9-6z"/>
-                <path d="M9 21V12h6v9"/>
-                <path d="M12 9v12"/>
-            </svg>
-            <div class="logo">LUXE LIVING</div>
+            <img class="brand-logo" src="images/logo.png" alt="Steady Shield Realtech Pvt Ltd">
         </div>
         
         <nav class="nav-links">
-            <a href="#hero" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#process">Process</a>
-            <a href="#neighborhoods">Locations</a>
-            <a href="#collection">Properties</a>
-            <a href="#estimator">Valuation</a>
-            <a href="#nri-desk">NRI Desk</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="properties.html">Properties</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
         </nav>
         
         <div class="nav-right">
@@ -41,11 +33,12 @@
                 </svg>
             </a>
             <div class="nav-divider"></div>
-            <a href="#collection" class="btn-inquire">INQUIRE</a>
+            <a href="contact.html" class="btn-inquire">INQUIRE</a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
     </header>
 
-    <!-- Hero Section — Static Image with Left Text + Right Form -->
+    <!-- Hero Section - Static Image with Left Text + Right Form -->
     <section class="hero-section" id="hero">
         <div class="hero-bg-overlay"></div>
         <div class="hero-grid">
@@ -82,15 +75,15 @@
 
                 <div class="hero-trust-bar">
                     <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                         <span>RERA Verified</span>
                     </div>
                     <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                         <span>100% Direct Ownership</span>
                     </div>
                     <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
                         <span>Zero Brokerage</span>
                     </div>
                 </div>
@@ -104,7 +97,7 @@
                         <p>Get exclusive access to our luxury building portfolio</p>
                     </div>
 
-                    <form class="hero-inquiry-form" onsubmit="event.preventDefault(); showToast('✅ Your visit has been scheduled. Our advisor will call you shortly.');">
+                    <form class="hero-inquiry-form" onsubmit="event.preventDefault(); showToast('&#10003; Your visit has been scheduled. Our advisor will call you shortly.');">
                         <div class="form-field">
                             <label>Full Name</label>
                             <input type="text" placeholder="Enter your full name" required>
@@ -138,10 +131,11 @@
                         </button>
                     </form>
 
-                    <p class="form-privacy">🔒 Your information is 100% confidential</p>
+                    <p class="form-privacy">&#128274; Your information is 100% confidential</p>
                 </div>
             </div>
         </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to explore">EXPLORE<span></span></a>
     </section>
 
     <!-- Main Content Section -->
@@ -226,7 +220,7 @@
                     <div class="about-features-grid">
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2">
                                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                                     <polyline points="9 22 9 12 15 12 15 22"/>
                                 </svg>
@@ -239,7 +233,7 @@
 
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2">
                                     <path d="M2 20h20"/>
                                     <path d="M6 16l4-8 4 4 6-10"/>
                                 </svg>
@@ -252,7 +246,7 @@
 
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2">
                                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                                 </svg>
                             </div>
@@ -264,7 +258,7 @@
 
                         <div class="feature-item">
                             <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2">
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                 </svg>
                             </div>
@@ -298,7 +292,7 @@
                     <div class="process-card">
                         <div class="process-number">01</div>
                         <div class="process-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
                         </div>
                         <h3>Explore Our Building Portfolio</h3>
                         <p>Select from our 15+ landmark residential buildings in Alipore, Ballygunge, EM Bypass, and New Town.</p>
@@ -307,7 +301,7 @@
                     <div class="process-card">
                         <div class="process-number">02</div>
                         <div class="process-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
                         </div>
                         <h3>Private VIP Building Tour</h3>
                         <p>Schedule an on-site walkthrough to inspect the building architecture, common lounges, floor layouts, and views.</p>
@@ -316,7 +310,7 @@
                     <div class="process-card">
                         <div class="process-number">03</div>
                         <div class="process-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
                         </div>
                         <h3>Select Floor & Customization</h3>
                         <p>Choose your desired floor level, balcony orientation, and interior specification options tailored to your taste.</p>
@@ -325,7 +319,7 @@
                     <div class="process-card">
                         <div class="process-number">04</div>
                         <div class="process-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 11 12 14 22 4"/></svg>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 11 12 14 22 4"/></svg>
                         </div>
                         <h3>Direct Legal Registration</h3>
                         <p>Finalize direct purchase documentation with full legal transparency and seamless key handover.</p>
@@ -846,7 +840,7 @@
                             <svg viewBox="0 0 800 550" class="blueprint-svg" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(197, 160, 89, 0.08)" stroke-width="1"/>
+                                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(16, 40, 79, 0.08)" stroke-width="1"/>
                                     </pattern>
                                 </defs>
                                 <rect width="100%" height="100%" fill="url(#grid)" />
@@ -859,29 +853,29 @@
 
                                 <!-- Rooms Labels & Icons -->
                                 <text x="240" y="180" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="15" font-weight="700" fill="#111111">MASTER BEDROOM</text>
-                                <text x="240" y="205" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#C5A059">15' x 18'</text>
+                                <text x="240" y="205" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#10284F">15' x 18'</text>
 
                                 <text x="240" y="380" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="15" font-weight="700" fill="#111111">LUXURY BATHROOM</text>
-                                <text x="240" y="405" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#C5A059">10' x 14'</text>
+                                <text x="240" y="405" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#10284F">10' x 14'</text>
 
                                 <text x="540" y="160" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="15" font-weight="700" fill="#111111">GRAND LOUNGE & DINING</text>
-                                <text x="540" y="185" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#C5A059">25' x 30'</text>
+                                <text x="540" y="185" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#10284F">25' x 30'</text>
 
                                 <text x="540" y="340" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="15" font-weight="700" fill="#111111">OPEN CHEF KITCHEN</text>
-                                <text x="540" y="365" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#C5A059">16' x 20'</text>
+                                <text x="540" y="365" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#10284F">16' x 20'</text>
 
-                                <text x="540" y="440" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="13" font-weight="600" fill="#C5A059">SUN TERRACE & BALCONY</text>
+                                <text x="540" y="440" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="13" font-weight="600" fill="#10284F">SUN TERRACE & BALCONY</text>
 
                                 <!-- Door Swings & Fixtures -->
-                                <path d="M 380 160 A 40 40 0 0 1 340 120" fill="none" stroke="#C5A059" stroke-width="2" stroke-dasharray="4,4"/>
-                                <path d="M 380 360 A 40 40 0 0 1 340 320" fill="none" stroke="#C5A059" stroke-width="2" stroke-dasharray="4,4"/>
+                                <path d="M 380 160 A 40 40 0 0 1 340 120" fill="none" stroke="#10284F" stroke-width="2" stroke-dasharray="4,4"/>
+                                <path d="M 380 360 A 40 40 0 0 1 340 320" fill="none" stroke="#10284F" stroke-width="2" stroke-dasharray="4,4"/>
 
                                 <!-- Dimension Lines -->
-                                <line x1="100" y1="50" x2="700" y2="50" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="3,3"/>
-                                <text x="400" y="42" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" font-weight="600" fill="#C5A059">56' - 0"</text>
+                                <line x1="100" y1="50" x2="700" y2="50" stroke="#10284F" stroke-width="1.5" stroke-dasharray="3,3"/>
+                                <text x="400" y="42" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" font-weight="600" fill="#10284F">56' - 0"</text>
 
-                                <line x1="60" y1="80" x2="60" y2="480" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="3,3"/>
-                                <text x="50" y="280" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" font-weight="600" fill="#C5A059" transform="rotate(-90 50 280)">40' - 0"</text>
+                                <line x1="60" y1="80" x2="60" y2="480" stroke="#10284F" stroke-width="1.5" stroke-dasharray="3,3"/>
+                                <text x="50" y="280" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" font-weight="600" fill="#10284F" transform="rotate(-90 50 280)">40' - 0"</text>
                             </svg>
                         </div>
                     </div>
@@ -898,10 +892,10 @@
                         <h2>Investing in Kolkata from Abroad?</h2>
                         <p>We specialize in helping Non-Resident Indians (NRIs) and overseas families seamlessly acquire, manage, and verify premier real estate in Kolkata with total peace of mind.</p>
                         <div class="nri-features">
-                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Live 4K Video Walkthroughs</div>
-                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Power of Attorney (POA) Support</div>
-                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> RBI / FEMA Tax & Legal Guidance</div>
-                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Rental & Property Management</div>
+                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Live 4K Video Walkthroughs</div>
+                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Power of Attorney (POA) Support</div>
+                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> RBI / FEMA Tax & Legal Guidance</div>
+                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Rental & Property Management</div>
                         </div>
                         <button class="btn-primary" onclick="showToast('NRI Consultation request logged. Our international advisor will contact you.')">BOOK PRIVATE NRI CONSULTATION</button>
                     </div>
@@ -944,7 +938,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label>Built-Up Area (Sq. Ft.): <span id="sqft-val" style="color:#C5A059; font-weight:700;">2,500</span> Sq.Ft</label>
+                            <label>Built-Up Area (Sq. Ft.): <span id="sqft-val" style="color:#10284F; font-weight:700;">2,500</span> Sq.Ft</label>
                             <input type="range" id="est-sqft" min="1000" max="10000" step="250" value="2500" class="est-slider" oninput="calculateValuation()">
                         </div>
                     </div>
@@ -952,9 +946,9 @@
                     <div class="estimator-result">
                         <span class="res-badge">Estimated Market Value</span>
                         <div class="res-price" id="est-result-price">₹ 4.65 Crore</div>
-                        <p class="res-sub">Estimated Price Range: <strong id="est-range" style="color:#111111;">₹ 4.40 Cr – ₹ 4.90 Cr</strong></p>
+                        <p class="res-sub">Estimated Price Range: <strong id="est-range" style="color:#111111;">₹ 4.40 Cr &ndash; ₹ 4.90 Cr</strong></p>
                         <div class="res-note">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
                             Values are based on Q1 2026 Kolkata market benchmarks for A-grade construction.
                         </div>
                         <button class="btn-primary" style="margin-top:20px; width:100%; justify-content:center;" onclick="showToast('Valuation report requested. An advisor will prepare a detailed analysis.')">REQUEST OFFICIAL VALUATION REPORT</button>
@@ -974,7 +968,7 @@
 
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
-                        <div class="stars">★★★★★</div>
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                         <p class="quote">"Finding an exclusive penthouse on EM Bypass without the usual high-pressure sales pitch was a breath of fresh air. Luxe Living acted as true family advisors."</p>
                         <div class="client-info">
                             <img src="part2/ezgif-frame-040.jpg" alt="Dr. S. Roy" class="client-avatar">
@@ -986,7 +980,7 @@
                     </div>
 
                     <div class="testimonial-card">
-                        <div class="stars">★★★★★</div>
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                         <p class="quote">"Living in London, securing an independent villa in New Town was intimidating. Their video walkthroughs and legal verification gave us complete confidence."</p>
                         <div class="client-info">
                             <img src="part2/ezgif-frame-040.jpg" alt="Anirban Mukherjee" class="client-avatar">
@@ -998,7 +992,7 @@
                     </div>
 
                     <div class="testimonial-card">
-                        <div class="stars">★★★★★</div>
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                         <p class="quote">"They helped us acquire a legacy estate in Alipore with complete transparency and zero stress. The team handles everything with discretion and polish."</p>
                         <div class="client-info">
                             <img src="part2/ezgif-frame-040.jpg" alt="Priya & Rahul Banerjee" class="client-avatar">
@@ -1041,12 +1035,12 @@
             <div class="modal-content video-modal-content">
                 <button class="modal-close" id="video-modal-close">&times;</button>
                 <div class="video-modal-header">
-                    <h3>Virtual Estate 360° Walkthrough</h3>
+                    <h3>Virtual Estate 360&deg; Walkthrough</h3>
                 </div>
                 <div class="video-modal-player">
                     <img src="part2/ezgif-frame-080.jpg" alt="Virtual Tour Video Preview" class="video-preview-img">
                     <div class="video-overlay-play">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#C5A059"><polygon points="8 5 19 12 8 19 8 5"/></svg>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#10284F"><polygon points="8 5 19 12 8 19 8 5"/></svg>
                         <p>Click to stream 4K Ultra-HD Tour</p>
                     </div>
                 </div>
@@ -1113,7 +1107,7 @@
             <div class="footer-inner">
                 <div class="footer-col logo-col">
                     <div class="logo-container">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="1.8">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="1.8">
                             <path d="M12 3L3 9v12h18V9l-9-6z"/>
                             <path d="M9 21V12h6v9"/>
                             <path d="M12 9v12"/>
@@ -1128,20 +1122,20 @@
                 <div class="footer-col">
                     <h4>Navigation</h4>
                     <ul>
-                        <li><a href="#anim-spacer">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#collection">Properties</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
                     <h4>Estates</h4>
                     <ul>
-                        <li><a href="#collection">Alipore Estates</a></li>
-                        <li><a href="#collection">Ballygunge Residences</a></li>
-                        <li><a href="#collection">EM Bypass Towers</a></li>
-                        <li><a href="#collection">Salt Lake Villas</a></li>
+                        <li><a href="properties.html">Alipore Estates</a></li>
+                        <li><a href="properties.html">Ballygunge Residences</a></li>
+                        <li><a href="properties.html">EM Bypass Towers</a></li>
+                        <li><a href="properties.html">Salt Lake Villas</a></li>
                     </ul>
                 </div>
                 
@@ -1161,7 +1155,7 @@
     
     <script>
         // ==========================================
-        // LUXE LIVING — Interactive Scripts
+        // LUXE LIVING - Interactive Scripts
         // ==========================================
 
 
@@ -1209,7 +1203,7 @@
                 e.stopPropagation();
                 btn.classList.toggle('active-heart');
                 if (btn.classList.contains('active-heart')) {
-                    showToast('❤️ Saved to your Favorites!');
+                    showToast('&#9829; Saved to your Favorites!');
                 } else {
                     showToast('Removed from Favorites');
                 }
@@ -1221,7 +1215,7 @@
                 e.stopPropagation();
                 btn.classList.toggle('active-bookmark');
                 if (btn.classList.contains('active-bookmark')) {
-                    showToast('🔖 Saved to your Saved Collection!');
+                    showToast('&#128278; Saved to your Saved Collection!');
                 } else {
                     showToast('Removed from Collection');
                 }
@@ -1244,7 +1238,7 @@
 
             modalTitle.textContent = title;
             modalPrice.textContent = price;
-            modalLocation.textContent = '📍 ' + location;
+            modalLocation.textContent = '\u{1F4CD} ' + location;
             modalImg.src = img;
 
             modal.classList.add('show');
@@ -1403,6 +1397,93 @@
 
         // Initialize calculator
         calculateValuation();
+
+        // ==========================================
+        // EDITORIAL MOTION & NAVIGATION
+        // ==========================================
+        const nav = document.getElementById('main-nav');
+        const navToggle = document.querySelector('.nav-toggle');
+        const navItems = document.querySelectorAll('.nav-links a');
+
+        const updateNav = () => {
+            const scrollTop = window.scrollY;
+            nav.classList.toggle('is-scrolled', scrollTop > 24);
+            const total = document.documentElement.scrollHeight - window.innerHeight;
+            nav.style.setProperty('--scroll', `${total ? (scrollTop / total) * 100 : 0}%`);
+        };
+        updateNav();
+        window.addEventListener('scroll', updateNav, { passive: true });
+
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                const open = nav.classList.toggle('is-open');
+                navToggle.setAttribute('aria-expanded', String(open));
+                navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+            });
+        }
+        navItems.forEach(link => link.addEventListener('click', () => nav.classList.remove('is-open')));
+
+        // Reveal content as it enters the viewport, with a gentle stagger for grids.
+        const revealTargets = document.querySelectorAll(
+            '.about-content, .section-header, .nri-card-wrapper, .estimator-box, .testimonials-header, .journal-header, .floor-plan-content, .contact-content'
+        );
+        const staggerTargets = document.querySelectorAll(
+            '.stat-bar-container, .process-grid, .properties-grid, .neighborhood-grid, .testimonials-grid, .journal-grid'
+        );
+        revealTargets.forEach(el => el.classList.add('reveal'));
+        staggerTargets.forEach(el => el.classList.add('reveal-stagger'));
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('in-view');
+                observer.unobserve(entry.target);
+            });
+        }, { threshold: 0.13, rootMargin: '0px 0px -32px' });
+        document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
+
+        // Animate numerical proof points once, preserving symbols such as 15+.
+        const countStats = () => document.querySelectorAll('.stat-num').forEach(el => {
+            const original = el.textContent.trim();
+            const target = Number(original.replace(/[^0-9.]/g, ''));
+            if (!target || el.dataset.counted) return;
+            el.dataset.counted = 'true';
+            const started = performance.now();
+            const duration = 1100;
+            const draw = now => {
+                const progress = Math.min((now - started) / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                el.textContent = Math.floor(target * eased) + (original.includes('+') ? '+' : '');
+                if (progress < 1) requestAnimationFrame(draw);
+            };
+            requestAnimationFrame(draw);
+        });
+        const stats = document.querySelector('.portfolio-stat-bar');
+        if (stats) new IntersectionObserver(entries => entries[0].isIntersecting && countStats(), { threshold: .4 }).observe(stats);
+
+        // Gentle scroll parallax for the NRI consultation CTA background.
+        const nriCta = document.querySelector('.nri-card-wrapper');
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (nriCta && !reducedMotion) {
+            let parallaxQueued = false;
+            const updateNriParallax = () => {
+                const rect = nriCta.getBoundingClientRect();
+                const viewportCenter = window.innerHeight / 2;
+                const sectionCenter = rect.top + rect.height / 2;
+                const offset = Math.max(-42, Math.min(42, (viewportCenter - sectionCenter) * 0.11));
+                nriCta.style.setProperty('--parallax-y', `${-50 + offset}px`);
+                parallaxQueued = false;
+            };
+            const queueNriParallax = () => {
+                if (!parallaxQueued) {
+                    parallaxQueued = true;
+                    requestAnimationFrame(updateNriParallax);
+                }
+            };
+            updateNriParallax();
+            window.addEventListener('scroll', queueNriParallax, { passive: true });
+            window.addEventListener('resize', queueNriParallax);
+        }
     </script>
+    <script src="scroll-reveal.js"></script>
 </body>
 </html>
