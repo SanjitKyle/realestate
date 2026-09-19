@@ -54,7 +54,7 @@
 
 .page-hero h1 {
     position: relative;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(2.8rem, 5vw, 4.5rem);
     font-weight: 700;
     color: #ffffff;
@@ -84,32 +84,86 @@
     border-radius: 3px;
 }
 
-/* Section Common */
+/* Section Common - 100% Full Bleed Edge-to-Edge */
 .page-section {
-    padding: 100px 80px;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 100px 0 !important;
+    box-sizing: border-box !important;
+}
+
+.page-section > .section-inner,
+.page-section > .two-col,
+.page-section > .timeline,
+.page-section > .features-grid,
+.page-section > .team-grid,
+.page-section > .properties-listing,
+.page-section > .contact-grid {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
 }
 
 .page-section.alt-bg {
-    background: #f8f9fc;
-    max-width: none;
+    background: #f8f9fc !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 100px 0 !important;
+    box-sizing: border-box !important;
 }
 
 .page-section.alt-bg > .section-inner {
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
 }
 
 .page-section.dark-bg {
-    background: #10284F;
-    color: #ffffff;
-    max-width: none;
+    background: #10284F !important;
+    color: #ffffff !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 80px 0 !important;
+    box-sizing: border-box !important;
 }
 
 .page-section.dark-bg > .section-inner {
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
+}
+
+.page-section.advantage-matrix-section,
+.advantage-matrix-section,
+.page-section.monograph-about-section,
+.monograph-about-section {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.advantage-matrix-section > .section-inner,
+.monograph-about-section > .section-inner {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding: 0 40px !important;
+    box-sizing: border-box !important;
 }
 
 .section-badge {
@@ -125,7 +179,8 @@
     letter-spacing: 2.5px;
     text-transform: uppercase;
     color: #10284F;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    clear: both;
 }
 
 .dark-bg .section-badge {
@@ -135,7 +190,7 @@
 }
 
 .section-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(2rem, 3.5vw, 3rem);
     font-weight: 700;
     color: #10284F;
@@ -230,7 +285,7 @@
 }
 
 .stat-card .stat-number {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
@@ -282,7 +337,7 @@
 }
 
 .feature-card h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.3rem;
     color: #10284F;
     margin: 0 0 12px 0;
@@ -327,7 +382,7 @@
 }
 
 .team-member h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.2rem;
     color: #10284F;
     margin: 0 0 6px 0;
@@ -396,7 +451,7 @@
 
 .gallery-masonry .gallery-item .overlay span {
     color: #ffffff;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.1rem;
 }
 
@@ -408,7 +463,7 @@
 }
 
 .contact-info-col h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.5rem;
     color: #10284F;
     margin: 0 0 8px 0;
@@ -536,19 +591,36 @@
     box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
 }
 
-/* Compact & Sleek CTA Banner */
+/* Compact & Sleek CTA Banner - 100% Full-Bleed */
 .page-section:has(.cta-banner),
-.page-section.dark-bg:has(.cta-banner) {
-    padding: 45px 30px !important;
+.page-section.dark-bg:has(.cta-banner),
+.cta-section-wrap {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 60px 0 !important;
+    background: #10284F !important;
+    box-sizing: border-box !important;
+}
+
+.cta-section-wrap > .section-inner,
+.page-section:has(.cta-banner) > .section-inner,
+.page-section.dark-bg:has(.cta-banner) > .section-inner {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    box-sizing: border-box !important;
 }
 
 .cta-banner {
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 0;
 }
 
 .cta-banner h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(1.5rem, 2.4vw, 2.0rem);
     color: #ffffff;
     margin: 0 0 10px 0;
@@ -627,7 +699,7 @@
 }
 
 .timeline-item h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.3rem;
     color: #10284F;
     margin: 0 0 4px 0;
@@ -710,7 +782,7 @@
 }
 
 .prop-card-body .price {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.5rem;
     color: #10284F;
     font-weight: 700;
@@ -718,7 +790,7 @@
 }
 
 .prop-card-body h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.25rem;
     color: #10284F;
     margin: 0 0 8px 0;
@@ -774,10 +846,29 @@
     margin-top: 50px;
 }
 
-/* Responsive */
+/* Responsive - Strict Edge-to-Edge Container Standards */
 @media (max-width: 1024px) {
-    .page-hero { padding: 140px 40px 60px; }
-    .page-section { padding: 80px 40px; }
+    .page-hero { padding: 140px 30px 60px; }
+    .page-section { 
+        padding-top: 80px !important; 
+        padding-bottom: 80px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .page-section > .section-inner,
+    .page-section > .two-col,
+    .page-section > .timeline,
+    .page-section > .features-grid,
+    .page-section > .team-grid,
+    .page-section > .properties-listing,
+    .page-section > .contact-grid {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
     .two-col { grid-template-columns: 1fr; gap: 40px; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .team-grid { grid-template-columns: repeat(2, 1fr); }
@@ -790,8 +881,27 @@
 }
 
 @media (max-width: 768px) {
-    .page-hero { padding: 130px 25px 50px; }
-    .page-section { padding: 60px 25px; }
+    .page-hero { padding: 130px 20px 50px; }
+    .page-section { 
+        padding-top: 60px !important; 
+        padding-bottom: 60px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .page-section > .section-inner,
+    .page-section > .two-col,
+    .page-section > .timeline,
+    .page-section > .features-grid,
+    .page-section > .team-grid,
+    .page-section > .properties-listing,
+    .page-section > .contact-grid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
     .features-grid, .team-grid { grid-template-columns: 1fr; }
     .stats-row { grid-template-columns: 1fr 1fr; gap: 16px; }
     .form-row { grid-template-columns: 1fr; }
@@ -850,7 +960,7 @@
 }
 
 .about-hero-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: clamp(2.1rem, 4vw, 3.2rem);
     font-weight: 700;
     color: #ffffff;
@@ -937,7 +1047,7 @@
 }
 
 .about-stat-num {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 2.8rem;
     font-weight: 700;
     color: #ffffff;
@@ -989,30 +1099,30 @@
 
 .about-exp-float {
     position: absolute;
-    top: -25px;
-    left: -25px;
+    top: 20px;
+    left: 20px;
     background: #0b1a30;
     border: 2px solid #ffffff;
     border-radius: 16px;
-    padding: 22px 28px;
+    padding: 16px 22px;
     color: #ffffff;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     z-index: 3;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
 }
 
 .about-exp-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #ffffff;
     line-height: 1;
 }
 
 .about-exp-lbl {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     line-height: 1.4;
     color: rgba(255, 255, 255, 0.9);
@@ -1022,19 +1132,19 @@
 
 .about-video-card {
     position: absolute;
-    bottom: -30px;
-    right: -25px;
+    bottom: 20px;
+    right: 20px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(16, 40, 79, 0.12);
     border-radius: 16px;
-    padding: 14px;
+    padding: 12px 14px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
     z-index: 3;
-    max-width: 310px;
+    max-width: 290px;
 }
 
 .about-video-thumb {
@@ -1075,7 +1185,7 @@
 }
 
 .about-video-info h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: #10284F;
@@ -1136,7 +1246,7 @@
 }
 
 .about-quote-card p {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 17px;
     font-style: italic;
     line-height: 1.7;
@@ -1185,7 +1295,7 @@
 }
 
 .about-pillar-card h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.4rem;
     color: #ffffff;
     margin: 0 0 14px 0;
@@ -1326,7 +1436,7 @@
 }
 
 .mini-step {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #d0dbe9;
@@ -1334,7 +1444,7 @@
 }
 
 .mini-milestone-card h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.15rem;
     font-weight: 700;
     color: #10284F;
@@ -1403,7 +1513,7 @@
 }
 
 .about-team-card h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.35rem;
     color: #10284F;
     margin: 0 0 6px 0;
@@ -1721,7 +1831,7 @@
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: #ffffff;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     border-radius: 12px;
@@ -1736,7 +1846,7 @@
 }
 
 .prop-card-v2-body h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
     color: #10284F;
@@ -1783,31 +1893,72 @@
     stroke: #10284F;
 }
 
+.prop-card-v2 .card-action-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
 .btn-view-prop {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    width: 100%;
-    padding: 12px;
-    background: #f0f4f9;
-    border: 1px solid #d0dbe9;
+    padding: 13px 18px;
+    background: #10284F;
+    border: none;
     border-radius: 10px;
-    color: #10284F;
-    font-size: 11.5px;
+    color: #ffffff;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: auto;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(16, 40, 79, 0.25);
 }
 
-.prop-card-v2:hover .btn-view-prop, .btn-view-prop:hover {
+.btn-view-prop svg {
+    stroke: #ffffff;
+    transition: transform 0.25s ease;
+}
+
+.btn-view-prop:hover {
+    background: #0b1a30;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(16, 40, 79, 0.35);
+}
+
+.btn-view-prop:hover svg {
+    transform: translateX(4px);
+}
+
+.prop-card-v2 .btn-card-call {
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid #10284F;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10284F;
+    background: #ffffff;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+}
+
+.prop-card-v2 .btn-card-call:hover {
     background: #10284F;
     color: #ffffff;
-    border-color: #10284F;
-    box-shadow: 0 4px 15px rgba(16, 40, 79, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(16, 40, 79, 0.25);
+}
+
+.prop-card-v2 .btn-card-call:hover svg {
+    stroke: #ffffff;
 }
 
 @media (max-width: 1100px) {
@@ -1895,7 +2046,7 @@
 }
 
 .neigh-card-v2-body h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.35rem;
     font-weight: 700;
     color: #10284F;
@@ -2087,7 +2238,7 @@
 }
 
 .gallery-card-info h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
     color: #ffffff;
@@ -2153,11 +2304,11 @@
     position: relative;
     max-width: 1000px;
     width: 100%;
-    background: #10284F;
+    background: #ffffff;
     border-radius: 20px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(16, 40, 79, 0.15);
+    box-shadow: 0 28px 70px rgba(16, 40, 79, 0.28);
     transform: scale(0.92);
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
@@ -2172,7 +2323,8 @@
     max-height: 70vh;
     width: 100%;
     overflow: hidden;
-    background: #071529;
+    background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%);
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .lightbox-img-wrap img {
@@ -2184,24 +2336,24 @@
 
 .lightbox-details {
     padding: 24px 30px;
-    background: #10284F;
-    color: #ffffff;
+    background: #ffffff;
+    color: #10284F;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .lightbox-details h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     margin: 0 0 4px 0;
-    color: #ffffff;
+    color: #10284F;
 }
 
 .lightbox-details p {
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.75);
+    color: #64748B;
     margin: 0;
 }
 
@@ -2212,10 +2364,9 @@
     width: 42px;
     height: 42px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff;
+    background: #ffffff;
+    border: 1.5px solid rgba(16, 40, 79, 0.18);
+    color: #10284F;
     font-size: 24px;
     display: flex;
     align-items: center;
@@ -2223,10 +2374,13 @@
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10;
+    box-shadow: 0 4px 15px rgba(16, 40, 79, 0.15);
 }
 
 .lightbox-close:hover {
-    background: rgba(255, 255, 255, 0.3);
+    background: #10284F;
+    color: #ffffff;
+    border-color: #10284F;
     transform: rotate(90deg);
 }
 
@@ -2326,7 +2480,7 @@
 }
 
 .amenity-number {
-    font-family: 'Cinzel', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.15rem;
     font-weight: 700;
     color: rgba(16, 40, 79, 0.22);
@@ -2334,7 +2488,7 @@
 }
 
 .amenity-card-v2 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
     color: #10284F;
@@ -2446,7 +2600,7 @@
 }
 
 .contact-card-v2 .contact-card-body h4 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.15rem;
     font-weight: 700;
     color: #10284F;
@@ -2576,7 +2730,7 @@
 }
 
 .faq-header-v2 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     color: #10284F;
@@ -2645,7 +2799,7 @@
 }
 
 .map-card-content h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
     font-size: 1.6rem;
     margin: 0 0 10px 0;
     color: #ffffff;
@@ -2655,4 +2809,409 @@
     font-size: 14px;
     color: rgba(255, 255, 255, 0.8);
     margin: 0 0 20px 0;
+}
+
+
+/* ========================================== */
+/* ADVANCED SCROLL TRIGGER & TEXT ANIMATIONS  */
+/* ========================================== */
+
+/* Top Scroll Progress Indicator */
+#scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #10284F 0%, #3b82f6 50%, #10284F 100%);
+    width: 0%;
+    z-index: 999999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+}
+
+/* Floating Back To Top Button */
+#back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #10284F;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(16, 40, 79, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.85);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#back-to-top-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+#back-to-top-btn:hover {
+    background: #071529;
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 16px 40px rgba(16, 40, 79, 0.4);
+}
+
+/* Scrolled Navbar Glassmorphism */
+.navbar.nav-scrolled {
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    box-shadow: 0 10px 30px rgba(16, 40, 79, 0.08) !important;
+    padding: 14px 40px !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+/* Blur Reveal & Down Reveal */
+.reveal-blur {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateY(25px);
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), filter 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, filter, transform;
+}
+
+.reveal-blur.in-view {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.reveal-down {
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-down.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Text Mask & Slide-Up Reveal */
+.reveal-text-mask {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.reveal-text-mask > span {
+    display: inline-block;
+    transform: translateY(110%);
+    opacity: 0;
+    transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.85s ease;
+    will-change: transform, opacity;
+}
+
+.reveal-text-mask.in-view > span {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+/* Animated Section Title Accent Line */
+.section-title.title-animated {
+    position: relative;
+    display: block !important;
+    width: 100%;
+}
+
+.section-title.title-animated::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #10284F 0%, rgba(16, 40, 79, 0.1) 100%);
+    margin: 10px auto 0;
+    border-radius: 4px;
+    transition: width 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-title.title-animated.in-view::after {
+    width: 80px;
+}
+
+/* Badge Pulse Animation */
+.section-badge.in-view, .about-hero-badge.in-view {
+    animation: badgePulse 2.2s infinite ease-in-out;
+}
+
+@keyframes badgePulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(16, 40, 79, 0.15);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(16, 40, 79, 0);
+    }
+}
+
+/* Micro-Interaction Card Hover Glow */
+.prop-card-v2, .gallery-card-v2, .amenity-card-v2, .neigh-card-v2, .feature-card {
+    transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease, border-color 0.4s ease !important;
+}
+
+.prop-card-v2:hover, .gallery-card-v2:hover, .amenity-card-v2:hover, .neigh-card-v2:hover {
+    transform: translateY(-8px) scale(1.01) !important;
+}
+
+
+/* ========================================== */
+/* ULTRA-LUXURY GLASSMOPHIC NAVBAR HEADER     */
+/* ========================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 60px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(16, 40, 79, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(16, 40, 79, 0.06) !important;
+    z-index: 9999;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.navbar.nav-scrolled {
+    padding: 12px 60px !important;
+    background: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 14px 40px rgba(16, 40, 79, 0.12) !important;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 44px !important;
+    height: 44px !important;
+    object-fit: contain;
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(16, 40, 79, 0.15);
+    transition: transform 0.35s ease;
+    flex: 0 0 44px !important;
+}
+
+.logo-container:hover .brand-logo {
+    transform: scale(1.08) rotate(3deg);
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-title {
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #10284F;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.brand-subtitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #627089;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 36px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links a {
+    color: #475569;
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 6px 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #10284F;
+    font-weight: 700;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0 !important;
+    bottom: -3px !important;
+    width: 0% !important;
+    height: 2.5px !important;
+    background: #10284F !important;
+    border-radius: 4px !important;
+    transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    transform: none !important;
+}
+
+.nav-links a.active::after,
+.nav-links a:hover::after {
+    width: 100% !important;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(16, 40, 79, 0.05);
+    border: 1px solid rgba(16, 40, 79, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #10284F;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.search-icon:hover {
+    background: #10284F;
+    color: #ffffff;
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(16, 40, 79, 0.2);
+}
+
+.search-icon svg {
+    stroke: currentColor;
+}
+
+.nav-divider {
+    width: 1px;
+    height: 22px;
+    background-color: rgba(16, 40, 79, 0.15);
+}
+
+.btn-inquire {
+    padding: 10px 26px !important;
+    border-radius: 50px !important;
+    background: #10284F !important;
+    color: #ffffff !important;
+    border: 1px solid #10284F !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 11.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.8px !important;
+    text-transform: uppercase !important;
+    text-decoration: none !important;
+    box-shadow: 0 6px 20px rgba(16, 40, 79, 0.2) !important;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-inquire:hover {
+    background: #071529 !important;
+    border-color: #071529 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 28px rgba(16, 40, 79, 0.35) !important;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 14px 30px !important;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+    .brand-title {
+        font-size: 15px;
+    }
+}
+
+
+/* Footer Brand Logo Styling */
+.footer-col .logo-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    margin-bottom: 20px !important;
+    text-decoration: none !important;
+}
+
+.footer-col .logo-container .brand-logo {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    background: #ffffff !important;
+    padding: 2px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+    flex: 0 0 48px !important;
+}
+
+.footer-col .logo-container .brand-title {
+    color: #ffffff !important;
+    font-family: 'Sen', 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px !important;
+    text-transform: uppercase !important;
+}
+
+.footer-col .logo-container .brand-subtitle {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 9.5px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2.5px !important;
+    text-transform: uppercase !important;
+    margin-top: 3px !important;
+    display: block !important;
+}
+
+/* Header Search Icon & Divider Hidden */
+.navbar .search-icon,
+.navbar .nav-divider {
+    display: none !important;
+}
+
+
+
+/* Global Google Sans-Serif Typography Standard */
+body, h1, h2, h3, h4, h5, h6, p, span, a, input, select, textarea, button {
+    font-family: 'Sen', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
 }

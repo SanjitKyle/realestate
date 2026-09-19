@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Properties — LUXE LIVING Premier Real Estate Advisory</title>
+    <title>Properties — Steady Shield Realtech — Premier Property Advisory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="inner-pages.css">
 </head>
 <body>
 
     <!-- Fixed Luxury Navbar -->
-    <header class="navbar" id="main-nav">
-        <div class="logo-container">
-            <img class="brand-logo" src="images/logo.png" alt="LUXE LIVING">
-        </div>
+        <header class="navbar" id="main-nav">
+        <a href="index.html" class="logo-container">
+            <img class="brand-logo" src="images/logo.png" alt="STEADY SHIELD REALTECH">
+            <div class="brand-text">
+                <span class="brand-title">REALTECH</span>
+                <span class="brand-subtitle">STEADY SHIELD PVT LTD</span>
+            </div>
+        </a>
         <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -25,14 +29,8 @@
             <a href="contact.html">Contact</a>
         </nav>
         <div class="nav-right">
-            <a href="#" class="search-icon" aria-label="Search">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="1.8">
-                    <circle cx="11" cy="11" r="8"/>
-                    <path d="M21 21l-4.35-4.35"/>
-                </svg>
-            </a>
-            <div class="nav-divider"></div>
             <a href="contact.html" class="btn-inquire">INQUIRE</a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
     </header>
 
@@ -107,17 +105,17 @@
                 <!-- Card 1 -->
                 <div class="prop-card-v2">
                     <div class="prop-card-v2-img">
-                        <img src="part1/ezgif-frame-001.jpg" alt="New Town Luxury Villa">
+                        <img src="part1/ezgif-frame-001.jpg" alt="New Town Independent Luxury House">
                         <span class="prop-badge-tag">FOR SALE</span>
                         <div class="prop-price-tag">₹ 3.5 Cr</div>
                     </div>
                     <div class="prop-card-v2-body">
-                        <h3>New Town Luxury Villa</h3>
+                        <h3>New Town Independent Luxury House</h3>
                         <div class="prop-location">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             <span>New Town Action Area III, Kolkata</span>
                         </div>
-                        <p class="prop-desc">Exclusive independent gated residence in Kolkata's fast-growing IT hub with private garden and smart security.</p>
+                        <p class="prop-desc">Exclusive independent gated house in Kolkata's fast-growing IT hub with private garden and smart security.</p>
                         
                         <div class="prop-specs-row">
                             <div class="prop-spec-pill">
@@ -134,10 +132,15 @@
                             </div>
                         </div>
 
-                        <a href="contact.html" class="btn-view-prop">
-                            <span>INQUIRE & SCHEDULE VISIT</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-view-prop">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -171,10 +174,15 @@
                             </div>
                         </div>
 
-                        <a href="contact.html" class="btn-view-prop">
-                            <span>INQUIRE & SCHEDULE VISIT</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-view-prop">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -208,10 +216,15 @@
                             </div>
                         </div>
 
-                        <a href="contact.html" class="btn-view-prop">
-                            <span>INQUIRE & SCHEDULE VISIT</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-view-prop">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -245,10 +258,15 @@
                             </div>
                         </div>
 
-                        <a href="contact.html" class="btn-view-prop">
-                            <span>INQUIRE & SCHEDULE VISIT</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-view-prop">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -282,10 +300,15 @@
                             </div>
                         </div>
 
-                        <a href="contact.html" class="btn-view-prop">
-                            <span>INQUIRE & SCHEDULE VISIT</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-view-prop">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -319,10 +342,15 @@
                             </div>
                         </div>
 
-                        <a href="contact.html" class="btn-view-prop">
-                            <span>INQUIRE & SCHEDULE VISIT</span>
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </a>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-view-prop">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -427,7 +455,7 @@
                 <!-- New Town -->
                 <div class="neigh-card-v2">
                     <div class="neigh-card-v2-img">
-                        <img src="part1/ezgif-frame-001.jpg" alt="New Town Gated Villas">
+                        <img src="part1/ezgif-frame-001.jpg" alt="New Town Flats & Houses">
                         <span class="neigh-badge-overlay">4 BUILDINGS AVAILABLE</span>
                     </div>
                     <div class="neigh-card-v2-body">
@@ -435,11 +463,11 @@
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                             <span>New Town</span>
                         </h3>
-                        <p>Kolkata's smart city destination. Eco Park, Biswa Bangla Convention Centre, international schools, and gated villa enclaves.</p>
+                        <p>Kolkata's smart city destination. Eco Park, Biswa Bangla Convention Centre, international schools, and premier flats and independent houses.</p>
                         
                         <div class="neigh-tags">
                             <span class="neigh-tag-pill">Smart City</span>
-                            <span class="neigh-tag-pill">Gated Villas</span>
+                            <span class="neigh-tag-pill">Flats & Houses</span>
                             <span class="neigh-tag-pill">Eco Park</span>
                         </div>
                     </div>
@@ -488,10 +516,13 @@
     <footer class="footer">
         <div class="footer-inner" style="border-bottom: none;">
             <div class="footer-col logo-col">
-                <div class="logo-container">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8"><path d="M12 3L3 9v12h18V9l-9-6z"/><path d="M9 21V12h6v9"/><path d="M12 9v12"/></svg>
-                    <span class="logo">LUXE LIVING</span>
-                </div>
+                <a href="index.html" class="logo-container" style="text-decoration:none;">
+                    <img class="brand-logo" src="images/logo.png" alt="STEADY SHIELD REALTECH" style="width:48px; height:48px; border-radius:50%; background:#ffffff; padding:2px;">
+                    <div class="brand-text">
+                        <span class="brand-title" style="color:#ffffff; font-family: 'Sen', 'Plus Jakarta Sans', sans-serif; font-size:18px; font-weight:700; letter-spacing:3px;">REALTECH</span>
+                        <span class="brand-subtitle" style="color:rgba(255,255,255,0.7); font-family:'Plus Jakarta Sans', sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2.5px; margin-top:3px; display:block;">STEADY SHIELD PVT LTD</span>
+                    </div>
+                </a>
                 <p class="footer-desc">Kolkata's premier luxury real estate advisory, curating elite heritage estates, high-rise penthouses, and riverside sanctuaries.</p>
             </div>
             <div class="footer-col">
@@ -509,20 +540,21 @@
                     <li><a href="properties.html">Alipore Estates</a></li>
                     <li><a href="properties.html">Ballygunge Residences</a></li>
                     <li><a href="properties.html">EM Bypass Towers</a></li>
-                    <li><a href="properties.html">Salt Lake Villas</a></li>
+                    <li><a href="properties.html">Salt Lake Flats & Houses</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <p class="contact-info">EM Bypass, Park Circus Connector, Kolkata, West Bengal 700046</p>
-                <p class="contact-info">inquire@luxelivingkolkata.com</p>
+                <p class="contact-info">inquire@steadyshieldrealtech.com</p>
                 <p class="contact-info">+91 (33) 2200 8800</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 LUXE LIVING Real Estate. All rights reserved.</p>
+            <p>&copy; 2026 Steady Shield Realtech Pvt Ltd. All rights reserved.</p>
         </div>
     </footer>
+    
 
     <script src="scroll-reveal.js"></script>
 </body>

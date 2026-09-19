@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us — LUXE LIVING Real Estate</title>
+    <title>Contact Us — Steady Shield Realtech Pvt Ltd</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="inner-pages.css">
 </head>
 <body>
 
+   
     <!-- Navbar -->
-    <header class="navbar" id="main-nav">
-        <div class="logo-container">
-            <img class="brand-logo" src="images/logo.png" alt="LUXE LIVING">
-        </div>
+        <header class="navbar" id="main-nav">
+        <a href="index.html" class="logo-container">
+            <img class="brand-logo" src="images/logo.png" alt="STEADY SHIELD REALTECH">
+            <div class="brand-text">
+                <span class="brand-title">REALTECH</span>
+                <span class="brand-subtitle">STEADY SHIELD PVT LTD</span>
+            </div>
+        </a>
         <nav class="nav-links">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -26,6 +31,7 @@
         </nav>
         <div class="nav-right">
             <a href="contact.html" class="btn-inquire">INQUIRE</a>
+            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
     </header>
 
@@ -78,7 +84,7 @@
                         </div>
                         <div class="contact-card-body">
                             <h4>Email Enquiries</h4>
-                            <p>inquire@luxelivingkolkata.com<br>nri@luxelivingkolkata.com</p>
+                            <p>inquire@steadyshieldrealtech.com<br>nri@steadyshieldrealtech.com</p>
                         </div>
                     </div>
 
@@ -96,7 +102,7 @@
 
             <!-- Right Form Column -->
             <form class="styled-form-v2" onsubmit="event.preventDefault(); alert('Thank you! Our advisory team will contact you within 24 hours.');">
-                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #10284F; margin: 0 0 6px 0;">Send Us a Message</h3>
+                <h3 style="font-family: 'Sen', 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; color: #10284F; margin: 0 0 6px 0;">Send Us a Message</h3>
                 <p style="font-size: 13.5px; color: #627089; margin: 0 0 22px 0;">Fill in the form below and an advisor will get in touch within 24 hours.</p>
                 
                 <div class="form-row">
@@ -199,7 +205,7 @@
                     <div style="display:inline-flex; align-items:center; justify-content:center; width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,0.15); backdrop-filter:blur(10px); margin-bottom:14px;">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
-                    <h3>LUXE LIVING Headquarters</h3>
+                    <h3>Steady Shield Realtech Headquarters</h3>
                     <p>EM Bypass, Park Circus Connector, Kolkata, West Bengal 700046</p>
                     <a href="https://maps.google.com" target="_blank" class="btn-gold" style="padding:12px 28px; font-size:11px;">
                         OPEN IN GOOGLE MAPS 
@@ -216,10 +222,13 @@
     <footer class="footer">
         <div class="footer-inner" style="border-bottom: none;">
             <div class="footer-col logo-col">
-                <div class="logo-container">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8"><path d="M12 3L3 9v12h18V9l-9-6z"/><path d="M9 21V12h6v9"/><path d="M12 9v12"/></svg>
-                    <span class="logo">LUXE LIVING</span>
-                </div>
+                <a href="index.html" class="logo-container" style="text-decoration:none;">
+                    <img class="brand-logo" src="images/logo.png" alt="STEADY SHIELD REALTECH" style="width:48px; height:48px; border-radius:50%; background:#ffffff; padding:2px;">
+                    <div class="brand-text">
+                        <span class="brand-title" style="color:#ffffff; font-family: 'Sen', 'Plus Jakarta Sans', sans-serif; font-size:18px; font-weight:700; letter-spacing:3px;">REALTECH</span>
+                        <span class="brand-subtitle" style="color:rgba(255,255,255,0.7); font-family:'Plus Jakarta Sans', sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2.5px; margin-top:3px; display:block;">STEADY SHIELD PVT LTD</span>
+                    </div>
+                </a>
                 <p class="footer-desc">Kolkata's premier luxury real estate advisory, curating elite heritage estates, high-rise penthouses, and riverside sanctuaries.</p>
             </div>
             <div class="footer-col">
@@ -238,18 +247,18 @@
                     <li><a href="properties.html">Alipore Estates</a></li>
                     <li><a href="properties.html">Ballygunge Residences</a></li>
                     <li><a href="properties.html">EM Bypass Towers</a></li>
-                    <li><a href="properties.html">Salt Lake Villas</a></li>
+                    <li><a href="properties.html">Salt Lake Flats & Houses</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <p class="contact-info">EM Bypass, Park Circus Connector, Kolkata, West Bengal 700046</p>
-                <p class="contact-info">inquire@luxelivingkolkata.com</p>
+                <p class="contact-info">inquire@steadyshieldrealtech.com</p>
                 <p class="contact-info">+91 (33) 2200 8800</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 LUXE LIVING Real Estate. All rights reserved.</p>
+            <p>&copy; 2026 Steady Shield Realtech Pvt Ltd. All rights reserved.</p>
         </div>
     </footer>
 

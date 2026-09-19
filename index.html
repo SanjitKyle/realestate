@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steady Shield Realtech — Premier Property Advisory Kolkata</title>
+    <title>Steady Shield Realtech — Premier Property Portal Kolkata</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="inner-pages.css">
 </head>
 <body>
 
-    <!-- Fixed Navbar that stays on top -->
+    <!-- 1. Top Portal Header Bar Overlay (99acres Style) -->
+        <!-- Fixed Header / Navigation -->
     <header class="navbar" id="main-nav">
-        <div class="logo-container">
-            <img class="brand-logo" src="images/logo.png" alt="Steady Shield Realtech Pvt Ltd">
-        </div>
+        <a href="index.html" class="logo-container">
+            <img class="brand-logo" src="images/logo.png" alt="STEADY SHIELD REALTECH">
+            <div class="brand-text">
+                <span class="brand-subtitle"> STEADY SHIELD </span>
+                <span class="brand-subtitle"> <span class="brand-title">REALTECH</span> PVT LTD</span>
+            </div>
+        </a>
         
         <nav class="nav-links">
             <a href="index.html" class="active">Home</a>
@@ -24,1466 +30,1354 @@
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </nav>
-        
         <div class="nav-right">
-            <a href="#" class="search-icon" aria-label="Search">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#111111" stroke-width="1.8">
-                    <circle cx="11" cy="11" r="8"/>
-                    <path d="M21 21l-4.35-4.35"/>
-                </svg>
-            </a>
-            <div class="nav-divider"></div>
             <a href="contact.html" class="btn-inquire">INQUIRE</a>
             <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
     </header>
 
-    <!-- Hero Section - Static Image with Left Text + Right Form -->
-    <section class="hero-section" id="hero">
-        <div class="hero-bg-overlay"></div>
-        <div class="hero-grid">
-            <!-- Left: Text Content -->
-            <div class="hero-left">
-                <div class="hero-subtitle">
-                    <span class="line"></span>
-                    <span class="text">EXCLUSIVELY CURATED PORTFOLIO OF 15+ LUXURY BUILDINGS IN KOLKATA</span>
-                </div>
+    <!-- 2. Hero Image Banner & Slider with Featured Project Card -->
+    <section class="portal-hero-slider">
+                                        <!-- Slide Track Container -->
+        <div class="slider-track" id="hero-slider-track">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <img src="part1/ezgif-frame-001.jpg" alt="Vinayak Amara New Town Kolkata">
+                <div class="slide-overlay"></div>
+                
+                <!-- Perfectly Aligned Hero Container -->
+                <div class="hero-card-container">
+                    <div class="hero-project-banner-card">
+                        <div class="banner-top-row">
+                            <div class="brand-badge-pill">
+                                <span class="brand-main">STEADY SHIELD</span>
+                                <span class="brand-sub">amara</span>
+                            </div>
+                            <div class="rera-info-inline">
+                                <span class="rera-label">RERA:</span>
+                                <span class="rera-val">WBRERA/P/NOR/2026/001720</span>
+                            </div>
+                        </div>
 
-                <h1 class="hero-title">
-                    Direct Purchase of Kolkata's<br>
-                    <span class="hero-title-gold">Finest Luxury Buildings & Towers</span>
-                </h1>
+                        <h2 class="banner-project-title">3 & 4 BHK Luxury Sky Apartments</h2>
+                        <div class="banner-project-location">📍 Action Area III, New Town, Kolkata</div>
+                        
+                        <div class="banner-price-text">
+                            <span class="price-lbl">Starting Price:</span>
+                            <span class="price-val">₹ 1.74 Cr Onwards</span>
+                        </div>
 
-                <p class="hero-desc">
-                    We present an exclusive private collection of 10 to 20 landmark residential buildings across Alipore, Ballygunge, EM Bypass, and New Town. Buy directly with complete legal transparency and zero middleman markup.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#collection" class="btn-primary">
-                        <span>VIEW BUILDING PORTFOLIO</span>
-                        <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                    <a href="#about" class="btn-secondary">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="8 5 19 12 8 19 8 5"/>
-                        </svg>
-                        <span>ABOUT OUR BUILDINGS</span>
-                    </a>
-                </div>
-
-                <div class="hero-trust-bar">
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        <span>RERA Verified</span>
-                    </div>
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>100% Direct Ownership</span>
-                    </div>
-                    <div class="trust-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-                        <span>Zero Brokerage</span>
+                        <a href="properties.html" class="btn-banner-explore-minimal">
+                            <span>Explore Now</span>
+                            <span class="arrow-sym">&rarr;</span>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Right: Inquiry Form -->
-            <div class="hero-right">
-                <div class="hero-form-card">
-                    <div class="form-card-header">
-                        <h3>Book a Private Visit</h3>
-                        <p>Get exclusive access to our luxury building portfolio</p>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <img src="part2/ezgif-frame-040.jpg" alt="EM Bypass Sky Mansions">
+                <div class="slide-overlay"></div>
+                
+                <div class="hero-card-container">
+                    <div class="hero-project-banner-card">
+                        <div class="banner-top-row">
+                            <div class="brand-badge-pill">
+                                <span class="brand-main">STEADY SHIELD</span>
+                                <span class="brand-sub">skyline</span>
+                            </div>
+                            <div class="rera-info-inline">
+                                <span class="rera-label">RERA:</span>
+                                <span class="rera-val">WBRERA/P/EMB/2026/004120</span>
+                            </div>
+                        </div>
+
+                        <h2 class="banner-project-title">4 & 5 BHK Waterfront Sky Mansions</h2>
+                        <div class="banner-project-location">📍 Waterfront Corridor, EM Bypass, Kolkata</div>
+                        
+                        <div class="banner-price-text">
+                            <span class="price-lbl">Starting Price:</span>
+                            <span class="price-val">₹ 3.50 Cr Onwards</span>
+                        </div>
+
+                        <a href="properties.html" class="btn-banner-explore-minimal">
+                            <span>Explore Now</span>
+                            <span class="arrow-sym">&rarr;</span>
+                        </a>
                     </div>
+                </div>
+            </div>
 
-                    <form class="hero-inquiry-form" onsubmit="event.preventDefault(); showToast('&#10003; Your visit has been scheduled. Our advisor will call you shortly.');">
-                        <div class="form-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your full name" required>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <img src="endpart/ezgif-frame-040.jpg" alt="Ballygunge Heritage House">
+                <div class="slide-overlay"></div>
+                
+                <div class="hero-card-container">
+                    <div class="hero-project-banner-card">
+                        <div class="banner-top-row">
+                            <div class="brand-badge-pill">
+                                <span class="brand-main">STEADY SHIELD</span>
+                                <span class="brand-sub">heritage</span>
+                            </div>
+                            <div class="rera-info-inline">
+                                <span class="rera-label">RERA:</span>
+                                <span class="rera-val">WBRERA/P/BAL/2026/001900</span>
+                            </div>
                         </div>
 
-                        <div class="form-field">
-                            <label>Phone Number</label>
-                            <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+                        <h2 class="banner-project-title">5 & 6 BHK Royal Heritage Estates</h2>
+                        <div class="banner-project-location">📍 Ballygunge Park, South Kolkata</div>
+                        
+                        <div class="banner-price-text">
+                            <span class="price-lbl">Starting Price:</span>
+                            <span class="price-val">₹ 6.80 Cr Onwards</span>
                         </div>
 
-                        <div class="form-field">
-                            <label>Email Address</label>
-                            <input type="email" placeholder="you@example.com">
-                        </div>
-
-                        <div class="form-field">
-                            <label>Preferred Location</label>
-                            <select>
-                                <option value="">Select a location</option>
-                                <option value="alipore">Alipore / New Alipore</option>
-                                <option value="ballygunge">Ballygunge / Southern Ave</option>
-                                <option value="embypass">EM Bypass Corridor</option>
-                                <option value="newtown">New Town</option>
-                                <option value="saltlake">Salt Lake</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="btn-form-submit">
-                            SCHEDULE PRIVATE VISIT
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                        </button>
-                    </form>
-
-                    <p class="form-privacy">&#128274; Your information is 100% confidential</p>
+                        <a href="properties.html" class="btn-banner-explore-minimal">
+                            <span>Explore Now</span>
+                            <span class="arrow-sym">&rarr;</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <a class="scroll-cue" href="#about" aria-label="Scroll to explore">EXPLORE<span></span></a>
+
+        <!-- Slider Navigation Controls -->
+        <button class="slider-arrow prev" id="slider-prev" aria-label="Previous Slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slider-arrow next" id="slider-next" aria-label="Next Slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
     </section>
 
-    <!-- Main Content Section -->
-    <section class="normal-content">
+    <!-- 3. Overlapping Floating Search Console Hub (99acres Style) -->
+    <div class="floating-search-container">
+        <div class="floating-search-hub">
+            <!-- Search Console Tabs -->
+            <div class="hub-tabs-row">
+                <button class="hub-tab active" data-tab="buy">Buy</button>
+                <button class="hub-tab" data-tab="rent">Rent</button>
+                <button class="hub-tab" data-tab="new-launch">
+                    <span>New Launch</span>
+                    <span class="pulse-red-dot"></span>
+                </button>
+                <button class="hub-tab" data-tab="commercial">Commercial</button>
+                <button class="hub-tab" data-tab="plots">Plots/Land</button>
+                <button class="hub-tab" data-tab="projects">Projects</button>
+                <div class="tab-divider"></div>
+                <a href="contact.html" class="hub-tab-post">
+                    <span>Post Property</span>
+                    <span class="badge-free">FREE</span>
+                </a>
+            </div>
 
-        <!-- Luxury Portfolio Stat Bar -->
-        <div class="portfolio-stat-bar">
-            <div class="stat-bar-container">
-                <div class="stat-item">
-                    <span class="stat-num">15+</span>
-                    <span class="stat-label">Landmark Buildings</span>
+            <!-- Integrated Search Bar Row -->
+            <div class="hub-search-form">
+                <!-- Dropdown Category Filter -->
+                <div class="type-dropdown-wrap">
+                    <select id="hub-property-type">
+                        <option value="residential">All Residential</option>
+                        <option value="flats">Flats & Apartments</option>
+                        <option value="houses">Independent Houses</option>
+                        <option value="commercial">Commercial Space</option>
+                        <option value="penthouses">Sky Penthouse</option>
+                    </select>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-num">250+</span>
-                    <span class="stat-label">Luxury Residences</span>
+
+                <div class="search-divider"></div>
+
+                <!-- Text Search Field -->
+                <div class="search-input-wrap">
+                    <svg class="search-icon-svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#627089" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                    <input type="text" id="hub-search-input" placeholder='Search "Flats for sale in Alipore Kolkata"' onkeypress="if(event.key === 'Enter') executeHubSearch();">
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-num">₹ 650 Cr+</span>
-                    <span class="stat-label">Portfolio Valuation</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-num">100%</span>
-                    <span class="stat-label">Direct Ownership</span>
-                </div>
+
+                <!-- Primary Search Button -->
+                <button class="btn-hub-search" onclick="executeHubSearch()" type="button">
+                    <span>Search</span>
+                </button>
             </div>
         </div>
+    </div>
 
-        <!-- About Us Section -->
-        <section class="about-section" id="about">
-            <div class="about-container">
-                <!-- Left Column: Visual Image Stack & Video Card -->
-                <div class="about-visual">
-                    <div class="main-img-card">
-                        <img src="part1/ezgif-frame-001.jpg" alt="Kolkata Luxury Villa Architecture" class="about-main-img">
-                        <div class="img-accent-border"></div>
-                    </div>
-                    
-                    <!-- Floating Experience Badge -->
-                    <div class="exp-badge">
-                        <span class="exp-number">15+</span>
-                        <span class="exp-text">Premier Kolkata Buildings<br>In Our Direct Portfolio</span>
-                    </div>
-                    
-                    <!-- Video Preview Card -->
-                    <div class="video-preview-card">
-                        <div class="video-thumb">
-                            <img src="part2/ezgif-frame-040.jpg" alt="Video Preview">
-                            <button class="play-btn" aria-label="Play Virtual Tour Video">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="8 5 19 12 8 19 8 5"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="video-info">
-                            <h4>Building Portfolio Tour</h4>
-                            <p>02:45 min 4K Walkthrough</p>
-                        </div>
-                    </div>
+
+    <!-- Main Content Section: Featured Property Listings (3-Column Grid) -->
+    <section class="page-section portal-showcase" id="featured-showcase-pin">
+        <div class="section-inner">
+            <div class="section-header-flex">
+                <div class="title-left-group">
+                    <span class="section-badge"><span class="badge-dot"></span> HANDPICKED PORTFOLIO</span>
+                    <h2 class="section-title left-title">Featured Luxury Properties for Sale</h2>
+                    <p class="section-subtitle left-sub">Direct developer pricing • 100% verified clear titles • Zero brokerage across Kolkata's finest micro-markets.</p>
                 </div>
-
-                <!-- Right Column: Content & Features -->
-                <div class="about-content">
-                    <div class="about-badge">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                        </svg>
-                        <span>OUR BUILDING PORTFOLIO</span>
-                    </div>
-
-                    <h2 class="about-title">
-                        Direct Sales of Kolkata's Most Exclusive Residential Buildings
-                    </h2>
-
-                    <p class="about-description">
-                        Instead of overwhelming buyers with generic listings, we manage and offer a curated portfolio of 10 to 20 landmark residential buildings across Kolkata. From luxury sky duplex towers on EM Bypass to private gated villa enclaves in New Town and heritage mansions in Alipore, we connect buyers directly to prime buildings with complete legal assurance.
-                    </p>
-
-                    <!-- 2x2 Feature Grid -->
-                    <div class="about-features-grid">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2">
-                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                    <polyline points="9 22 9 12 15 12 15 22"/>
-                                </svg>
-                            </div>
-                            <div class="feature-text">
-                                <h3>15+ Curated Buildings</h3>
-                                <p>Handpicked luxury developments across Kolkata's top locations.</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2">
-                                    <path d="M2 20h20"/>
-                                    <path d="M6 16l4-8 4 4 6-10"/>
-                                </svg>
-                            </div>
-                            <div class="feature-text">
-                                <h3>Direct Buying Deal</h3>
-                                <p>Buy directly with transparent owner pricing and no middleman markup.</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                                </svg>
-                            </div>
-                            <div class="feature-text">
-                                <h3>Flexible Unit Options</h3>
-                                <p>Full floor layouts, penthouses, duplexes, or individual luxury units.</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                </svg>
-                            </div>
-                            <div class="feature-text">
-                                <h3>Complete Legal Sanction</h3>
-                                <p>Verified municipal permissions, clear titles & immediate handover.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Highlight Quote Box -->
-                    <div class="about-quote-box">
-                        <p class="quote-text">
-                            "We don't list thousands of random properties. We present a private portfolio of Kolkata's 15 finest luxury buildings for direct customer purchase."
-                        </p>
-                    </div>
+                <div class="portal-filter-tabs">
+                    <button class="portal-filter-btn active" data-filter="all">All <span class="tab-count">6</span></button>
+                    <button class="portal-filter-btn" data-filter="ready">Ready to Move <span class="tab-count">4</span></button>
+                    <button class="portal-filter-btn" data-filter="under-construction">Under Construction <span class="tab-count">2</span></button>
+                    <button class="portal-filter-btn" data-filter="ultra">Ultra Luxury <span class="tab-count">4</span></button>
                 </div>
             </div>
-        </section>
 
-        <!-- Our 4-Step Property Advisory Process -->
-        <section class="advisory-process-section" id="process">
-            <div class="process-container">
-                <div class="process-header">
-                    <span class="section-pill-badge">How To Buy</span>
-                    <h2 class="section-title-center">4 Steps to Own Your Building Unit</h2>
-                    <p class="section-subtitle-center">Experience a seamless direct buying journey with our dedicated building sales team.</p>
-                </div>
-
-                <div class="process-grid">
-                    <div class="process-card">
-                        <div class="process-number">01</div>
-                        <div class="process-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <div class="properties-listing portal-grid" id="properties-grid">
+<!-- Card 1 -->
+                <div class="prop-card" data-category="ready ultra">
+                    <div class="prop-card-img" onclick="openPropGallery(1, event)">
+                        <img src="part1/ezgif-frame-001.jpg" alt="New Town Independent Luxury House" loading="lazy">
+                        <div class="badge-glass-wrap">
+                            <span class="badge-glass"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> RERA APPROVED</span>
                         </div>
-                        <h3>Explore Our Building Portfolio</h3>
-                        <p>Select from our 15+ landmark residential buildings in Alipore, Ballygunge, EM Bypass, and New Town.</p>
-                    </div>
-
-                    <div class="process-card">
-                        <div class="process-number">02</div>
-                        <div class="process-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                        <div class="prop-img-overlay">
+                            <span class="tag-status-luxury ready"><span class="status-pulse pulse-green"></span> Ready to Move</span>
+                            <span class="tag-photo-count" onclick="openPropGallery(1, event)" title="View all 12 photos"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> 12 Photos</span>
                         </div>
-                        <h3>Private VIP Building Tour</h3>
-                        <p>Schedule an on-site walkthrough to inspect the building architecture, common lounges, floor layouts, and views.</p>
                     </div>
-
-                    <div class="process-card">
-                        <div class="process-number">03</div>
-                        <div class="process-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                    <div class="prop-card-body">
+                        <div class="price-row">
+                            <div class="price-wrap">
+                                <span class="price-prefix">Guide Price</span>
+                                <div class="price">₹ 3.50 <span class="cr-lbl">Crore</span></div>
+                            </div>
+                            <span class="price-sqft">₹ 10,145 / sq.ft</span>
                         </div>
-                        <h3>Select Floor & Customization</h3>
-                        <p>Choose your desired floor level, balcony orientation, and interior specification options tailored to your taste.</p>
-                    </div>
-
-                    <div class="process-card">
-                        <div class="process-number">04</div>
-                        <div class="process-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 11 12 14 22 4"/></svg>
+                        <h3 class="prop-title"><a href="properties.html">New Town Independent Luxury House</a></h3>
+                        <div class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Action Area III, New Town, Kolkata</span>
                         </div>
-                        <h3>Direct Legal Registration</h3>
-                        <p>Finalize direct purchase documentation with full legal transparency and seamless key handover.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Listings Section (Distinct Off-White Background) -->
-        <section class="featured-listings-section" id="collection">
-            <div class="featured-container">
-                <div class="featured-header">
-                    <span class="section-pill-badge">Direct Portfolio</span>
-                    <h2 class="section-title-center">Our Featured Buildings for Sale</h2>
-                    <p class="section-subtitle-center">Explore our exclusive inventory of 15+ premier residential building developments across Kolkata.</p>
-                </div>
-                
-                <!-- Carousel Slider Wrapper -->
-                <div class="carousel-slider-wrapper">
-                    <div class="properties-track" id="properties-track">
-                        <!-- Slide 1 -->
-                        <div class="properties-slide">
-                            <div class="properties-grid">
-                                <!-- Card 1 -->
-                                <div class="property-card" data-title="New Town Action Area III Villa" data-price="₹ 3.5 Crore" data-location="New Town, Kolkata" data-img="part1/ezgif-frame-001.jpg">
-                                    <div class="img-wrapper">
-                                        <img src="part1/ezgif-frame-001.jpg" alt="New Town Action Area III Villa">
-                                        <div class="badge status-rent">FOR SALE</div>
-                                        <div class="img-bottom-bar">
-                                            <span class="location-text">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                                    <circle cx="12" cy="10" r="3"/>
-                                                </svg>
-                                                New Town Action Area III, Kolkata
-                                            </span>
-                                            <div class="media-counters">
-                                                <span class="counter"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> 6</span>
-                                                <span class="counter"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> 2</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="card-info">
-                                        <div class="card-price">₹ 3.5 Crore</div>
-                                        <h3 class="card-title">New Town Luxury Villa</h3>
-                                        <p class="card-desc">Exclusive independent gated residence in Kolkata's fast-growing IT and diplomatic hub.</p>
-                                        
-                                        <div class="card-specs-bar">
-                                            <div class="spec-col"><span class="spec-value">4</span><span class="spec-label">Bedrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">4</span><span class="spec-label">Bathrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">3450</span><span class="spec-label">square Ft</span></div>
-                                        </div>
-                                        
-                                        <div class="card-agent-footer">
-                                            <div class="agent-info">
-                                                <img src="part2/ezgif-frame-040.jpg" alt="William Seklo" class="agent-avatar">
-                                                <div class="agent-details">
-                                                    <span class="agent-name">William Seklo</span>
-                                                    <span class="agent-role">Senior Property Advisor</span>
-                                                </div>
-                                            </div>
-                                            <div class="card-actions">
-                                                <button class="action-btn btn-expand" aria-label="Expand">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                                                </button>
-                                                <button class="action-btn btn-favorite" aria-label="Favorite">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                                                </button>
-                                                <button class="action-btn btn-bookmark" aria-label="Bookmark">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <p class="prop-desc">Independent luxury house with private garden lawn, smart home automation, and 24/7 clubhouse access.</p>
+                        <div class="specs-pill-bar">
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">4 BHK</span>
+                                    <span class="lbl">Bedrooms</span>
                                 </div>
-
-                                <!-- Card 2 -->
-                                <div class="property-card" data-title="EM Bypass Waterfront Duplex" data-price="₹ 6.8 Crore" data-location="EM Bypass, Kolkata" data-img="part2/ezgif-frame-040.jpg">
-                                    <div class="img-wrapper">
-                                        <img src="part2/ezgif-frame-040.jpg" alt="EM Bypass Waterfront Duplex">
-                                        <div class="badge status-sale">FOR SALE</div>
-                                        <div class="img-bottom-bar">
-                                            <span class="location-text">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                                    <circle cx="12" cy="10" r="3"/>
-                                                </svg>
-                                                EM Bypass Waterfront, Kolkata
-                                            </span>
-                                            <div class="media-counters">
-                                                <span class="counter"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> 8</span>
-                                                <span class="counter"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> 3</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="card-info">
-                                        <div class="card-price">₹ 6.8 Crore</div>
-                                        <h3 class="card-title">EM Bypass Sky Mansion</h3>
-                                        <p class="card-desc">Panoramic lakeview penthouse with private deck balcony and five-star luxury clubhouse access.</p>
-                                        
-                                        <div class="card-specs-bar">
-                                            <div class="spec-col"><span class="spec-value">4</span><span class="spec-label">Bedrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">5</span><span class="spec-label">Bathrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">4800</span><span class="spec-label">square Ft</span></div>
-                                        </div>
-                                        
-                                        <div class="card-agent-footer">
-                                            <div class="agent-info">
-                                                <img src="part2/ezgif-frame-040.jpg" alt="William Seklo" class="agent-avatar">
-                                                <div class="agent-details">
-                                                    <span class="agent-name">William Seklo</span>
-                                                    <span class="agent-role">Luxury Living Consultant</span>
-                                                </div>
-                                            </div>
-                                            <div class="card-actions">
-                                                <button class="action-btn btn-expand" aria-label="Expand">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                                                </button>
-                                                <button class="action-btn btn-favorite" aria-label="Favorite">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                                                </button>
-                                                <button class="action-btn btn-bookmark" aria-label="Bookmark">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M2 12h20M7 12V7a2 2 0 0 1 2-2h1"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">4 Baths</span>
+                                    <span class="lbl">Bathrooms</span>
                                 </div>
-
-                                <!-- Card 3 -->
-                                <div class="property-card" data-title="Ballygunge Heritage Garden Villa" data-price="₹ 12.5 Crore" data-location="Ballygunge Park, Kolkata" data-img="endpart/ezgif-frame-040.jpg">
-                                    <div class="img-wrapper">
-                                        <img src="endpart/ezgif-frame-040.jpg" alt="Ballygunge Heritage Garden Villa">
-                                        <div class="badge status-rent">FOR SALE</div>
-                                        <div class="img-bottom-bar">
-                                            <span class="location-text">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                                    <circle cx="12" cy="10" r="3"/>
-                                                </svg>
-                                                Ballygunge Park, Kolkata
-                                            </span>
-                                            <div class="media-counters">
-                                                <span class="counter"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> 10</span>
-                                                <span class="counter"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> 4</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="card-info">
-                                        <div class="card-price">₹ 12.5 Crore</div>
-                                        <h3 class="card-title">Ballygunge Garden Estate</h3>
-                                        <p class="card-desc">Prestigious South Kolkata heritage bungalow with expansive private lawn and driveways.</p>
-                                        
-                                        <div class="card-specs-bar">
-                                            <div class="spec-col"><span class="spec-value">6</span><span class="spec-label">Bedrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">6</span><span class="spec-label">Bathrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">6500</span><span class="spec-label">square Ft</span></div>
-                                        </div>
-                                        
-                                        <div class="card-agent-footer">
-                                            <div class="agent-info">
-                                                <img src="part2/ezgif-frame-040.jpg" alt="William Seklo" class="agent-avatar">
-                                                <div class="agent-details">
-                                                    <span class="agent-name">William Seklo</span>
-                                                    <span class="agent-role">Lead Advisory Specialist</span>
-                                                </div>
-                                            </div>
-                                            <div class="card-actions">
-                                                <button class="action-btn btn-expand" aria-label="Expand">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                                                </button>
-                                                <button class="action-btn btn-favorite" aria-label="Favorite">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                                                </button>
-                                                <button class="action-btn btn-bookmark" aria-label="Bookmark">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Card 4 -->
-                                <div class="property-card" data-title="Alipore Luxury Estate Enclave" data-price="₹ 18.0 Crore" data-location="Alipore Estates, Kolkata" data-img="part3/ezgif-frame-040.jpg">
-                                    <div class="img-wrapper">
-                                        <img src="part3/ezgif-frame-040.jpg" alt="Alipore Luxury Estate Enclave">
-                                        <div class="badge status-sale">FOR SALE</div>
-                                        <div class="img-bottom-bar">
-                                            <span class="location-text">
-                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                                    <circle cx="12" cy="10" r="3"/>
-                                                </svg>
-                                                Alipore Estates, Kolkata
-                                            </span>
-                                            <div class="media-counters">
-                                                <span class="counter"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> 12</span>
-                                                <span class="counter"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> 5</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="card-info">
-                                        <div class="card-price">₹ 18.0 Crore</div>
-                                        <h3 class="card-title">Alipore Royal Sanctuary</h3>
-                                        <p class="card-desc">Ultra luxury independent bungalow in Kolkata's most coveted VIP neighborhood.</p>
-                                        
-                                        <div class="card-specs-bar">
-                                            <div class="spec-col"><span class="spec-value">5</span><span class="spec-label">Bedrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">6</span><span class="spec-label">Bathrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">8200</span><span class="spec-label">square Ft</span></div>
-                                        </div>
-                                        
-                                        <div class="card-agent-footer">
-                                            <div class="agent-info">
-                                                <img src="part2/ezgif-frame-040.jpg" alt="William Seklo" class="agent-avatar">
-                                                <div class="agent-details">
-                                                    <span class="agent-name">William Seklo</span>
-                                                    <span class="agent-role">Senior Property Advisor</span>
-                                                </div>
-                                            </div>
-                                            <div class="card-actions">
-                                                <button class="action-btn btn-expand" aria-label="Expand">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
-                                                </button>
-                                                <button class="action-btn btn-favorite" aria-label="Favorite">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                                                </button>
-                                                <button class="action-btn btn-bookmark" aria-label="Bookmark">
-                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">3,450</span>
+                                    <span class="lbl">Sq Ft Area</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-card-inquire">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                        <!-- Slide 2 -->
-                        <div class="properties-slide">
-                            <div class="properties-grid">
-                                <!-- Card 5 -->
-                                <div class="property-card" data-title="Salt Lake Sector V Penthouse" data-price="₹ 2.8 Crore" data-location="Salt Lake, Kolkata" data-img="part1/ezgif-frame-120.jpg">
-                                    <div class="img-wrapper">
-                                        <img src="part1/ezgif-frame-120.jpg" alt="Salt Lake Sector V Penthouse">
-                                        <div class="badge status-sale">FOR SALE</div>
-                                        <div class="img-bottom-bar">
-                                            <span class="location-text">Salt Lake Sector V, Kolkata</span>
-                                            <div class="media-counters"><span class="counter">8 Photos</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="card-price">₹ 2.8 Crore</div>
-                                        <h3 class="card-title">Salt Lake Skyline Suite</h3>
-                                        <p class="card-desc">Modern glass high-rise apartment near IT sector with direct metro connectivity.</p>
-                                        <div class="card-specs-bar">
-                                            <div class="spec-col"><span class="spec-value">3</span><span class="spec-label">Bedrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">3</span><span class="spec-label">Bathrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">2600</span><span class="spec-label">square Ft</span></div>
-                                        </div>
-                                        <div class="card-agent-footer">
-                                            <div class="agent-info">
-                                                <img src="part2/ezgif-frame-040.jpg" alt="Alexander Vance" class="agent-avatar">
-                                                <div class="agent-details"><span class="agent-name">Alexander Vance</span><span class="agent-role">Managing Advisor</span></div>
-                                            </div>
-                                            <div class="card-actions">
-                                                <button class="action-btn btn-expand"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
-                                                <button class="action-btn btn-favorite"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-                                                <button class="action-btn btn-bookmark"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
+                <!-- Card 2 -->
+                <div class="prop-card" data-category="ultra under-construction">
+                    <div class="prop-card-img" onclick="openPropGallery(2, event)">
+                        <img src="part2/ezgif-frame-040.jpg" alt="EM Bypass Sky Mansion" loading="lazy">
+                        <div class="badge-glass-wrap">
+                            <span class="badge-glass"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> FEATURED TOWER</span>
+                        </div>
+                        <div class="prop-img-overlay">
+                            <span class="tag-status-luxury under-construction"><span class="status-pulse pulse-blue"></span> Under Construction</span>
+                            <span class="tag-photo-count" onclick="openPropGallery(2, event)" title="View all 16 photos"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> 16 Photos</span>
+                        </div>
+                    </div>
+                    <div class="prop-card-body">
+                        <div class="price-row">
+                            <div class="price-wrap">
+                                <span class="price-prefix">Guide Price</span>
+                                <div class="price">₹ 6.80 <span class="cr-lbl">Crore</span></div>
+                            </div>
+                            <span class="price-sqft">₹ 14,166 / sq.ft</span>
+                        </div>
+                        <h3 class="prop-title"><a href="properties.html">EM Bypass Lakeview Sky Mansion</a></h3>
+                        <div class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Waterfront Corridor, EM Bypass, Kolkata</span>
+                        </div>
+                        <p class="prop-desc">Panoramic lakeview sky residence with 40-ft private deck terrace, infinity pool, and concierge hospitality.</p>
+                        <div class="specs-pill-bar">
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">4 BHK</span>
+                                    <span class="lbl">Bedrooms</span>
                                 </div>
-                                <!-- Card 6 -->
-                                <div class="property-card" data-title="Southern Avenue Lakeview Suite" data-price="₹ 4.2 Crore" data-location="Southern Avenue, Kolkata" data-img="part2/ezgif-frame-100.jpg">
-                                    <div class="img-wrapper">
-                                        <img src="part2/ezgif-frame-100.jpg" alt="Southern Avenue Lakeview Suite">
-                                        <div class="badge status-sale">FOR SALE</div>
-                                        <div class="img-bottom-bar">
-                                            <span class="location-text">Southern Avenue, Kolkata</span>
-                                            <div class="media-counters"><span class="counter">12 Photos</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="card-price">₹ 4.2 Crore</div>
-                                        <h3 class="card-title">Southern Avenue Lakeview</h3>
-                                        <p class="card-desc">Breathtaking Rabindra Sarobar lake facing luxury floor with private elevator lobby.</p>
-                                        <div class="card-specs-bar">
-                                            <div class="spec-col"><span class="spec-value">4</span><span class="spec-label">Bedrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">4</span><span class="spec-label">Bathrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">3800</span><span class="spec-label">square Ft</span></div>
-                                        </div>
-                                        <div class="card-agent-footer">
-                                            <div class="agent-info">
-                                                <img src="part2/ezgif-frame-040.jpg" alt="William Seklo" class="agent-avatar">
-                                                <div class="agent-details"><span class="agent-name">William Seklo</span><span class="agent-role">Senior Property Advisor</span></div>
-                                            </div>
-                                            <div class="card-actions">
-                                                <button class="action-btn btn-expand"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
-                                                <button class="action-btn btn-favorite"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-                                                <button class="action-btn btn-bookmark"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M2 12h20M7 12V7a2 2 0 0 1 2-2h1"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">5 Baths</span>
+                                    <span class="lbl">Bathrooms</span>
                                 </div>
-                                <!-- Card 7 -->
-                                <div class="property-card" data-title="Rajarhat Expressway Villa" data-price="₹ 1.8 Crore" data-location="Rajarhat, Kolkata" data-img="endpart/ezgif-frame-060.jpg">
-                                    <div class="img-wrapper">
-                                        <img src="endpart/ezgif-frame-060.jpg" alt="Rajarhat Expressway Villa">
-                                        <div class="badge status-rent">FOR SALE</div>
-                                        <div class="img-bottom-bar">
-                                            <span class="location-text">Rajarhat Expressway, Kolkata</span>
-                                            <div class="media-counters"><span class="counter">6 Photos</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="card-price">₹ 1.8 Crore</div>
-                                        <h3 class="card-title">Rajarhat Gated Villa</h3>
-                                        <p class="card-desc">Modern 3-bedroom villa with private green garden in a fully secured gated community.</p>
-                                        <div class="card-specs-bar">
-                                            <div class="spec-col"><span class="spec-value">3</span><span class="spec-label">Bedrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">3</span><span class="spec-label">Bathrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">2200</span><span class="spec-label">square Ft</span></div>
-                                        </div>
-                                        <div class="card-agent-footer">
-                                            <div class="agent-info">
-                                                <img src="part2/ezgif-frame-040.jpg" alt="William Seklo" class="agent-avatar">
-                                                <div class="agent-details"><span class="agent-name">William Seklo</span><span class="agent-role">Luxury Living Consultant</span></div>
-                                            </div>
-                                            <div class="card-actions">
-                                                <button class="action-btn btn-expand"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
-                                                <button class="action-btn btn-favorite"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-                                                <button class="action-btn btn-bookmark"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card 8 -->
-                                <div class="property-card" data-title="Park Street Urban Mansion" data-price="₹ 8.5 Crore" data-location="Park Street, Kolkata" data-img="part3/ezgif-frame-080.jpg">
-                                    <div class="img-wrapper">
-                                        <img src="part3/ezgif-frame-080.jpg" alt="Park Street Urban Mansion">
-                                        <div class="badge status-sale">FOR SALE</div>
-                                        <div class="img-bottom-bar">
-                                            <span class="location-text">Park Street Enclave, Kolkata</span>
-                                            <div class="media-counters"><span class="counter">9 Photos</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="card-info">
-                                        <div class="card-price">₹ 8.5 Crore</div>
-                                        <h3 class="card-title">Park Street Enclave</h3>
-                                        <p class="card-desc">Elite luxury floor in Central Kolkata's most iconic heritage cultural corridor.</p>
-                                        <div class="card-specs-bar">
-                                            <div class="spec-col"><span class="spec-value">4</span><span class="spec-label">Bedrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">5</span><span class="spec-label">Bathrooms</span></div>
-                                            <div class="spec-col"><span class="spec-value">5100</span><span class="spec-label">square Ft</span></div>
-                                        </div>
-                                        <div class="card-agent-footer">
-                                            <div class="agent-info">
-                                                <img src="part2/ezgif-frame-040.jpg" alt="Alexander Vance" class="agent-avatar">
-                                                <div class="agent-details"><span class="agent-name">Alexander Vance</span><span class="agent-role">Managing Advisor</span></div>
-                                            </div>
-                                            <div class="card-actions">
-                                                <button class="action-btn btn-expand"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
-                                                <button class="action-btn btn-favorite"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
-                                                <button class="action-btn btn-bookmark"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></button>
-                                            </div>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">4,800</span>
+                                    <span class="lbl">Sq Ft Area</span>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-card-inquire">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Card 3 -->
+                <div class="prop-card" data-category="ultra ready">
+                    <div class="prop-card-img" onclick="openPropGallery(3, event)">
+                        <img src="endpart/ezgif-frame-040.jpg" alt="Ballygunge Garden Estate" loading="lazy">
+                        <div class="badge-glass-wrap">
+                            <span class="badge-glass"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> HERITAGE ESTATE</span>
+                        </div>
+                        <div class="prop-img-overlay">
+                            <span class="tag-status-luxury ready"><span class="status-pulse pulse-green"></span> Ready to Move</span>
+                            <span class="tag-photo-count" onclick="openPropGallery(3, event)" title="View all 18 photos"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> 18 Photos</span>
+                        </div>
+                    </div>
+                    <div class="prop-card-body">
+                        <div class="price-row">
+                            <div class="price-wrap">
+                                <span class="price-prefix">Guide Price</span>
+                                <div class="price">₹ 12.50 <span class="cr-lbl">Crore</span></div>
+                            </div>
+                            <span class="price-sqft">₹ 19,230 / sq.ft</span>
+                        </div>
+                        <h3 class="prop-title"><a href="properties.html">Ballygunge Heritage Garden Estate</a></h3>
+                        <div class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Ballygunge Park, South Kolkata</span>
+                        </div>
+                        <p class="prop-desc">Prestigious South Kolkata sanctuary with private lawn, majestic driveway, and grand architectural lineage.</p>
+                        <div class="specs-pill-bar">
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">6 BHK</span>
+                                    <span class="lbl">Bedrooms</span>
+                                </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M2 12h20M7 12V7a2 2 0 0 1 2-2h1"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">6 Baths</span>
+                                    <span class="lbl">Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">6,500</span>
+                                    <span class="lbl">Sq Ft Area</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-card-inquire">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="prop-card" data-category="ultra ready">
+                    <div class="prop-card-img" onclick="openPropGallery(4, event)">
+                        <img src="part3/ezgif-frame-040.jpg" alt="Alipore Royal Sanctuary" loading="lazy">
+                        <div class="badge-glass-wrap">
+                            <span class="badge-glass"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> VIP ENCLAVE</span>
+                        </div>
+                        <div class="prop-img-overlay">
+                            <span class="tag-status-luxury ready"><span class="status-pulse pulse-green"></span> Ready to Move</span>
+                            <span class="tag-photo-count" onclick="openPropGallery(4, event)" title="View all 20 photos"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> 20 Photos</span>
+                        </div>
+                    </div>
+                    <div class="prop-card-body">
+                        <div class="price-row">
+                            <div class="price-wrap">
+                                <span class="price-prefix">Guide Price</span>
+                                <div class="price">₹ 18.00 <span class="cr-lbl">Crore</span></div>
+                            </div>
+                            <span class="price-sqft">₹ 21,950 / sq.ft</span>
+                        </div>
+                        <h3 class="prop-title"><a href="properties.html">Alipore Royal Sanctuary Estate</a></h3>
+                        <div class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Alipore Estates, VIP Quarter, Kolkata</span>
+                        </div>
+                        <p class="prop-desc">Ultra luxury private bungalow in Kolkata's most coveted VIP address with private swimming pool and gardens.</p>
+                        <div class="specs-pill-bar">
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">5 BHK</span>
+                                    <span class="lbl">Bedrooms</span>
+                                </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M2 12h20M7 12V7a2 2 0 0 1 2-2h1"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">6 Baths</span>
+                                    <span class="lbl">Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">8,200</span>
+                                    <span class="lbl">Sq Ft Area</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-card-inquire">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="prop-card" data-category="ready under-construction">
+                    <div class="prop-card-img" onclick="openPropGallery(5, event)">
+                        <img src="part1/ezgif-frame-120.jpg" alt="Salt Lake Skyline Suite" loading="lazy">
+                        <div class="badge-glass-wrap">
+                            <span class="badge-glass"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> IT HUB TOWERS</span>
+                        </div>
+                        <div class="prop-img-overlay">
+                            <span class="tag-status-luxury under-construction"><span class="status-pulse pulse-blue"></span> Under Construction</span>
+                            <span class="tag-photo-count" onclick="openPropGallery(5, event)" title="View all 14 photos"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> 14 Photos</span>
+                        </div>
+                    </div>
+                    <div class="prop-card-body">
+                        <div class="price-row">
+                            <div class="price-wrap">
+                                <span class="price-prefix">Guide Price</span>
+                                <div class="price">₹ 2.80 <span class="cr-lbl">Crore</span></div>
+                            </div>
+                            <span class="price-sqft">₹ 10,769 / sq.ft</span>
+                        </div>
+                        <h3 class="prop-title"><a href="properties.html">Salt Lake Skyline Luxury Suite</a></h3>
+                        <div class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Sector V, Salt Lake, Kolkata</span>
+                        </div>
+                        <p class="prop-desc">Glass facade high-rise apartment near IT sector with direct metro connectivity and smart automation.</p>
+                        <div class="specs-pill-bar">
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">3 BHK</span>
+                                    <span class="lbl">Bedrooms</span>
+                                </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M2 12h20M7 12V7a2 2 0 0 1 2-2h1"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">3 Baths</span>
+                                    <span class="lbl">Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">2,600</span>
+                                    <span class="lbl">Sq Ft Area</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-card-inquire">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="prop-card" data-category="ready ultra">
+                    <div class="prop-card-img" onclick="openPropGallery(6, event)">
+                        <img src="part2/ezgif-frame-100.jpg" alt="Southern Avenue Lakeview" loading="lazy">
+                        <div class="badge-glass-wrap">
+                            <span class="badge-glass"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg> LAKEFRONT LIVING</span>
+                        </div>
+                        <div class="prop-img-overlay">
+                            <span class="tag-status-luxury ready"><span class="status-pulse pulse-green"></span> Ready to Move</span>
+                            <span class="tag-photo-count" onclick="openPropGallery(6, event)" title="View all 15 photos"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg> 15 Photos</span>
+                        </div>
+                    </div>
+                    <div class="prop-card-body">
+                        <div class="price-row">
+                            <div class="price-wrap">
+                                <span class="price-prefix">Guide Price</span>
+                                <div class="price">₹ 4.20 <span class="cr-lbl">Crore</span></div>
+                            </div>
+                            <span class="price-sqft">₹ 15,000 / sq.ft</span>
+                        </div>
+                        <h3 class="prop-title"><a href="properties.html">Southern Avenue Parkview Residence</a></h3>
+                        <div class="location">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Rabindra Sarobar Lakefront, Southern Avenue</span>
+                        </div>
+                        <p class="prop-desc">Breathtaking lake facing luxury residence with Italian marble interiors and exclusive club membership.</p>
+                        <div class="specs-pill-bar">
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">3 BHK</span>
+                                    <span class="lbl">Bedrooms</span>
+                                </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6M2 12h20M7 12V7a2 2 0 0 1 2-2h1"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">3 Baths</span>
+                                    <span class="lbl">Bathrooms</span>
+                                </div>
+                            </div>
+                            <div class="spec-pill-divider"></div>
+                            <div class="spec-pill">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                                <div class="spec-meta">
+                                    <span class="val">2,800</span>
+                                    <span class="lbl">Sq Ft Area</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action-bar">
+                            <a href="contact.html" class="btn-card-inquire">
+                                <span>INQUIRE NOW</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="tel:+913322008800" class="btn-card-call" title="Speak to Advisor">
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                        <!-- Card 7: Explore Full Collection -->
             </div>
-        </section>
 
-        <!-- Kolkata Neighborhood Guide -->
-        <section class="neighborhood-section" id="neighborhoods">
-            <div class="neighborhood-container">
-                <div class="neighborhood-header">
-                    <span class="section-pill-badge">Location Spotlight</span>
-                    <h2 class="section-title-center">Explore Kolkata's Prime Enclaves</h2>
-                    <p class="section-subtitle-center">Discover the distinctive charm, lifestyle, and property dynamics across Kolkata's finest districts.</p>
-                </div>
-
-                <div class="neighborhood-grid">
-                    <div class="neighborhood-card">
-                        <img src="part1/ezgif-frame-060.jpg" alt="Alipore Kolkata" class="neighborhood-bg">
-                        <div class="neighborhood-overlay">
-                            <span class="location-badge">South Kolkata</span>
-                            <h3>Alipore & New Alipore</h3>
-                            <p>Kolkata's most prestigious heritage avenue, known for sprawling greenery, high-security estates, and high-net-worth residency.</p>
-                            <div class="neighborhood-stats">
-                                <span>Avg. Price: <strong>₹18,000/sq.ft</strong></span>
-                                <span>Focus: <strong>Bungalows & Penthouses</strong></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="neighborhood-card">
-                        <img src="part2/ezgif-frame-040.jpg" alt="Ballygunge Kolkata" class="neighborhood-bg">
-                        <div class="neighborhood-overlay">
-                            <span class="location-badge">Central South</span>
-                            <h3>Ballygunge & Southern Avenue</h3>
-                            <p>The cultural and aristocratic heart of Kolkata, offering tree-lined boulevards, fine dining, and elite apartment residences.</p>
-                            <div class="neighborhood-stats">
-                                <span>Avg. Price: <strong>₹15,500/sq.ft</strong></span>
-                                <span>Focus: <strong>Luxury Apartments</strong></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="neighborhood-card">
-                        <img src="part3/ezgif-frame-080.jpg" alt="EM Bypass Kolkata" class="neighborhood-bg">
-                        <div class="neighborhood-overlay">
-                            <span class="location-badge">Waterfront Corridor</span>
-                            <h3>EM Bypass & Science City</h3>
-                            <p>Kolkata’s luxury sky corridor featuring iconic high-rise towers, panoramic wetland views, and five-star luxury amenities.</p>
-                            <div class="neighborhood-stats">
-                                <span>Avg. Price: <strong>₹14,000/sq.ft</strong></span>
-                                <span>Focus: <strong>Sky Condos & Duplexes</strong></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="neighborhood-card">
-                        <img src="endpart/ezgif-frame-040.jpg" alt="New Town Kolkata" class="neighborhood-bg">
-                        <div class="neighborhood-overlay">
-                            <span class="location-badge">Smart City Hub</span>
-                            <h3>New Town Action Area I, II & III</h3>
-                            <p>Modern planned township with futuristic infrastructure, tech parks, wide expressways, and gated luxury villas.</p>
-                            <div class="neighborhood-stats">
-                                <span>Avg. Price: <strong>₹9,500/sq.ft</strong></span>
-                                <span>Focus: <strong>Gated Villas & Smart Homes</strong></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="neighborhood-card">
-                        <img src="endpart/ezgif-frame-060.jpg" alt="Salt Lake Kolkata" class="neighborhood-bg">
-                        <div class="neighborhood-overlay">
-                            <span class="location-badge">North East Hub</span>
-                            <h3>Salt Lake (Bidhannagar)</h3>
-                            <p>Planned green sector blocks with calm residential avenues, near Sector V IT hub and premier healthcare facilities.</p>
-                            <div class="neighborhood-stats">
-                                <span>Avg. Price: <strong>₹11,000/sq.ft</strong></span>
-                                <span>Focus: <strong>Independent Floors & Plots</strong></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Apartments Plan / Floor Plan Section -->
-        <section class="floor-plan-section" id="floor-plans">
-            <div class="floor-plan-container">
-                <div class="floor-plan-header">
-                    <span class="section-pill-badge">Apartment Sketch</span>
-                    <h2 class="section-title-center">Apartments Plan</h2>
-                </div>
-
-                <!-- Category Navigation Tabs -->
-                <div class="plan-tabs">
-                    <button class="plan-tab-btn" data-plan="studio">The Studio</button>
-                    <button class="plan-tab-btn active" data-plan="deluxe">Deluxe Portion</button>
-                    <button class="plan-tab-btn" data-plan="penthouse">Penthouse</button>
-                    <button class="plan-tab-btn" data-plan="topgarden">Top Garden</button>
-                    <button class="plan-tab-btn" data-plan="doubleheight">Double Height</button>
-                </div>
-
-                <!-- Floor Plan Grid -->
-                <div class="plan-content-grid">
-                    <!-- Left Spec Card -->
-                    <div class="plan-spec-card">
-                        <h3 class="plan-title" id="plan-name">Deluxe Portion</h3>
-                        <p class="plan-desc">
-                            Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons actetur adipisicing elit sedo eiusmod tempor. Incididunt labore et dolore magna aliqua.
-                        </p>
-
-                        <div class="plan-specs-list">
-                            <div class="plan-spec-row">
-                                <span class="spec-name">Total Area</span>
-                                <span class="spec-dots"></span>
-                                <span class="spec-val" id="spec-area">2800 Sq. Ft</span>
-                            </div>
-                            <div class="plan-spec-row">
-                                <span class="spec-name">Bedroom</span>
-                                <span class="spec-dots"></span>
-                                <span class="spec-val" id="spec-bed">150 Sq. Ft</span>
-                            </div>
-                            <div class="plan-spec-row">
-                                <span class="spec-name">Bathroom</span>
-                                <span class="spec-dots"></span>
-                                <span class="spec-val" id="spec-bath">45 Sq. Ft</span>
-                            </div>
-                            <div class="plan-spec-row">
-                                <span class="spec-name">Belcony/Pets</span>
-                                <span class="spec-dots"></span>
-                                <span class="spec-val" id="spec-pets">Allowed</span>
-                            </div>
-                            <div class="plan-spec-row">
-                                <span class="spec-name">Lounge</span>
-                                <span class="spec-dots"></span>
-                                <span class="spec-val" id="spec-lounge">650 Sq. Ft</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Blueprint Visual -->
-                    <div class="plan-blueprint-container">
-                        <div class="blueprint-svg-wrapper">
-                            <svg viewBox="0 0 800 550" class="blueprint-svg" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                                        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(16, 40, 79, 0.08)" stroke-width="1"/>
-                                    </pattern>
-                                </defs>
-                                <rect width="100%" height="100%" fill="url(#grid)" />
-
-                                <!-- Outer Wall Boundaries -->
-                                <path d="M 100 80 L 700 80 L 700 480 L 100 480 Z" fill="none" stroke="#111111" stroke-width="8"/>
-                                <path d="M 380 80 L 380 480" fill="none" stroke="#111111" stroke-width="6"/>
-                                <path d="M 100 300 L 380 300" fill="none" stroke="#111111" stroke-width="6"/>
-                                <path d="M 380 240 L 700 240" fill="none" stroke="#111111" stroke-width="6"/>
-
-                                <!-- Rooms Labels & Icons -->
-                                <text x="240" y="180" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="15" font-weight="700" fill="#111111">MASTER BEDROOM</text>
-                                <text x="240" y="205" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#10284F">15' x 18'</text>
-
-                                <text x="240" y="380" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="15" font-weight="700" fill="#111111">LUXURY BATHROOM</text>
-                                <text x="240" y="405" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#10284F">10' x 14'</text>
-
-                                <text x="540" y="160" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="15" font-weight="700" fill="#111111">GRAND LOUNGE & DINING</text>
-                                <text x="540" y="185" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#10284F">25' x 30'</text>
-
-                                <text x="540" y="340" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="15" font-weight="700" fill="#111111">OPEN CHEF KITCHEN</text>
-                                <text x="540" y="365" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" fill="#10284F">16' x 20'</text>
-
-                                <text x="540" y="440" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="13" font-weight="600" fill="#10284F">SUN TERRACE & BALCONY</text>
-
-                                <!-- Door Swings & Fixtures -->
-                                <path d="M 380 160 A 40 40 0 0 1 340 120" fill="none" stroke="#10284F" stroke-width="2" stroke-dasharray="4,4"/>
-                                <path d="M 380 360 A 40 40 0 0 1 340 320" fill="none" stroke="#10284F" stroke-width="2" stroke-dasharray="4,4"/>
-
-                                <!-- Dimension Lines -->
-                                <line x1="100" y1="50" x2="700" y2="50" stroke="#10284F" stroke-width="1.5" stroke-dasharray="3,3"/>
-                                <text x="400" y="42" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" font-weight="600" fill="#10284F">56' - 0"</text>
-
-                                <line x1="60" y1="80" x2="60" y2="480" stroke="#10284F" stroke-width="1.5" stroke-dasharray="3,3"/>
-                                <text x="50" y="280" text-anchor="middle" font-family="Plus Jakarta Sans" font-size="12" font-weight="600" fill="#10284F" transform="rotate(-90 50 280)">40' - 0"</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- NRI & Overseas Advisory Desk -->
-        <section class="nri-desk-section" id="nri-desk">
-            <div class="nri-container">
-                <div class="nri-card-wrapper">
-                    <div class="nri-content">
-                        <span class="nri-pill">Global Bengali & NRI Desk</span>
-                        <h2>Investing in Kolkata from Abroad?</h2>
-                        <p>We specialize in helping Non-Resident Indians (NRIs) and overseas families seamlessly acquire, manage, and verify premier real estate in Kolkata with total peace of mind.</p>
-                        <div class="nri-features">
-                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Live 4K Video Walkthroughs</div>
-                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Power of Attorney (POA) Support</div>
-                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> RBI / FEMA Tax & Legal Guidance</div>
-                            <div class="nri-feat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Rental & Property Management</div>
-                        </div>
-                        <button class="btn-primary" onclick="showToast('NRI Consultation request logged. Our international advisor will contact you.')">BOOK PRIVATE NRI CONSULTATION</button>
-                    </div>
-                    <div class="nri-image">
-                        <img src="part3/ezgif-frame-080.jpg" alt="NRI Luxury Living Kolkata">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Property Value Estimator -->
-        <section class="estimator-section" id="estimator">
-            <div class="estimator-container">
-                <div class="estimator-header">
-                    <span class="section-pill-badge">Advisory Tool</span>
-                    <h2 class="section-title-center">Kolkata Property Value Estimator</h2>
-                    <p class="section-subtitle-center">Get an instant, benchmarked market valuation estimate for luxury properties in Kolkata.</p>
-                </div>
-
-                <div class="estimator-box">
-                    <div class="estimator-form">
-                        <div class="form-group">
-                            <label>Select Kolkata Location</label>
-                            <select id="est-location" class="est-input" onchange="calculateValuation()">
-                                <option value="alipore">Alipore / New Alipore (₹18,000/sq.ft)</option>
-                                <option value="ballygunge" selected>Ballygunge / Southern Ave (₹15,500/sq.ft)</option>
-                                <option value="embypass">EM Bypass Corridor (₹14,000/sq.ft)</option>
-                                <option value="saltlake">Salt Lake Sector V (₹11,000/sq.ft)</option>
-                                <option value="newtown">New Town Action Area III (₹9,500/sq.ft)</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Property Type</label>
-                            <select id="est-type" class="est-input" onchange="calculateValuation()">
-                                <option value="apartment">Luxury Apartment / High-Rise</option>
-                                <option value="duplex">Sky Duplex / Penthouse (+20% Premium)</option>
-                                <option value="villa">Independent Gated Villa (+30% Premium)</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Built-Up Area (Sq. Ft.): <span id="sqft-val" style="color:#10284F; font-weight:700;">2,500</span> Sq.Ft</label>
-                            <input type="range" id="est-sqft" min="1000" max="10000" step="250" value="2500" class="est-slider" oninput="calculateValuation()">
-                        </div>
-                    </div>
-
-                    <div class="estimator-result">
-                        <span class="res-badge">Estimated Market Value</span>
-                        <div class="res-price" id="est-result-price">₹ 4.65 Crore</div>
-                        <p class="res-sub">Estimated Price Range: <strong id="est-range" style="color:#111111;">₹ 4.40 Cr &ndash; ₹ 4.90 Cr</strong></p>
-                        <div class="res-note">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                            Values are based on Q1 2026 Kolkata market benchmarks for A-grade construction.
-                        </div>
-                        <button class="btn-primary" style="margin-top:20px; width:100%; justify-content:center;" onclick="showToast('Valuation report requested. An advisor will prepare a detailed analysis.')">REQUEST OFFICIAL VALUATION REPORT</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Client Testimonials -->
-        <section class="testimonials-section" id="testimonials">
-            <div class="testimonials-container">
-                <div class="testimonials-header">
-                    <span class="section-pill-badge">Client Stories</span>
-                    <h2 class="section-title-center">What Our Clients Say</h2>
-                    <p class="section-subtitle-center">Read feedback from discerning Kolkata homeowners and international NRI buyers.</p>
-                </div>
-
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="quote">"Finding an exclusive penthouse on EM Bypass without the usual high-pressure sales pitch was a breath of fresh air. Luxe Living acted as true family advisors."</p>
-                        <div class="client-info">
-                            <img src="part2/ezgif-frame-040.jpg" alt="Dr. S. Roy" class="client-avatar">
-                            <div>
-                                <h4>Dr. S. Roy</h4>
-                                <span>Ballygunge, Kolkata</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="quote">"Living in London, securing an independent villa in New Town was intimidating. Their video walkthroughs and legal verification gave us complete confidence."</p>
-                        <div class="client-info">
-                            <img src="part2/ezgif-frame-040.jpg" alt="Anirban Mukherjee" class="client-avatar">
-                            <div>
-                                <h4>Anirban Mukherjee</h4>
-                                <span>NRI Investor, UK</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                        <p class="quote">"They helped us acquire a legacy estate in Alipore with complete transparency and zero stress. The team handles everything with discretion and polish."</p>
-                        <div class="client-info">
-                            <img src="part2/ezgif-frame-040.jpg" alt="Priya & Rahul Banerjee" class="client-avatar">
-                            <div>
-                                <h4>Priya & Rahul Banerjee</h4>
-                                <span>Alipore Residents</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interactive Property Modal -->
-        <div class="modal-overlay" id="property-modal">
-            <div class="modal-content">
-                <button class="modal-close" id="modal-close-btn">&times;</button>
-                <div class="modal-body">
-                    <div class="modal-img-container">
-                        <img src="" id="modal-img" alt="Property Image">
-                    </div>
-                    <div class="modal-details">
-                        <span class="modal-price" id="modal-price"></span>
-                        <h2 class="modal-title" id="modal-title"></h2>
-                        <p class="modal-location" id="modal-location"></p>
-                        <p class="modal-desc">This premier luxury estate represents the pinnacle of architectural design, fine craftsmanship, and resort-style living. Features include custom smart home systems, private outdoor dining terraces, and panoramic floor-to-ceiling glass corridors.</p>
-                        <div class="modal-inquire-form">
-                            <h3>Request Private Showing</h3>
-                            <input type="text" placeholder="Your Name" class="modal-input">
-                            <input type="email" placeholder="Your Email Address" class="modal-input">
-                            <button class="btn-primary" style="width:100%; justify-content:center;" onclick="showToast('Inquiry sent successfully! Our agent will contact you shortly.')">SEND INQUIRY</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="portal-showcase-footer">
+                <a href="properties.html" class="btn-view-all">
+                    <span>Explore All 15+ Properties</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
             </div>
         </div>
+    </section>
 
-        <!-- Interactive Video Tour Modal -->
-        <div class="modal-overlay" id="video-modal">
-            <div class="modal-content video-modal-content">
-                <button class="modal-close" id="video-modal-close">&times;</button>
-                <div class="video-modal-header">
-                    <h3>Virtual Estate 360&deg; Walkthrough</h3>
-                </div>
-                <div class="video-modal-player">
-                    <img src="part2/ezgif-frame-080.jpg" alt="Virtual Tour Video Preview" class="video-preview-img">
-                    <div class="video-overlay-play">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#10284F"><polygon points="8 5 19 12 8 19 8 5"/></svg>
-                        <p>Click to stream 4K Ultra-HD Tour</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Toast Alert Container -->
-        <div class="toast-notification" id="toast-notification">Notification Message</div>
-
-        <!-- Kolkata Luxury Living Journal -->
-        <section class="journal-section" id="journal">
-            <div class="journal-container">
-                <div class="journal-header">
-                    <span class="section-pill-badge">Advisory Journal</span>
-                    <h2 class="section-title-center">Kolkata Real Estate Insights</h2>
-                    <p class="section-subtitle-center">Stay informed with expert analysis on Kolkata's luxury property market, architectural trends, and investment opportunities.</p>
-                </div>
-
-                <div class="journal-grid">
-                    <article class="journal-card">
-                        <div class="journal-img-wrapper">
-                            <img src="part1/ezgif-frame-060.jpg" alt="EM Bypass Sky Condos">
-                            <span class="journal-tag">Market Trend</span>
-                        </div>
-                        <div class="journal-body">
-                            <span class="journal-date">January 2026</span>
-                            <h3>Why EM Bypass is Becoming Kolkata’s Luxury Sky Corridor</h3>
-                            <p>An in-depth look at how lakeside views and five-star amenities are attracting high-net-worth buyers to Kolkata's eastern arterial corridor.</p>
-                            <a href="javascript:void(0)" onclick="showToast('Article: Why EM Bypass is Kolkata Luxury Sky Corridor')" class="read-more">Read Insight &rarr;</a>
-                        </div>
-                    </article>
-
-                    <article class="journal-card">
-                        <div class="journal-img-wrapper">
-                            <img src="endpart/ezgif-frame-040.jpg" alt="New Town Gated Villas">
-                            <span class="journal-tag">Buyers Guide</span>
-                        </div>
-                        <div class="journal-body">
-                            <span class="journal-date">February 2026</span>
-                            <h3>Gated Villa Communities vs High-Rise Penthouses in New Town</h3>
-                            <p>Evaluating space, privacy, security, and long-term appreciation for luxury buyers in Kolkata’s smart township.</p>
-                            <a href="javascript:void(0)" onclick="showToast('Article: Gated Villa vs High-Rise in New Town')" class="read-more">Read Insight &rarr;</a>
-                        </div>
-                    </article>
-
-                    <article class="journal-card">
-                        <div class="journal-img-wrapper">
-                            <img src="part3/ezgif-frame-080.jpg" alt="NRI Investment Guide">
-                            <span class="journal-tag">NRI Advisory</span>
-                        </div>
-                        <div class="journal-body">
-                            <span class="journal-date">March 2026</span>
-                            <h3>Navigating NRI Real Estate Investments in West Bengal</h3>
-                            <p>Essential checklist covering repatriation of funds, FEMA compliance, and property management for overseas buyers.</p>
-                            <a href="javascript:void(0)" onclick="showToast('Article: NRI Real Estate Guide Kolkata')" class="read-more">Read Insight &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="footer" id="contact">
-            <div class="footer-inner">
-                <div class="footer-col logo-col">
-                    <div class="logo-container">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10284F" stroke-width="1.8">
-                            <path d="M12 3L3 9v12h18V9l-9-6z"/>
-                            <path d="M9 21V12h6v9"/>
-                            <path d="M12 9v12"/>
-                        </svg>
-                        <span class="logo">LUXE LIVING</span>
-                    </div>
-                    <p class="footer-desc">
-                        Kolkata's premier luxury real estate advisory, curating elite heritage estates, high-rise penthouses, and riverside sanctuaries.
-                    </p>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="properties.html">Properties</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Estates</h4>
-                    <ul>
-                        <li><a href="properties.html">Alipore Estates</a></li>
-                        <li><a href="properties.html">Ballygunge Residences</a></li>
-                        <li><a href="properties.html">EM Bypass Towers</a></li>
-                        <li><a href="properties.html">Salt Lake Villas</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <p class="contact-info">EM Bypass, Park Circus Connector, Kolkata, West Bengal 700046</p>
-                    <p class="contact-info">inquire@luxelivingkolkata.com</p>
-                    <p class="contact-info">+91 (33) 2200 8800</p>
-                </div>
-            </div>
+    <!-- Kolkata Micro-Location Neighborhood Explorer Grid -->
+    <!-- 6. About Steady Shield Realtech (2026 Architectural Monograph Showcase) -->
+    <section class="monograph-about-section" id="home-about">
+        <div class="section-inner">
             
-            <div class="footer-bottom">
-                <p>&copy; 2026 LUXE LIVING Real Estate. All rights reserved.</p>
+            <!-- Top Ultra-Clean Architectural Eyebrow -->
+            <div class="monograph-top-header">
+                <div class="mono-tag">
+                    <span class="mono-pulse-dot"></span>
+                    <span>Private Residential Advisory</span>
+                </div>
+                <div class="mono-sep-line"></div>
+                <div class="mono-location">Kolkata • Established 2015</div>
+                <div class="mono-sep-line"></div>
+                <div class="mono-compliance">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>100% WBRERA Compliant</span>
+                </div>
             </div>
-        </footer>
+
+            <!-- Grand Editorial Manifesto Title -->
+            <div class="monograph-manifesto-row">
+                <h2 class="monograph-title">
+                    We curate Kolkata’s most prestigious <span class="monograph-serif-accent">residential landmarks</span> — directly from developers with zero middleman markup.
+                </h2>
+                <p class="monograph-lead">
+                    Instead of open catalogues with unvetted listings, Steady Shield Realtech operates as a private advisory managing an exclusive collection of landmark residential buildings across Alipore, Ballygunge, EM Bypass, and New Town.
+                </p>
+            </div>
+
+            <!-- 2026 Architectural Bento Grid (3 Pillars of Excellence) -->
+            <div class="monograph-bento-grid">
+                
+                <!-- Bento Column 1: Cinematic Architectural Canvas -->
+                <div class="bento-visual-card">
+                    <img src="endpart/ezgif-frame-040.jpg" alt="Steady Shield Landmark Architecture" loading="lazy">
+                    <div class="bento-visual-gradient"></div>
+                    
+                    <div class="bento-visual-top">
+                        <span class="bento-badge-glass">
+                            <span class="beacon-gold"></span>
+                            <span>Direct Builder Portfolio</span>
+                        </span>
+                    </div>
+
+                    <div class="bento-visual-bottom">
+                        <div class="bento-quote-glass">
+                            <span class="quote-number">15+</span>
+                            <div class="quote-text">
+                                <strong>Landmark Buildings Managed</strong>
+                                <span>Across Kolkata’s Prime Micro-Markets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Column 2: Operational Pillars -->
+                <div class="bento-pillars-card">
+                    <div class="pillar-row">
+                        <div class="pillar-num">01</div>
+                        <div class="pillar-body">
+                            <h3>Direct Developer Purchase</h3>
+                            <p>Direct builder inventory without broker margins or markups. You acquire residences with verified owner pricing and direct developer contracts.</p>
+                        </div>
+                    </div>
+
+                    <div class="pillar-divider"></div>
+
+                    <div class="pillar-row">
+                        <div class="pillar-num">02</div>
+                        <div class="pillar-body">
+                            <h3>Rigorous Legal Assurance</h3>
+                            <p>Every building undergoes a 40-point legal audit covering municipal approvals, sanctions, and WBRERA compliance for complete title peace of mind.</p>
+                        </div>
+                    </div>
+
+                    <div class="pillar-divider"></div>
+
+                    <div class="pillar-row">
+                        <div class="pillar-num">03</div>
+                        <div class="pillar-body">
+                            <h3>Private Concierge &amp; NRI Desk</h3>
+                            <p>Complimentary chauffeur-driven site viewings, bespoke floor customizations, and seamless virtual transactions for global Non-Resident Indians.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bento Column 3: The Prestige Metrics & Direct Advisory CTA -->
+                <div class="bento-prestige-card">
+                    <div class="prestige-card-header">
+                        <span class="prestige-sub">Advisory Record</span>
+                        <h3>Key Portfolio Metrics</h3>
+                    </div>
+
+                    <div class="prestige-stats-stack">
+                        <div class="prestige-stat-item">
+                            <span class="stat-big">10+</span>
+                            <span class="stat-desc">Years of Uncompromised Trust</span>
+                        </div>
+                        <div class="prestige-mini-line"></div>
+                        <div class="prestige-stat-item">
+                            <span class="stat-big">250+</span>
+                            <span class="stat-desc">Residences Delivered with Clean Deeds</span>
+                        </div>
+                        <div class="prestige-mini-line"></div>
+                        <div class="prestige-stat-item">
+                            <span class="stat-big">₹650 Cr+</span>
+                            <span class="stat-desc">Portfolio Valuation Managed</span>
+                        </div>
+                    </div>
+
+                    <div class="prestige-actions">
+                        <a href="about.html" class="btn-prestige-primary">
+                            <span>Read Full Story</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                        </a>
+                        <a href="contact.html" class="btn-prestige-outline">
+                            <span>Schedule Consultation</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </section>
-    
+
+    <!-- Direct Developer Ownership & Legal Guarantee Section (Next-Gen 2026 Advantage Matrix) -->
+    <section class="advantage-matrix-section" id="advantage-matrix">
+        <div class="advantage-ambient-glow"></div>
+        <div class="advantage-ambient-glow-2"></div>
+        <div class="section-inner">
+            
+            <!-- Section Header -->
+            <div class="advantage-header">
+                <div class="advantage-eyebrow">
+                    <span class="adv-pulse-beacon"></span>
+                    <span>Direct Developer Privilege</span>
+                </div>
+                <h2 class="advantage-title">
+                    The Steady Shield <span class="advantage-gradient-text">Advantage</span>
+                </h2>
+                <p class="advantage-subtitle">
+                    Why Kolkata’s premier homebuyers and global NRIs choose our private residential advisory over generic open listings.
+                </p>
+            </div>
+
+            <!-- 4-Column High-Performance Advantage Grid -->
+            <div class="advantage-cards-grid">
+                
+                <!-- Card 1: Direct Builder Pricing -->
+                <div class="adv-luxury-card">
+                    <div class="adv-card-header">
+                        <div class="adv-icon-capsule">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </div>
+                        <span class="adv-pillar-num">01</span>
+                    </div>
+
+                    <div class="adv-card-body">
+                        <span class="adv-highlight-pill">0% Middleman Markup</span>
+                        <h3 class="adv-card-title">100% Direct Developer Pricing</h3>
+                        <p class="adv-card-desc">
+                            Direct builder pricing with authentic owner rates, verified payment schedules, and zero middleman inflation.
+                        </p>
+                        
+                        <div class="adv-perks-list">
+                            <div class="adv-perk-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Direct builder contract</span>
+                            </div>
+                            <div class="adv-perk-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Transparent milestone terms</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="adv-card-bottom-line"></div>
+                </div>
+
+                <!-- Card 2: Legal Guarantee -->
+                <div class="adv-luxury-card">
+                    <div class="adv-card-header">
+                        <div class="adv-icon-capsule">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                        </div>
+                        <span class="adv-pillar-num">02</span>
+                    </div>
+
+                    <div class="adv-card-body">
+                        <span class="adv-highlight-pill">40-Point Title Audit</span>
+                        <h3 class="adv-card-title">WBRERA Verified Documentation</h3>
+                        <p class="adv-card-desc">
+                            Every property undergoes comprehensive legal scrutiny of municipal permissions, freehold land titles, and sanctioned blueprints.
+                        </p>
+                        
+                        <div class="adv-perks-list">
+                            <div class="adv-perk-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>100% Freehold clear title</span>
+                            </div>
+                            <div class="adv-perk-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Sanctioned building plans</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="adv-card-bottom-line"></div>
+                </div>
+
+                <!-- Card 3: Dedicated NRI Concierge -->
+                <div class="adv-luxury-card">
+                    <div class="adv-card-header">
+                        <div class="adv-icon-capsule">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        </div>
+                        <span class="adv-pillar-num">03</span>
+                    </div>
+
+                    <div class="adv-card-body">
+                        <span class="adv-highlight-pill">Global NRI Desk</span>
+                        <h3 class="adv-card-title">Dedicated Private Concierge</h3>
+                        <p class="adv-card-desc">
+                            Chauffeur-driven private site visits, FEMA-compliant cross-border documentation, and live 4K virtual tours for global buyers.
+                        </p>
+                        
+                        <div class="adv-perks-list">
+                            <div class="adv-perk-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>FEMA &amp; POA documentation</span>
+                            </div>
+                            <div class="adv-perk-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>Chauffeur site viewings</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="adv-card-bottom-line"></div>
+                </div>
+
+                <!-- Card 4: Zero Brokerage -->
+                <div class="adv-luxury-card">
+                    <div class="adv-card-header">
+                        <div class="adv-icon-capsule">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8l-8 8"/><circle cx="9" cy="9" r="1" fill="currentColor"/><circle cx="15" cy="15" r="1" fill="currentColor"/></svg>
+                        </div>
+                        <span class="adv-pillar-num">04</span>
+                    </div>
+
+                    <div class="adv-card-body">
+                        <span class="adv-highlight-pill">Always ₹0 Fee</span>
+                        <h3 class="adv-card-title">Zero Buyer Brokerage</h3>
+                        <p class="adv-card-desc">
+                            Our compensation is directly integrated with builder developers. You pay absolutely zero brokerage or hidden consulting fees.
+                        </p>
+                        
+                        <div class="adv-perks-list">
+                            <div class="adv-perk-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>100% Free advisory service</span>
+                            </div>
+                            <div class="adv-perk-item">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                <span>No hidden admin charges</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="adv-card-bottom-line"></div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Advisory Trust Banner -->
+            <div class="advantage-bottom-strip">
+                <div class="adv-trust-metric">
+                    <span class="adv-trust-num">₹650 Cr+</span>
+                    <span class="adv-trust-label">Worth of Luxury Residences Advised with Zero Brokerage</span>
+                </div>
+                <div class="adv-trust-cta">
+                    <a href="contact.html" class="btn-adv-consult">
+                        <span>Book Advisory Consultation</span>
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Mortgage EMI Calculator Widget -->
+    <section class="page-section alt-bg emi-calculator-section">
+        <div class="section-inner">
+            <div class="emi-wrapper">
+                <div class="emi-info-col">
+                    <span class="section-badge">Financial Planning</span>
+                    <h2 class="section-title left-title">Home Loan EMI Calculator</h2>
+                    <p class="emi-desc">Plan your luxury purchase with complete clarity. Estimate your monthly loan installment, total interest, and customized banking assistance options.</p>
+                    <div class="bank-partners">
+                        <span class="partner-label">PARTNERED BANKS:</span>
+                        <div class="bank-tags">
+                            <span class="bank-tag">SBI Home Loans</span>
+                            <span class="bank-tag">HDFC Bank</span>
+                            <span class="bank-tag">ICICI Bank</span>
+                            <span class="bank-tag">Axis Bank</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emi-calc-card">
+                    <div class="calc-group">
+                        <div class="calc-label-row">
+                            <label>Loan Amount (₹)</label>
+                            <span id="loan-amount-val" class="calc-val">₹ 1,00,00,000</span>
+                        </div>
+                        <input type="range" id="loan-amount" min="2000000" max="200000000" step="1000000" value="10000000">
+                    </div>
+
+                    <div class="calc-group">
+                        <div class="calc-label-row">
+                            <label>Interest Rate (% P.A.)</label>
+                            <span id="interest-rate-val" class="calc-val">8.5 %</span>
+                        </div>
+                        <input type="range" id="interest-rate" min="7.0" max="12.0" step="0.1" value="8.5">
+                    </div>
+
+                    <div class="calc-group">
+                        <div class="calc-label-row">
+                            <label>Loan Tenure (Years)</label>
+                            <span id="loan-tenure-val" class="calc-val">20 Years</span>
+                        </div>
+                        <input type="range" id="loan-tenure" min="5" max="30" step="1" value="20">
+                    </div>
+
+                    <div class="calc-results">
+                        <div class="result-box main-emi">
+                            <span class="lbl">ESTIMATED MONTHLY EMI</span>
+                            <span id="monthly-emi-result" class="val">₹ 86,782</span>
+                        </div>
+                        <div class="results-row">
+                            <div class="result-sub">
+                                <span class="lbl">Total Interest</span>
+                                <span id="total-interest-result" class="val">₹ 1,08,27,680</span>
+                            </div>
+                            <div class="result-sub">
+                                <span class="lbl">Total Payable</span>
+                                <span id="total-payable-result" class="val">₹ 2,08,27,680</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn-primary" style="width: 100%; text-align: center; justify-content: center; margin-top: 15px;">
+                            <span>APPLY FOR BANK LOAN ASSISTANCE</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verified Buyer Testimonials -->
+    <section class="page-section portal-testimonials">
+        <div class="section-inner">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <span class="section-badge">Client Trust</span>
+                <h2 class="section-title center-title">What Our Property Buyers Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Buying our Alipore penthouse through Steady Shield Realtech was smooth and completely transparent. Zero brokerage and clear RERA paperwork!"</p>
+                    <div class="buyer-profile">
+                        <strong>Vikramaditya Roy</strong>
+                        <span>Owner at Alipore Royal Sanctuary</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"As an NRI living in London, buying real estate in Kolkata used to feel stressful. Steady Shield's NRI desk handled power-of-attorney and virtual tours effortlessly."</p>
+                    <div class="buyer-profile">
+                        <strong>Ananya Dasgupta</strong>
+                        <span>Owner at EM Bypass Sky Mansion</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Direct developer pricing saved us money, and their legal team verified every title document before we paid any advance. Highly recommended!"</p>
+                    <div class="buyer-profile">
+                        <strong>Siddharth & Meera Kothari</strong>
+                        <span>Owners at Ballygunge Garden Estate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="page-section dark-bg cta-section-wrap">
+        <div class="section-inner">
+            <div class="cta-banner">
+                <h2>Ready to Tour Kolkata's Premier Luxury Buildings?</h2>
+                <p>Schedule a private visit with our senior advisory team or speak directly with our luxury real estate consultants.</p>
+                <div class="cta-btn-group">
+                    <a href="contact.html" class="btn-cta-solid">SCHEDULE PRIVATE SITE VISIT</a>
+                    <a href="tel:+913322008800" class="btn-cta-outline">CALL +91 (33) 2200 8800</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col logo-col">
+                <div class="logo-container">
+                    <img class="brand-logo" src="images/logo.png" alt="STEADY SHIELD REALTECH" style="height: 36px; width: auto;">
+                    <div class="brand-text">
+                        <span class="brand-title" style="color: #ffffff;">REALTECH</span>
+                        <span class="brand-subtitle" style="color: rgba(255,255,255,0.7);">STEADY SHIELD PVT LTD</span>
+                    </div>
+                </div>
+                <p class="footer-desc">Kolkata's premier real estate portal and luxury advisory, curating elite heritage estates, high-rise penthouses, and modern flats and houses.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Popular Micro-Markets</h4>
+                <ul>
+                    <li><a href="properties.html">Alipore Luxury Estates</a></li>
+                    <li><a href="properties.html">Ballygunge Heritage Homes</a></li>
+                    <li><a href="properties.html">EM Bypass Waterfront Towers</a></li>
+                    <li><a href="properties.html">New Town Flats & Houses</a></li>
+                    <li><a href="properties.html">Salt Lake IT Corridor Suites</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Portal Links</h4>
+                <ul>
+                    <li><a href="index.html">Home Search Portal</a></li>
+                    <li><a href="about.html">About Steady Shield</a></li>
+                    <li><a href="properties.html">Luxury Properties</a></li>
+                    <li><a href="gallery.html">Visual Gallery</a></li>
+                    <li><a href="contact.html">NRI Advisory Desk</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Headquarters</h4>
+                <p class="contact-info">EM Bypass, Park Circus Connector, Kolkata, West Bengal 700046</p>
+                <p class="contact-info">inquire@steadyshieldrealtech.com</p>
+                <p class="contact-info">+91 (33) 2200 8800 / +91 98300 XXXXX</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 STEADY SHIELD REALTECH PVT LTD. All rights reserved. RERA Registered Real Estate Portal.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JS -->
+    <script src="scroll-reveal.js"></script>
     <script>
-        // ==========================================
-        // LUXE LIVING - Interactive Scripts
-        // ==========================================
-
-
-        // ==========================================
-        // FEATURED LISTINGS CAROUSEL INTERACTIVITY
-        // ==========================================
-        const track = document.getElementById('properties-track');
-        const dots = document.querySelectorAll('#carousel-dots .dot');
-        let currentSlide = 0;
-
-        function goToSlide(slideIndex) {
-            currentSlide = slideIndex;
-            if (track) {
-                track.style.transform = `translateX(-${slideIndex * 100}%)`;
-            }
-            dots.forEach((dot, idx) => {
-                if (idx === slideIndex) {
-                    dot.classList.add('active');
-                } else {
-                    dot.classList.remove('active');
-                }
-            });
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                goToSlide(index);
-            });
-        });
-
-        // Toast Notification Helper
-        const toast = document.getElementById('toast-notification');
-        function showToast(msg) {
-            if (!toast) return;
-            toast.textContent = msg;
-            toast.classList.add('show');
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 3000);
-        }
-
-        // Heart & Bookmark Interactive Toggle
-        document.querySelectorAll('.btn-favorite').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                btn.classList.toggle('active-heart');
-                if (btn.classList.contains('active-heart')) {
-                    showToast('&#9829; Saved to your Favorites!');
-                } else {
-                    showToast('Removed from Favorites');
-                }
-            });
-        });
-
-        document.querySelectorAll('.btn-bookmark').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                btn.classList.toggle('active-bookmark');
-                if (btn.classList.contains('active-bookmark')) {
-                    showToast('&#128278; Saved to your Saved Collection!');
-                } else {
-                    showToast('Removed from Collection');
-                }
-            });
-        });
-
-        // Property Lightbox Modal Handler
-        const modal = document.getElementById('property-modal');
-        const modalImg = document.getElementById('modal-img');
-        const modalTitle = document.getElementById('modal-title');
-        const modalPrice = document.getElementById('modal-price');
-        const modalLocation = document.getElementById('modal-location');
-        const modalCloseBtn = document.getElementById('modal-close-btn');
-
-        function openModal(card) {
-            const title = card.getAttribute('data-title') || 'Luxury Villa';
-            const price = card.getAttribute('data-price') || '$34,900/Month';
-            const location = card.getAttribute('data-location') || 'California, USA';
-            const img = card.getAttribute('data-img') || 'part1/ezgif-frame-001.jpg';
-
-            modalTitle.textContent = title;
-            modalPrice.textContent = price;
-            modalLocation.textContent = '\u{1F4CD} ' + location;
-            modalImg.src = img;
-
-            modal.classList.add('show');
-        }
-
-        document.querySelectorAll('.btn-expand, .property-card').forEach(item => {
-            item.addEventListener('click', (e) => {
-                if (e.target.closest('.btn-favorite') || e.target.closest('.btn-bookmark')) return;
-                const card = e.target.closest('.property-card');
-                if (card) openModal(card);
-            });
-        });
-
-        if (modalCloseBtn) {
-            modalCloseBtn.addEventListener('click', () => {
-                modal.classList.remove('show');
-            });
-        }
-        if (modal) {
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) modal.classList.remove('show');
-            });
-        }
-
-        // Virtual Tour Video Modal Handler
-        const videoModal = document.getElementById('video-modal');
-        const playBtn = document.querySelector('.play-btn');
-        const videoModalClose = document.getElementById('video-modal-close');
-
-        if (playBtn && videoModal) {
-            playBtn.addEventListener('click', () => {
-                videoModal.classList.add('show');
-            });
-        }
-        if (videoModalClose && videoModal) {
-            videoModalClose.addEventListener('click', () => {
-                videoModal.classList.remove('show');
-            });
-        }
-        if (videoModal) {
-            videoModal.addEventListener('click', (e) => {
-                if (e.target === videoModal) videoModal.classList.remove('show');
-            });
-        }
-
-        // ==========================================
-        // FLOOR PLAN TABS INTERACTIVITY
-        // ==========================================
-        const planData = {
-            studio: {
-                name: 'The Studio',
-                desc: 'Compact architectural design for modern urban living with space-efficient multipurpose layouts.',
-                area: '1200 Sq. Ft',
-                bed: '120 Sq. Ft',
-                bath: '35 Sq. Ft',
-                pets: 'Allowed',
-                lounge: '400 Sq. Ft'
-            },
-            deluxe: {
-                name: 'Deluxe Portion',
-                desc: 'Enimad minim veniam quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet cons actetur adipisicing elit sedo eiusmod tempor.',
-                area: '2800 Sq. Ft',
-                bed: '150 Sq. Ft',
-                bath: '45 Sq. Ft',
-                pets: 'Allowed',
-                lounge: '650 Sq. Ft'
-            },
-            penthouse: {
-                name: 'Penthouse Suite',
-                desc: 'Ultra-exclusive double-story rooftop sanctuary with panoramic skyline views and private elevator access.',
-                area: '4200 Sq. Ft',
-                bed: '250 Sq. Ft',
-                bath: '80 Sq. Ft',
-                pets: 'Allowed',
-                lounge: '1100 Sq. Ft'
-            },
-            topgarden: {
-                name: 'Top Garden Residence',
-                desc: 'Seamless blend of lush outdoor garden terraces and interior glass living spaces.',
-                area: '3500 Sq. Ft',
-                bed: '180 Sq. Ft',
-                bath: '60 Sq. Ft',
-                pets: 'Allowed',
-                lounge: '850 Sq. Ft'
-            },
-            doubleheight: {
-                name: 'Double Height Loft',
-                desc: 'Dramatic 20ft ceiling heights, custom mezzanine floor, and floor-to-ceiling glass facades.',
-                area: '5000 Sq. Ft',
-                bed: '300 Sq. Ft',
-                bath: '95 Sq. Ft',
-                pets: 'Allowed',
-                lounge: '1400 Sq. Ft'
-            }
-        };
-
-        const tabBtns = document.querySelectorAll('.plan-tab-btn');
-        tabBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const planKey = btn.getAttribute('data-plan');
-                const data = planData[planKey];
-                if (!data) return;
-
-                tabBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                document.getElementById('plan-name').textContent = data.name;
-                document.getElementById('spec-area').textContent = data.area;
-                document.getElementById('spec-bed').textContent = data.bed;
-                document.getElementById('spec-bath').textContent = data.bath;
-                document.getElementById('spec-pets').textContent = data.pets;
-                document.getElementById('spec-lounge').textContent = data.lounge;
-            });
-        });
-
-        // Property Value Estimator Logic
-        function calculateValuation() {
-            const locSelect = document.getElementById('est-location');
-            const typeSelect = document.getElementById('est-type');
-            const sqftInput = document.getElementById('est-sqft');
-            const sqftVal = document.getElementById('sqft-val');
-            const priceRes = document.getElementById('est-result-price');
-            const rangeRes = document.getElementById('est-range');
-
-            if (!locSelect || !typeSelect || !sqftInput) return;
-
-            const sqft = parseInt(sqftInput.value);
-            sqftVal.textContent = sqft.toLocaleString();
-
-            const prices = {
-                alipore: 18000,
-                ballygunge: 15500,
-                embypass: 14000,
-                saltlake: 11000,
-                newtown: 9500
-            };
-
-            const multipliers = {
-                apartment: 1.0,
-                duplex: 1.2,
-                villa: 1.3
-            };
-
-            const baseRate = prices[locSelect.value] || 15500;
-            const mult = multipliers[typeSelect.value] || 1.0;
-
-            const totalRs = sqft * baseRate * mult;
-            const totalCrores = (totalRs / 10000000).toFixed(2);
-
-            const minCrores = (totalRs * 0.95 / 10000000).toFixed(2);
-            const maxCrores = (totalRs * 1.05 / 10000000).toFixed(2);
-
-            priceRes.textContent = `₹ ${totalCrores} Crore`;
-            rangeRes.textContent = `₹ ${minCrores} Cr – ₹ ${maxCrores} Cr`;
-        }
-
-        // Initialize calculator
-        calculateValuation();
-
-        // ==========================================
-        // EDITORIAL MOTION & NAVIGATION
-        // ==========================================
-        const nav = document.getElementById('main-nav');
-        const navToggle = document.querySelector('.nav-toggle');
-        const navItems = document.querySelectorAll('.nav-links a');
-
-        const updateNav = () => {
-            const scrollTop = window.scrollY;
-            nav.classList.toggle('is-scrolled', scrollTop > 24);
-            const total = document.documentElement.scrollHeight - window.innerHeight;
-            nav.style.setProperty('--scroll', `${total ? (scrollTop / total) * 100 : 0}%`);
-        };
-        updateNav();
-        window.addEventListener('scroll', updateNav, { passive: true });
-
-        if (navToggle) {
-            navToggle.addEventListener('click', () => {
-                const open = nav.classList.toggle('is-open');
-                navToggle.setAttribute('aria-expanded', String(open));
-                navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-            });
-        }
-        navItems.forEach(link => link.addEventListener('click', () => nav.classList.remove('is-open')));
-
-        // Reveal content as it enters the viewport, with a gentle stagger for grids.
-        const revealTargets = document.querySelectorAll(
-            '.about-content, .section-header, .nri-card-wrapper, .estimator-box, .testimonials-header, .journal-header, .floor-plan-content, .contact-content'
-        );
-        const staggerTargets = document.querySelectorAll(
-            '.stat-bar-container, .process-grid, .properties-grid, .neighborhood-grid, .testimonials-grid, .journal-grid'
-        );
-        revealTargets.forEach(el => el.classList.add('reveal'));
-        staggerTargets.forEach(el => el.classList.add('reveal-stagger'));
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                entry.target.classList.add('in-view');
-                observer.unobserve(entry.target);
-            });
-        }, { threshold: 0.13, rootMargin: '0px 0px -32px' });
-        document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => observer.observe(el));
-
-        // Animate numerical proof points once, preserving symbols such as 15+.
-        const countStats = () => document.querySelectorAll('.stat-num').forEach(el => {
-            const original = el.textContent.trim();
-            const target = Number(original.replace(/[^0-9.]/g, ''));
-            if (!target || el.dataset.counted) return;
-            el.dataset.counted = 'true';
-            const started = performance.now();
-            const duration = 1100;
-            const draw = now => {
-                const progress = Math.min((now - started) / duration, 1);
-                const eased = 1 - Math.pow(1 - progress, 3);
-                el.textContent = Math.floor(target * eased) + (original.includes('+') ? '+' : '');
-                if (progress < 1) requestAnimationFrame(draw);
-            };
-            requestAnimationFrame(draw);
-        });
-        const stats = document.querySelector('.portfolio-stat-bar');
-        if (stats) new IntersectionObserver(entries => entries[0].isIntersecting && countStats(), { threshold: .4 }).observe(stats);
-
-        // Gentle scroll parallax for the NRI consultation CTA background.
-        const nriCta = document.querySelector('.nri-card-wrapper');
-        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        if (nriCta && !reducedMotion) {
-            let parallaxQueued = false;
-            const updateNriParallax = () => {
-                const rect = nriCta.getBoundingClientRect();
-                const viewportCenter = window.innerHeight / 2;
-                const sectionCenter = rect.top + rect.height / 2;
-                const offset = Math.max(-42, Math.min(42, (viewportCenter - sectionCenter) * 0.11));
-                nriCta.style.setProperty('--parallax-y', `${-50 + offset}px`);
-                parallaxQueued = false;
-            };
-            const queueNriParallax = () => {
-                if (!parallaxQueued) {
-                    parallaxQueued = true;
-                    requestAnimationFrame(updateNriParallax);
-                }
-            };
-            updateNriParallax();
-            window.addEventListener('scroll', queueNriParallax, { passive: true });
-            window.addEventListener('resize', queueNriParallax);
+        function executeHubSearch() {
+            const query = document.getElementById('hub-search-input').value;
+            const propType = document.getElementById('hub-property-type').value;
+            const activeTab = document.querySelector('.hub-tab.active') ? document.querySelector('.hub-tab.active').dataset.tab : 'buy';
+            
+            let queryParams = [];
+            if (query) queryParams.push('query=' + encodeURIComponent(query));
+            if (propType) queryParams.push('type=' + propType);
+            if (activeTab) queryParams.push('tab=' + activeTab);
+            
+            window.location.href = 'properties.html' + (queryParams.length ? '?' + queryParams.join('&') : '');
         }
     </script>
-    <script src="scroll-reveal.js"></script>
+
+    <!-- Interactive In-Page Property Gallery Lightbox Modal -->
+    <div class="prop-gallery-modal" id="prop-gallery-modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="prop-gallery-backdrop" onclick="closePropGallery()"></div>
+        <div class="prop-gallery-container">
+            <!-- Modal Header -->
+            <div class="prop-gallery-header">
+                <div class="prop-gallery-info">
+                    <span class="prop-gallery-counter" id="prop-gallery-counter">Photo 1 of 12</span>
+                    <h3 class="prop-gallery-title" id="prop-gallery-title">Property Showcase</h3>
+                    <p class="prop-gallery-location" id="prop-gallery-location">Kolkata, West Bengal</p>
+                </div>
+                <div class="prop-gallery-header-actions">
+                    <a href="contact.html" class="btn-gallery-inquire">Inquire Now</a>
+                    <button class="prop-gallery-close" onclick="closePropGallery()" aria-label="Close Gallery">&times;</button>
+                </div>
+            </div>
+
+            <!-- Main Stage Photo Display with Prev/Next -->
+            <div class="prop-gallery-stage">
+                <button class="prop-gallery-nav prev" onclick="navigatePropGallery(-1)" aria-label="Previous Photo">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <div class="prop-gallery-main-img-wrap">
+                    <img id="prop-gallery-main-img" src="" alt="Property Gallery Photo">
+                </div>
+                <button class="prop-gallery-nav next" onclick="navigatePropGallery(1)" aria-label="Next Photo">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+            </div>
+
+            <!-- Thumbnails Filmstrip Strip -->
+            <div class="prop-gallery-filmstrip-wrap">
+                <div class="prop-gallery-filmstrip" id="prop-gallery-filmstrip"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Lightbox Interactive JS -->
+    <script>
+        const propertyGalleries = {
+            1: {
+                title: "New Town Independent Luxury House",
+                location: "Action Area III, New Town, Kolkata",
+                price: "₹ 3.50 Crore",
+                images: [
+                    "part1/ezgif-frame-001.jpg",
+                    "part1/ezgif-frame-015.jpg",
+                    "part1/ezgif-frame-028.jpg",
+                    "part1/ezgif-frame-042.jpg",
+                    "part1/ezgif-frame-056.jpg",
+                    "part1/ezgif-frame-070.jpg",
+                    "part1/ezgif-frame-085.jpg",
+                    "part1/ezgif-frame-098.jpg",
+                    "part1/ezgif-frame-112.jpg",
+                    "part1/ezgif-frame-126.jpg",
+                    "part1/ezgif-frame-140.jpg",
+                    "part1/ezgif-frame-148.jpg"
+                ]
+            },
+            2: {
+                title: "EM Bypass Lakeview Sky Mansion",
+                location: "Waterfront Corridor, EM Bypass, Kolkata",
+                price: "₹ 6.80 Crore",
+                images: [
+                    "part2/ezgif-frame-040.jpg",
+                    "part2/ezgif-frame-010.jpg",
+                    "part2/ezgif-frame-022.jpg",
+                    "part2/ezgif-frame-034.jpg",
+                    "part2/ezgif-frame-048.jpg",
+                    "part2/ezgif-frame-060.jpg",
+                    "part2/ezgif-frame-072.jpg",
+                    "part2/ezgif-frame-084.jpg",
+                    "part2/ezgif-frame-096.jpg",
+                    "part2/ezgif-frame-108.jpg",
+                    "part2/ezgif-frame-120.jpg",
+                    "part2/ezgif-frame-132.jpg",
+                    "part2/ezgif-frame-144.jpg",
+                    "part2/ezgif-frame-148.jpg",
+                    "part2/ezgif-frame-018.jpg",
+                    "part2/ezgif-frame-030.jpg"
+                ]
+            },
+            3: {
+                title: "Ballygunge Heritage Garden Estate",
+                location: "Ballygunge Park, South Kolkata",
+                price: "₹ 12.50 Crore",
+                images: [
+                    "endpart/ezgif-frame-040.jpg",
+                    "endpart/ezgif-frame-005.jpg",
+                    "endpart/ezgif-frame-015.jpg",
+                    "endpart/ezgif-frame-025.jpg",
+                    "endpart/ezgif-frame-035.jpg",
+                    "endpart/ezgif-frame-045.jpg",
+                    "endpart/ezgif-frame-055.jpg",
+                    "endpart/ezgif-frame-065.jpg",
+                    "endpart/ezgif-frame-075.jpg",
+                    "endpart/ezgif-frame-085.jpg",
+                    "endpart/ezgif-frame-095.jpg",
+                    "endpart/ezgif-frame-105.jpg",
+                    "endpart/ezgif-frame-115.jpg",
+                    "endpart/ezgif-frame-125.jpg",
+                    "endpart/ezgif-frame-135.jpg",
+                    "endpart/ezgif-frame-145.jpg",
+                    "endpart/ezgif-frame-010.jpg",
+                    "endpart/ezgif-frame-020.jpg"
+                ]
+            },
+            4: {
+                title: "Alipore Royal Sanctuary Estate",
+                location: "Alipore Estates, VIP Quarter, Kolkata",
+                price: "₹ 18.00 Crore",
+                images: [
+                    "part3/ezgif-frame-040.jpg",
+                    "part3/ezgif-frame-005.jpg",
+                    "part3/ezgif-frame-015.jpg",
+                    "part3/ezgif-frame-025.jpg",
+                    "part3/ezgif-frame-035.jpg",
+                    "part3/ezgif-frame-045.jpg",
+                    "part3/ezgif-frame-055.jpg",
+                    "part3/ezgif-frame-065.jpg",
+                    "part3/ezgif-frame-075.jpg",
+                    "part3/ezgif-frame-085.jpg",
+                    "part3/ezgif-frame-095.jpg",
+                    "part3/ezgif-frame-105.jpg",
+                    "part3/ezgif-frame-115.jpg",
+                    "part3/ezgif-frame-010.jpg",
+                    "part3/ezgif-frame-020.jpg",
+                    "part3/ezgif-frame-030.jpg",
+                    "part3/ezgif-frame-050.jpg",
+                    "part3/ezgif-frame-060.jpg",
+                    "part3/ezgif-frame-070.jpg",
+                    "part3/ezgif-frame-080.jpg"
+                ]
+            },
+            5: {
+                title: "Salt Lake Skyline Luxury Suite",
+                location: "Sector V, Salt Lake, Kolkata",
+                price: "₹ 2.80 Crore",
+                images: [
+                    "part1/ezgif-frame-120.jpg",
+                    "part1/ezgif-frame-005.jpg",
+                    "part1/ezgif-frame-018.jpg",
+                    "part1/ezgif-frame-032.jpg",
+                    "part1/ezgif-frame-045.jpg",
+                    "part1/ezgif-frame-058.jpg",
+                    "part1/ezgif-frame-072.jpg",
+                    "part1/ezgif-frame-085.jpg",
+                    "part1/ezgif-frame-098.jpg",
+                    "part1/ezgif-frame-110.jpg",
+                    "part1/ezgif-frame-125.jpg",
+                    "part1/ezgif-frame-135.jpg",
+                    "part1/ezgif-frame-142.jpg",
+                    "part1/ezgif-frame-149.jpg"
+                ]
+            },
+            6: {
+                title: "Southern Avenue Parkview Residence",
+                location: "Rabindra Sarobar Lakefront, Southern Avenue",
+                price: "₹ 4.20 Crore",
+                images: [
+                    "part2/ezgif-frame-100.jpg",
+                    "part2/ezgif-frame-008.jpg",
+                    "part2/ezgif-frame-018.jpg",
+                    "part2/ezgif-frame-028.jpg",
+                    "part2/ezgif-frame-038.jpg",
+                    "part2/ezgif-frame-048.jpg",
+                    "part2/ezgif-frame-058.jpg",
+                    "part2/ezgif-frame-068.jpg",
+                    "part2/ezgif-frame-078.jpg",
+                    "part2/ezgif-frame-088.jpg",
+                    "part2/ezgif-frame-098.jpg",
+                    "part2/ezgif-frame-108.jpg",
+                    "part2/ezgif-frame-118.jpg",
+                    "part2/ezgif-frame-128.jpg",
+                    "part2/ezgif-frame-138.jpg"
+                ]
+            }
+        };
+
+        let currentGalleryPropId = 1;
+        let currentPhotoIndex = 0;
+
+        function openPropGallery(propId, event) {
+            if (event) {
+                event.stopPropagation();
+            }
+            const gallery = propertyGalleries[propId];
+            if (!gallery) return;
+
+            currentGalleryPropId = propId;
+            currentPhotoIndex = 0;
+
+            const modal = document.getElementById('prop-gallery-modal');
+            const titleEl = document.getElementById('prop-gallery-title');
+            const locEl = document.getElementById('prop-gallery-location');
+            const filmstripEl = document.getElementById('prop-gallery-filmstrip');
+
+            if (titleEl) titleEl.textContent = gallery.title;
+            if (locEl) locEl.textContent = gallery.location + ' • ' + gallery.price;
+
+            // Render filmstrip thumbnails
+            if (filmstripEl) {
+                filmstripEl.innerHTML = '';
+                gallery.images.forEach((imgSrc, idx) => {
+                    const thumb = document.createElement('div');
+                    thumb.className = 'prop-thumb-item' + (idx === 0 ? ' active' : '');
+                    thumb.innerHTML = `<img src="${imgSrc}" alt="Thumbnail ${idx + 1}" loading="lazy">`;
+                    thumb.onclick = () => switchGalleryPhoto(idx);
+                    filmstripEl.appendChild(thumb);
+                });
+            }
+
+            updateGalleryDisplay();
+
+            if (modal) {
+                modal.classList.add('is-open');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function updateGalleryDisplay() {
+            const gallery = propertyGalleries[currentGalleryPropId];
+            if (!gallery) return;
+
+            const counterEl = document.getElementById('prop-gallery-counter');
+            const mainImgEl = document.getElementById('prop-gallery-main-img');
+            const filmstripEl = document.getElementById('prop-gallery-filmstrip');
+
+            if (counterEl) {
+                counterEl.textContent = `Photo ${currentPhotoIndex + 1} of ${gallery.images.length}`;
+            }
+
+            if (mainImgEl) {
+                mainImgEl.style.opacity = '0.3';
+                mainImgEl.style.transform = 'scale(0.98)';
+                mainImgEl.src = gallery.images[currentPhotoIndex];
+                mainImgEl.onload = () => {
+                    mainImgEl.style.opacity = '1';
+                    mainImgEl.style.transform = 'scale(1)';
+                };
+            }
+
+            // Update active thumbnail
+            if (filmstripEl) {
+                const thumbs = filmstripEl.querySelectorAll('.prop-thumb-item');
+                thumbs.forEach((t, i) => {
+                    if (i === currentPhotoIndex) {
+                        t.classList.add('active');
+                        t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    } else {
+                        t.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        function switchGalleryPhoto(idx) {
+            const gallery = propertyGalleries[currentGalleryPropId];
+            if (!gallery || idx < 0 || idx >= gallery.images.length) return;
+            currentPhotoIndex = idx;
+            updateGalleryDisplay();
+        }
+
+        function navigatePropGallery(direction) {
+            const gallery = propertyGalleries[currentGalleryPropId];
+            if (!gallery) return;
+            currentPhotoIndex = (currentPhotoIndex + direction + gallery.images.length) % gallery.images.length;
+            updateGalleryDisplay();
+        }
+
+        function closePropGallery() {
+            const modal = document.getElementById('prop-gallery-modal');
+            if (modal) {
+                modal.classList.remove('is-open');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            const modal = document.getElementById('prop-gallery-modal');
+            if (modal && modal.classList.contains('is-open')) {
+                if (e.key === 'Escape') closePropGallery();
+                if (e.key === 'ArrowLeft') navigatePropGallery(-1);
+                if (e.key === 'ArrowRight') navigatePropGallery(1);
+            }
+        });
+    </script>
 </body>
 </html>
